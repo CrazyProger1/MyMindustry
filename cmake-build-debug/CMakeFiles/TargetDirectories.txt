@@ -1,0 +1,3 @@
+D:/Programming/MyGames/MyMindustry/cmake-build-debug/CMakeFiles/MyMindustry.dir
+D:/Programming/MyGames/MyMindustry/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/Programming/MyGames/MyMindustry/cmake-build-debug/CMakeFiles/rebuild_cache.dir

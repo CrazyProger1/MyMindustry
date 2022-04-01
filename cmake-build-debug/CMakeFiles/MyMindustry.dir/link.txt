@@ -1,0 +1,3 @@
+"D:\Programs\CLion 2021.2.2\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\MyMindustry.dir/objects.a
+D:\Programming\C++\Compilers\mingw64\bin\ar.exe cr CMakeFiles\MyMindustry.dir/objects.a @CMakeFiles\MyMindustry.dir\objects1.rsp
+D:\Programming\C++\Compilers\mingw64\bin\g++.exe -g -static -static-libgcc -Wl,--whole-archive CMakeFiles\MyMindustry.dir/objects.a -Wl,--no-whole-archive -o MyMindustry.exe -Wl,--out-implib,libMyMindustry.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\MyMindustry.dir\linklibs.rsp

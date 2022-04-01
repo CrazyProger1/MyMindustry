@@ -1,0 +1,3 @@
+"D:\Programs\CLion 2021.2.2\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\MyCTW.dir/objects.a
+D:\Programming\C++\Compilers\mingw64\bin\ar.exe cr CMakeFiles\MyCTW.dir/objects.a @CMakeFiles\MyCTW.dir\objects1.rsp
+D:\Programming\C++\Compilers\mingw64\bin\g++.exe -g -static -static-libgcc -Wl,--whole-archive CMakeFiles\MyCTW.dir/objects.a -Wl,--no-whole-archive -o MyCTW.exe -Wl,--out-implib,libMyCTW.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\MyCTW.dir\linklibs.rsp
