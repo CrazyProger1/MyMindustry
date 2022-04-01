@@ -128,29 +128,53 @@ MyMindustry/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyMindustry.dir\build.make CMakeFiles/MyMindustry.dir/build
 .PHONY : MyMindustry/fast
 
-main.obj: main.cpp.obj
-.PHONY : main.obj
+code/engine/srcs/managers/LoggingManager.obj: code/engine/srcs/managers/LoggingManager.cpp.obj
+.PHONY : code/engine/srcs/managers/LoggingManager.obj
 
 # target to build an object file
-main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyMindustry.dir\build.make CMakeFiles/MyMindustry.dir/main.cpp.obj
-.PHONY : main.cpp.obj
+code/engine/srcs/managers/LoggingManager.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyMindustry.dir\build.make CMakeFiles/MyMindustry.dir/code/engine/srcs/managers/LoggingManager.cpp.obj
+.PHONY : code/engine/srcs/managers/LoggingManager.cpp.obj
 
-main.i: main.cpp.i
-.PHONY : main.i
+code/engine/srcs/managers/LoggingManager.i: code/engine/srcs/managers/LoggingManager.cpp.i
+.PHONY : code/engine/srcs/managers/LoggingManager.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyMindustry.dir\build.make CMakeFiles/MyMindustry.dir/main.cpp.i
-.PHONY : main.cpp.i
+code/engine/srcs/managers/LoggingManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyMindustry.dir\build.make CMakeFiles/MyMindustry.dir/code/engine/srcs/managers/LoggingManager.cpp.i
+.PHONY : code/engine/srcs/managers/LoggingManager.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+code/engine/srcs/managers/LoggingManager.s: code/engine/srcs/managers/LoggingManager.cpp.s
+.PHONY : code/engine/srcs/managers/LoggingManager.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyMindustry.dir\build.make CMakeFiles/MyMindustry.dir/main.cpp.s
-.PHONY : main.cpp.s
+code/engine/srcs/managers/LoggingManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyMindustry.dir\build.make CMakeFiles/MyMindustry.dir/code/engine/srcs/managers/LoggingManager.cpp.s
+.PHONY : code/engine/srcs/managers/LoggingManager.cpp.s
+
+code/main.obj: code/main.cpp.obj
+.PHONY : code/main.obj
+
+# target to build an object file
+code/main.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyMindustry.dir\build.make CMakeFiles/MyMindustry.dir/code/main.cpp.obj
+.PHONY : code/main.cpp.obj
+
+code/main.i: code/main.cpp.i
+.PHONY : code/main.i
+
+# target to preprocess a source file
+code/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyMindustry.dir\build.make CMakeFiles/MyMindustry.dir/code/main.cpp.i
+.PHONY : code/main.cpp.i
+
+code/main.s: code/main.cpp.s
+.PHONY : code/main.s
+
+# target to generate assembly for a file
+code/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyMindustry.dir\build.make CMakeFiles/MyMindustry.dir/code/main.cpp.s
+.PHONY : code/main.cpp.s
 
 # Help Target
 help:
@@ -161,9 +185,12 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... MyMindustry
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
+	@echo ... code/engine/srcs/managers/LoggingManager.obj
+	@echo ... code/engine/srcs/managers/LoggingManager.i
+	@echo ... code/engine/srcs/managers/LoggingManager.s
+	@echo ... code/main.obj
+	@echo ... code/main.i
+	@echo ... code/main.s
 .PHONY : help
 
 

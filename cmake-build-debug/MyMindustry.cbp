@@ -84,7 +84,19 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="D:/Programming/MyGames/MyMindustry/main.cpp">
+		<Unit filename="D:/Programming/MyGames/MyMindustry/code/engine/include/managers/LoggingManager.h">
+			<Option target="MyMindustry"/>
+		</Unit>
+		<Unit filename="D:/Programming/MyGames/MyMindustry/code/engine/include/types.h">
+			<Option target="MyMindustry"/>
+		</Unit>
+		<Unit filename="D:/Programming/MyGames/MyMindustry/code/engine/srcs/managers/LoggingManager.cpp">
+			<Option target="MyMindustry"/>
+		</Unit>
+		<Unit filename="D:/Programming/MyGames/MyMindustry/code/game/game.h">
+			<Option target="MyMindustry"/>
+		</Unit>
+		<Unit filename="D:/Programming/MyGames/MyMindustry/code/main.cpp">
 			<Option target="MyMindustry"/>
 		</Unit>
 		<Unit filename="D:/Programming/MyGames/MyMindustry/CMakeLists.txt">

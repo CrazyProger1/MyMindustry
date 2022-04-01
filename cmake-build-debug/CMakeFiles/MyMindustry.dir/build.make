@@ -65,28 +65,44 @@ include CMakeFiles/MyMindustry.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/MyMindustry.dir/flags.make
 
-CMakeFiles/MyMindustry.dir/main.cpp.obj: CMakeFiles/MyMindustry.dir/flags.make
-CMakeFiles/MyMindustry.dir/main.cpp.obj: CMakeFiles/MyMindustry.dir/includes_CXX.rsp
-CMakeFiles/MyMindustry.dir/main.cpp.obj: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Programming\MyGames\MyMindustry\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/MyMindustry.dir/main.cpp.obj"
-	D:\Programming\C++\Compilers\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\MyMindustry.dir\main.cpp.obj -c D:\Programming\MyGames\MyMindustry\main.cpp
+CMakeFiles/MyMindustry.dir/code/main.cpp.obj: CMakeFiles/MyMindustry.dir/flags.make
+CMakeFiles/MyMindustry.dir/code/main.cpp.obj: CMakeFiles/MyMindustry.dir/includes_CXX.rsp
+CMakeFiles/MyMindustry.dir/code/main.cpp.obj: ../code/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Programming\MyGames\MyMindustry\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/MyMindustry.dir/code/main.cpp.obj"
+	D:\Programming\C++\Compilers\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\MyMindustry.dir\code\main.cpp.obj -c D:\Programming\MyGames\MyMindustry\code\main.cpp
 
-CMakeFiles/MyMindustry.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MyMindustry.dir/main.cpp.i"
-	D:\Programming\C++\Compilers\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Programming\MyGames\MyMindustry\main.cpp > CMakeFiles\MyMindustry.dir\main.cpp.i
+CMakeFiles/MyMindustry.dir/code/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MyMindustry.dir/code/main.cpp.i"
+	D:\Programming\C++\Compilers\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Programming\MyGames\MyMindustry\code\main.cpp > CMakeFiles\MyMindustry.dir\code\main.cpp.i
 
-CMakeFiles/MyMindustry.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyMindustry.dir/main.cpp.s"
-	D:\Programming\C++\Compilers\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Programming\MyGames\MyMindustry\main.cpp -o CMakeFiles\MyMindustry.dir\main.cpp.s
+CMakeFiles/MyMindustry.dir/code/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyMindustry.dir/code/main.cpp.s"
+	D:\Programming\C++\Compilers\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Programming\MyGames\MyMindustry\code\main.cpp -o CMakeFiles\MyMindustry.dir\code\main.cpp.s
+
+CMakeFiles/MyMindustry.dir/code/engine/srcs/managers/LoggingManager.cpp.obj: CMakeFiles/MyMindustry.dir/flags.make
+CMakeFiles/MyMindustry.dir/code/engine/srcs/managers/LoggingManager.cpp.obj: CMakeFiles/MyMindustry.dir/includes_CXX.rsp
+CMakeFiles/MyMindustry.dir/code/engine/srcs/managers/LoggingManager.cpp.obj: ../code/engine/srcs/managers/LoggingManager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Programming\MyGames\MyMindustry\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/MyMindustry.dir/code/engine/srcs/managers/LoggingManager.cpp.obj"
+	D:\Programming\C++\Compilers\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\MyMindustry.dir\code\engine\srcs\managers\LoggingManager.cpp.obj -c D:\Programming\MyGames\MyMindustry\code\engine\srcs\managers\LoggingManager.cpp
+
+CMakeFiles/MyMindustry.dir/code/engine/srcs/managers/LoggingManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MyMindustry.dir/code/engine/srcs/managers/LoggingManager.cpp.i"
+	D:\Programming\C++\Compilers\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Programming\MyGames\MyMindustry\code\engine\srcs\managers\LoggingManager.cpp > CMakeFiles\MyMindustry.dir\code\engine\srcs\managers\LoggingManager.cpp.i
+
+CMakeFiles/MyMindustry.dir/code/engine/srcs/managers/LoggingManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyMindustry.dir/code/engine/srcs/managers/LoggingManager.cpp.s"
+	D:\Programming\C++\Compilers\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Programming\MyGames\MyMindustry\code\engine\srcs\managers\LoggingManager.cpp -o CMakeFiles\MyMindustry.dir\code\engine\srcs\managers\LoggingManager.cpp.s
 
 # Object files for target MyMindustry
 MyMindustry_OBJECTS = \
-"CMakeFiles/MyMindustry.dir/main.cpp.obj"
+"CMakeFiles/MyMindustry.dir/code/main.cpp.obj" \
+"CMakeFiles/MyMindustry.dir/code/engine/srcs/managers/LoggingManager.cpp.obj"
 
 # External object files for target MyMindustry
 MyMindustry_EXTERNAL_OBJECTS =
 
-MyMindustry.exe: CMakeFiles/MyMindustry.dir/main.cpp.obj
+MyMindustry.exe: CMakeFiles/MyMindustry.dir/code/main.cpp.obj
+MyMindustry.exe: CMakeFiles/MyMindustry.dir/code/engine/srcs/managers/LoggingManager.cpp.obj
 MyMindustry.exe: CMakeFiles/MyMindustry.dir/build.make
 MyMindustry.exe: ../externals/SFML-2.5.1/lib/libsfml-graphics-s-d.a
 MyMindustry.exe: ../externals/SFML-2.5.1/lib/libsfml-window-s-d.a
@@ -95,7 +111,7 @@ MyMindustry.exe: ../externals/SFML-2.5.1/lib/libfreetype.a
 MyMindustry.exe: CMakeFiles/MyMindustry.dir/linklibs.rsp
 MyMindustry.exe: CMakeFiles/MyMindustry.dir/objects1.rsp
 MyMindustry.exe: CMakeFiles/MyMindustry.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\Programming\MyGames\MyMindustry\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable MyMindustry.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\Programming\MyGames\MyMindustry\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable MyMindustry.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\MyMindustry.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

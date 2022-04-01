@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/MyMindustry.dir/main.cpp.obj"
+  "CMakeFiles/MyMindustry.dir/code/engine/srcs/managers/LoggingManager.cpp.obj"
+  "CMakeFiles/MyMindustry.dir/code/main.cpp.obj"
   "MyMindustry.exe"
   "MyMindustry.exe.manifest"
   "MyMindustry.pdb"
