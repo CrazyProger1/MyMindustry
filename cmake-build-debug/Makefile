@@ -128,6 +128,78 @@ MyMindustry/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyMindustry.dir\build.make CMakeFiles/MyMindustry.dir/build
 .PHONY : MyMindustry/fast
 
+code/engine/srcs/GameCore.obj: code/engine/srcs/GameCore.cpp.obj
+.PHONY : code/engine/srcs/GameCore.obj
+
+# target to build an object file
+code/engine/srcs/GameCore.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyMindustry.dir\build.make CMakeFiles/MyMindustry.dir/code/engine/srcs/GameCore.cpp.obj
+.PHONY : code/engine/srcs/GameCore.cpp.obj
+
+code/engine/srcs/GameCore.i: code/engine/srcs/GameCore.cpp.i
+.PHONY : code/engine/srcs/GameCore.i
+
+# target to preprocess a source file
+code/engine/srcs/GameCore.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyMindustry.dir\build.make CMakeFiles/MyMindustry.dir/code/engine/srcs/GameCore.cpp.i
+.PHONY : code/engine/srcs/GameCore.cpp.i
+
+code/engine/srcs/GameCore.s: code/engine/srcs/GameCore.cpp.s
+.PHONY : code/engine/srcs/GameCore.s
+
+# target to generate assembly for a file
+code/engine/srcs/GameCore.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyMindustry.dir\build.make CMakeFiles/MyMindustry.dir/code/engine/srcs/GameCore.cpp.s
+.PHONY : code/engine/srcs/GameCore.cpp.s
+
+code/engine/srcs/Scene.obj: code/engine/srcs/Scene.cpp.obj
+.PHONY : code/engine/srcs/Scene.obj
+
+# target to build an object file
+code/engine/srcs/Scene.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyMindustry.dir\build.make CMakeFiles/MyMindustry.dir/code/engine/srcs/Scene.cpp.obj
+.PHONY : code/engine/srcs/Scene.cpp.obj
+
+code/engine/srcs/Scene.i: code/engine/srcs/Scene.cpp.i
+.PHONY : code/engine/srcs/Scene.i
+
+# target to preprocess a source file
+code/engine/srcs/Scene.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyMindustry.dir\build.make CMakeFiles/MyMindustry.dir/code/engine/srcs/Scene.cpp.i
+.PHONY : code/engine/srcs/Scene.cpp.i
+
+code/engine/srcs/Scene.s: code/engine/srcs/Scene.cpp.s
+.PHONY : code/engine/srcs/Scene.s
+
+# target to generate assembly for a file
+code/engine/srcs/Scene.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyMindustry.dir\build.make CMakeFiles/MyMindustry.dir/code/engine/srcs/Scene.cpp.s
+.PHONY : code/engine/srcs/Scene.cpp.s
+
+code/engine/srcs/managers/EntitiesManager.obj: code/engine/srcs/managers/EntitiesManager.cpp.obj
+.PHONY : code/engine/srcs/managers/EntitiesManager.obj
+
+# target to build an object file
+code/engine/srcs/managers/EntitiesManager.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyMindustry.dir\build.make CMakeFiles/MyMindustry.dir/code/engine/srcs/managers/EntitiesManager.cpp.obj
+.PHONY : code/engine/srcs/managers/EntitiesManager.cpp.obj
+
+code/engine/srcs/managers/EntitiesManager.i: code/engine/srcs/managers/EntitiesManager.cpp.i
+.PHONY : code/engine/srcs/managers/EntitiesManager.i
+
+# target to preprocess a source file
+code/engine/srcs/managers/EntitiesManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyMindustry.dir\build.make CMakeFiles/MyMindustry.dir/code/engine/srcs/managers/EntitiesManager.cpp.i
+.PHONY : code/engine/srcs/managers/EntitiesManager.cpp.i
+
+code/engine/srcs/managers/EntitiesManager.s: code/engine/srcs/managers/EntitiesManager.cpp.s
+.PHONY : code/engine/srcs/managers/EntitiesManager.s
+
+# target to generate assembly for a file
+code/engine/srcs/managers/EntitiesManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyMindustry.dir\build.make CMakeFiles/MyMindustry.dir/code/engine/srcs/managers/EntitiesManager.cpp.s
+.PHONY : code/engine/srcs/managers/EntitiesManager.cpp.s
+
 code/engine/srcs/managers/LoggingManager.obj: code/engine/srcs/managers/LoggingManager.cpp.obj
 .PHONY : code/engine/srcs/managers/LoggingManager.obj
 
@@ -151,6 +223,30 @@ code/engine/srcs/managers/LoggingManager.s: code/engine/srcs/managers/LoggingMan
 code/engine/srcs/managers/LoggingManager.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyMindustry.dir\build.make CMakeFiles/MyMindustry.dir/code/engine/srcs/managers/LoggingManager.cpp.s
 .PHONY : code/engine/srcs/managers/LoggingManager.cpp.s
+
+code/engine/srcs/managers/ScenesManager.obj: code/engine/srcs/managers/ScenesManager.cpp.obj
+.PHONY : code/engine/srcs/managers/ScenesManager.obj
+
+# target to build an object file
+code/engine/srcs/managers/ScenesManager.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyMindustry.dir\build.make CMakeFiles/MyMindustry.dir/code/engine/srcs/managers/ScenesManager.cpp.obj
+.PHONY : code/engine/srcs/managers/ScenesManager.cpp.obj
+
+code/engine/srcs/managers/ScenesManager.i: code/engine/srcs/managers/ScenesManager.cpp.i
+.PHONY : code/engine/srcs/managers/ScenesManager.i
+
+# target to preprocess a source file
+code/engine/srcs/managers/ScenesManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyMindustry.dir\build.make CMakeFiles/MyMindustry.dir/code/engine/srcs/managers/ScenesManager.cpp.i
+.PHONY : code/engine/srcs/managers/ScenesManager.cpp.i
+
+code/engine/srcs/managers/ScenesManager.s: code/engine/srcs/managers/ScenesManager.cpp.s
+.PHONY : code/engine/srcs/managers/ScenesManager.s
+
+# target to generate assembly for a file
+code/engine/srcs/managers/ScenesManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyMindustry.dir\build.make CMakeFiles/MyMindustry.dir/code/engine/srcs/managers/ScenesManager.cpp.s
+.PHONY : code/engine/srcs/managers/ScenesManager.cpp.s
 
 code/main.obj: code/main.cpp.obj
 .PHONY : code/main.obj
@@ -185,9 +281,21 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... MyMindustry
+	@echo ... code/engine/srcs/GameCore.obj
+	@echo ... code/engine/srcs/GameCore.i
+	@echo ... code/engine/srcs/GameCore.s
+	@echo ... code/engine/srcs/Scene.obj
+	@echo ... code/engine/srcs/Scene.i
+	@echo ... code/engine/srcs/Scene.s
+	@echo ... code/engine/srcs/managers/EntitiesManager.obj
+	@echo ... code/engine/srcs/managers/EntitiesManager.i
+	@echo ... code/engine/srcs/managers/EntitiesManager.s
 	@echo ... code/engine/srcs/managers/LoggingManager.obj
 	@echo ... code/engine/srcs/managers/LoggingManager.i
 	@echo ... code/engine/srcs/managers/LoggingManager.s
+	@echo ... code/engine/srcs/managers/ScenesManager.obj
+	@echo ... code/engine/srcs/managers/ScenesManager.i
+	@echo ... code/engine/srcs/managers/ScenesManager.s
 	@echo ... code/main.obj
 	@echo ... code/main.i
 	@echo ... code/main.s

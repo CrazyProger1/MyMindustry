@@ -1,29 +1,41 @@
 #include <SFML/Graphics.hpp>
-#include "game/game.h"
+#include "engine/engine.h"
 
-int main() {
-    // create the window
-    sf::RenderWindow window(sf::VideoMode(800, 600), "My window");
 
-    // run the program as long as the window is open
-    while (window.isOpen()) {
-        // check all the window's events that were triggered since the last iteration of the loop
-        sf::Event event{};
-        while (window.pollEvent(event)) {
-            // "close requested" event: we close the window
-            if (event.type == sf::Event::Closed)
-                window.close();
-        }
+class Game : public engine::GameCore {
+private:
+public:
+    void onUpdate() override {
 
-        // clear the window with black color
-        window.clear(sf::Color::Black);
-
-        // draw everything here...
-        // window.draw(...);
-
-        // end the current frame
-        window.display();
     }
 
+    void onDraw(sf::RenderTarget &rt) override {
+
+    }
+
+    void onTerminate() override {
+
+    }
+};
+
+
+class Menu : public engine::Scene {
+    void onUpdate() override {
+//        std::cout << "hello" << std::endl;
+    }
+};
+
+int main() {
+    Game game;
+    game.setDebug(true);
+
+    sf::RenderWindow window(sf::VideoMode(800, 600), "My window");
+    game.setMainWindow(&window);
+
+    game.addScene(1, new Menu);
+    game.setActiveScene(1);
+
+    game.run();
+    game.terminate();
     return 0;
 }

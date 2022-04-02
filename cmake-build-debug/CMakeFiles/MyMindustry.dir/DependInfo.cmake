@@ -8,7 +8,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "D:/Programming/MyGames/MyMindustry/code/engine/srcs/GameCore.cpp" "D:/Programming/MyGames/MyMindustry/cmake-build-debug/CMakeFiles/MyMindustry.dir/code/engine/srcs/GameCore.cpp.obj"
+  "D:/Programming/MyGames/MyMindustry/code/engine/srcs/Scene.cpp" "D:/Programming/MyGames/MyMindustry/cmake-build-debug/CMakeFiles/MyMindustry.dir/code/engine/srcs/Scene.cpp.obj"
+  "D:/Programming/MyGames/MyMindustry/code/engine/srcs/managers/EntitiesManager.cpp" "D:/Programming/MyGames/MyMindustry/cmake-build-debug/CMakeFiles/MyMindustry.dir/code/engine/srcs/managers/EntitiesManager.cpp.obj"
   "D:/Programming/MyGames/MyMindustry/code/engine/srcs/managers/LoggingManager.cpp" "D:/Programming/MyGames/MyMindustry/cmake-build-debug/CMakeFiles/MyMindustry.dir/code/engine/srcs/managers/LoggingManager.cpp.obj"
+  "D:/Programming/MyGames/MyMindustry/code/engine/srcs/managers/ScenesManager.cpp" "D:/Programming/MyGames/MyMindustry/cmake-build-debug/CMakeFiles/MyMindustry.dir/code/engine/srcs/managers/ScenesManager.cpp.obj"
   "D:/Programming/MyGames/MyMindustry/code/main.cpp" "D:/Programming/MyGames/MyMindustry/cmake-build-debug/CMakeFiles/MyMindustry.dir/code/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

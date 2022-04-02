@@ -1,1 +1,11 @@
-INFO :2022-3-1 16:46 : LOGS CLEARED
+INFO : 2022-3-2 15:55 : LoggingManager initialized
+INFO : 2022-3-2 15:55 : Core (v1) initialized
+INFO : 2022-3-2 15:55 : ScenesManager initialized
+INFO : 2022-3-2 15:55 : EntitiesManager initialized
+INFO : 2022-3-2 15:55 : Window is set (800x600)
+INFO : 2022-3-2 15:55 : Added new scene (id = 1)
+INFO : 2022-3-2 15:55 : New active scene is set (id = 1)
+INFO : 2022-3-2 15:55 : New active scene is set (id = 1)
+INFO : 2022-3-2 15:55 : Mainloop ran
+INFO : 2022-3-2 15:55 : Got stop signal
+INFO : 2022-3-2 15:55 : Game successfully terminated

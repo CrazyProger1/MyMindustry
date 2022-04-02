@@ -6,7 +6,7 @@ set(SFML_DIR "externals/SFML-2.5.1/lib/cmake/SFML")
 set(CMAKE_EXE_LINKER_FLAGS "-static -static-libgcc")
 set(SFML_STATIC_LIBRARIES TRUE)
 
-add_executable(${PROJECT_NAME} code/main.cpp code/game/game.h code/engine/srcs/managers/LoggingManager.cpp code/engine/include/managers/LoggingManager.h code/engine/include/types.h)
+add_executable(${PROJECT_NAME} code/main.cpp code/game/game.h code/engine/srcs/managers/LoggingManager.cpp code/engine/include/managers/LoggingManager.h code/engine/include/types.h code/engine/srcs/GameCore.cpp code/engine/include/GameCore.h code/engine/engine.h code/engine/srcs/managers/ScenesManager.cpp code/engine/include/managers/ScenesManager.h code/engine/srcs/Scene.cpp code/engine/include/Scene.h code/engine/srcs/managers/EntitiesManager.cpp code/engine/include/managers/EntitiesManager.h)
 target_link_libraries(${PROJECT_NAME} sfml-graphics)
 target_link_libraries(${PROJECT_NAME} stdc++fs)
 

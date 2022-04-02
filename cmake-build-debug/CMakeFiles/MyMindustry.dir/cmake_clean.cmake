@@ -1,5 +1,9 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/MyMindustry.dir/code/engine/srcs/GameCore.cpp.obj"
+  "CMakeFiles/MyMindustry.dir/code/engine/srcs/Scene.cpp.obj"
+  "CMakeFiles/MyMindustry.dir/code/engine/srcs/managers/EntitiesManager.cpp.obj"
   "CMakeFiles/MyMindustry.dir/code/engine/srcs/managers/LoggingManager.cpp.obj"
+  "CMakeFiles/MyMindustry.dir/code/engine/srcs/managers/ScenesManager.cpp.obj"
   "CMakeFiles/MyMindustry.dir/code/main.cpp.obj"
   "MyMindustry.exe"
   "MyMindustry.exe.manifest"

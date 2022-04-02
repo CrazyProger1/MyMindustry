@@ -20,6 +20,7 @@ namespace engine {
 
     LoggingManager::LoggingManager() {
         m_logFile.open(m_strFileName, std::ios::app);
+        logInfo("LoggingManager initialized");
     }
 
 
@@ -27,7 +28,7 @@ namespace engine {
         str strToLog;
 
         if (bindTime)
-            strToLog = "INFO :" + getCurrentTime() + " : " + info;
+            strToLog = "INFO : " + getCurrentTime() + " : " + info;
         else
             strToLog = "INFO : " + info;
 
@@ -62,10 +63,6 @@ namespace engine {
         lf.close();
 
         m_logFile.open(m_strFileName, std::ios::app);
-
-        logInfo("LOGS CLEARED");
-
-
     }
 
     void LoggingManager::setFileName(const str &fileName) {
@@ -98,6 +95,7 @@ namespace engine {
         if (!s_pSelf) {
             s_pSelf = new LoggingManager();
         }
+
         return s_pSelf;
     }
 
