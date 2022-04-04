@@ -1,11 +1,18 @@
-INFO : 2022-3-2 15:55 : LoggingManager initialized
-INFO : 2022-3-2 15:55 : Core (v1) initialized
-INFO : 2022-3-2 15:55 : ScenesManager initialized
-INFO : 2022-3-2 15:55 : EntitiesManager initialized
-INFO : 2022-3-2 15:55 : Window is set (800x600)
-INFO : 2022-3-2 15:55 : Added new scene (id = 1)
-INFO : 2022-3-2 15:55 : New active scene is set (id = 1)
-INFO : 2022-3-2 15:55 : New active scene is set (id = 1)
-INFO : 2022-3-2 15:55 : Mainloop ran
-INFO : 2022-3-2 15:55 : Got stop signal
-INFO : 2022-3-2 15:55 : Game successfully terminated
+INFO : 2022-3-4 13:55 : LoggingManager initialized
+INFO : 2022-3-4 13:55 : Core (v1) initialized
+INFO : 2022-3-4 13:55 : ScenesManager initialized
+INFO : 2022-3-4 13:55 : EntitiesManager initialized
+INFO : 2022-3-4 13:55 : MemoryManager initialized
+INFO : 2022-3-4 13:55 : Window is set (800x600)
+INFO : 2022-3-4 13:55 : Added new scene (id = 1)
+INFO : 2022-3-4 13:55 : New active scene is set (id = 1)
+INFO : 2022-3-4 13:55 : Resources loaded
+INFO : 2022-3-4 13:55 : Entities initialized
+INFO : 2022-3-4 13:55 : Scene initialized
+INFO : 2022-3-4 13:55 : Mainloop ran
+ERROR : 2022-3-4 13:55 : Scene with id = 2 has not be found
+ERROR : 2022-3-4 13:55 : Scene with id = 2 has not be found
+ERROR : 2022-3-4 13:55 : Scene with id = 2 has not be found
+INFO : 2022-3-4 13:55 : Got stop signal
+INFO : 2022-3-4 13:55 : Scene destroyed
+INFO : 2022-3-4 13:55 : Game successfully terminated

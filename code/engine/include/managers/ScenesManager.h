@@ -38,8 +38,11 @@ namespace engine {
 
         void updateScene();
 
+        void destroyActiveScene();
+
         void drawScene(sf::RenderWindow &window);
 
+        void handleSFMLEvent(sf::Event &event);
 
     };
 

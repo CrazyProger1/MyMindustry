@@ -676,23 +676,11 @@ SFML/Config.hpp
 
 ../externals/SFML-2.5.1/include/SFML/Window/WindowStyle.hpp
 
-D:/Programming/MyGames/MyMindustry/code/engine/engine.h
-include/GameCore.h
-D:/Programming/MyGames/MyMindustry/code/engine/include/GameCore.h
-
-D:/Programming/MyGames/MyMindustry/code/engine/include/GameCore.h
+D:/Programming/MyGames/MyMindustry/code/engine/include/Entity.h
 SFML/Graphics.hpp
 -
-managers/LoggingManager.h
-D:/Programming/MyGames/MyMindustry/code/engine/include/managers/LoggingManager.h
-managers/ScenesManager.h
-D:/Programming/MyGames/MyMindustry/code/engine/include/managers/ScenesManager.h
-
-D:/Programming/MyGames/MyMindustry/code/engine/include/Scene.h
-SFML/Graphics.hpp
--
-managers/EntitiesManager.h
-D:/Programming/MyGames/MyMindustry/code/engine/include/managers/EntitiesManager.h
+./types.h
+D:/Programming/MyGames/MyMindustry/code/engine/include/types.h
 
 D:/Programming/MyGames/MyMindustry/code/engine/include/managers/EntitiesManager.h
 map
@@ -701,6 +689,8 @@ SFML/Graphics.hpp
 -
 LoggingManager.h
 D:/Programming/MyGames/MyMindustry/code/engine/include/managers/LoggingManager.h
+../Entity.h
+D:/Programming/MyGames/MyMindustry/code/engine/include/Entity.h
 
 D:/Programming/MyGames/MyMindustry/code/engine/include/managers/LoggingManager.h
 ctime
@@ -712,35 +702,11 @@ iostream
 ../types.h
 D:/Programming/MyGames/MyMindustry/code/engine/include/types.h
 
-D:/Programming/MyGames/MyMindustry/code/engine/include/managers/ScenesManager.h
-map
--
-LoggingManager.h
-D:/Programming/MyGames/MyMindustry/code/engine/include/managers/LoggingManager.h
-../Scene.h
-D:/Programming/MyGames/MyMindustry/code/engine/include/Scene.h
-SFML/Graphics.hpp
--
-
 D:/Programming/MyGames/MyMindustry/code/engine/include/types.h
 string
 -
 
-D:/Programming/MyGames/MyMindustry/code/engine/srcs/GameCore.cpp
-../include/GameCore.h
-D:/Programming/MyGames/MyMindustry/code/engine/include/GameCore.h
-
-D:/Programming/MyGames/MyMindustry/code/engine/srcs/Scene.cpp
-../include/Scene.h
-D:/Programming/MyGames/MyMindustry/code/engine/include/Scene.h
-
-D:/Programming/MyGames/MyMindustry/code/engine/srcs/managers/ScenesManager.cpp
-../../include/managers/ScenesManager.h
-D:/Programming/MyGames/MyMindustry/code/engine/include/managers/ScenesManager.h
-
-D:/Programming/MyGames/MyMindustry/code/main.cpp
-SFML/Graphics.hpp
--
-engine/engine.h
-D:/Programming/MyGames/MyMindustry/code/engine/engine.h
+D:/Programming/MyGames/MyMindustry/code/engine/srcs/managers/EntitiesManager.cpp
+../../include/managers/EntitiesManager.h
+D:/Programming/MyGames/MyMindustry/code/engine/include/managers/EntitiesManager.h
 

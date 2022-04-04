@@ -50,13 +50,35 @@ namespace engine {
     }
 
     void ScenesManager::setActiveScene(int id) {
-        if (m_pActiveScene != nullptr)
-            m_pActiveScene->onDestroy();
+        if (m_mpScenes.find(id) == m_mpScenes.end()) {
+            m_pLoggingManager->logError("Scene with id = " + std::to_string(id) + " has not be found");
+            return;
+        }
+
+        if (m_pActiveScene != nullptr) {
+            destroyActiveScene();
+
+        }
+
 
         m_pActiveScene = m_mpScenes.at(id);
+
+
         m_pLoggingManager->logInfo("New active scene is set (id = " + std::to_string(id) + ")");
         m_pActiveScene->onLoadResources();
-        m_pActiveScene->onInitializeScene();
+        m_pLoggingManager->logInfo("Resources loaded");
+        m_pActiveScene->init();
+        m_pLoggingManager->logInfo("Scene initialized");
+
+    }
+
+    void ScenesManager::handleSFMLEvent(sf::Event &event) {
+        m_pActiveScene->onSFMLEvent(event);
+    }
+
+    void ScenesManager::destroyActiveScene() {
+        m_pActiveScene->destroy();
+        m_pLoggingManager->logInfo("Scene destroyed");
     }
 
 }

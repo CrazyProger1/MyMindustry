@@ -8,6 +8,7 @@
 #include <SFML/Graphics.hpp>
 #include "managers/LoggingManager.h"
 #include "managers/ScenesManager.h"
+#include "managers/MemoryManager.h"
 
 namespace engine {
     class GameCore {
@@ -16,6 +17,7 @@ namespace engine {
         LoggingManager *m_pLoggingManager;
         ScenesManager *m_pScenesManager;
         EntitiesManager *m_pEntitiesManager;
+        MemoryManager *m_pMemoryManager;
 
         bool m_bDebug = false;
 

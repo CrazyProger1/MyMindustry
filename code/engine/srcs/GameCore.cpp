@@ -14,11 +14,13 @@ namespace engine {
         m_pLoggingManager->logInfo("Core (v1) initialized");
         m_pScenesManager = ScenesManager::getInstance();
         m_pEntitiesManager = EntitiesManager::getInstance();
+        m_pMemoryManager = MemoryManager::getInstance();
     };
 
 
     void GameCore::setMainWindow(sf::RenderWindow *window) {
         m_pMainWindow = window;
+        m_pMemoryManager->setMainWindow(window);
         m_pLoggingManager->logInfo("Window is set (" + std::to_string(window->getSize().x)
                                    + "x" + std::to_string(window->getSize().y) + ")");
     }
@@ -45,10 +47,14 @@ namespace engine {
     }
 
     void GameCore::terminate() {
+        m_pScenesManager->destroyActiveScene();
         onTerminate();
         m_pMainWindow->close();
         m_pLoggingManager->logInfo("Game successfully terminated");
+
         engine::LoggingManager::deleteInstance();
+        engine::EntitiesManager::deleteInstance();
+        engine::ScenesManager::deleteInstance();
         exit(0);
     }
 
@@ -56,7 +62,10 @@ namespace engine {
     void GameCore::handleSFMLEvents() {
         sf::Event event{};
         while (m_pMainWindow->pollEvent(event)) {
+
             onSFMLEvent(event);
+            m_pScenesManager->handleSFMLEvent(event);
+
             if (event.type == sf::Event::Closed) {
                 m_pLoggingManager->logInfo("Got stop signal");
                 terminate();

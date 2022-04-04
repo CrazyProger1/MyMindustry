@@ -149,6 +149,62 @@ CMakeFiles/MyMindustry.dir/code/engine/srcs/managers/EntitiesManager.cpp.s: cmak
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyMindustry.dir/code/engine/srcs/managers/EntitiesManager.cpp.s"
 	D:\Programming\C++\Compilers\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Programming\MyGames\MyMindustry\code\engine\srcs\managers\EntitiesManager.cpp -o CMakeFiles\MyMindustry.dir\code\engine\srcs\managers\EntitiesManager.cpp.s
 
+CMakeFiles/MyMindustry.dir/code/engine/srcs/managers/MemoryManager.cpp.obj: CMakeFiles/MyMindustry.dir/flags.make
+CMakeFiles/MyMindustry.dir/code/engine/srcs/managers/MemoryManager.cpp.obj: CMakeFiles/MyMindustry.dir/includes_CXX.rsp
+CMakeFiles/MyMindustry.dir/code/engine/srcs/managers/MemoryManager.cpp.obj: ../code/engine/srcs/managers/MemoryManager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Programming\MyGames\MyMindustry\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/MyMindustry.dir/code/engine/srcs/managers/MemoryManager.cpp.obj"
+	D:\Programming\C++\Compilers\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\MyMindustry.dir\code\engine\srcs\managers\MemoryManager.cpp.obj -c D:\Programming\MyGames\MyMindustry\code\engine\srcs\managers\MemoryManager.cpp
+
+CMakeFiles/MyMindustry.dir/code/engine/srcs/managers/MemoryManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MyMindustry.dir/code/engine/srcs/managers/MemoryManager.cpp.i"
+	D:\Programming\C++\Compilers\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Programming\MyGames\MyMindustry\code\engine\srcs\managers\MemoryManager.cpp > CMakeFiles\MyMindustry.dir\code\engine\srcs\managers\MemoryManager.cpp.i
+
+CMakeFiles/MyMindustry.dir/code/engine/srcs/managers/MemoryManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyMindustry.dir/code/engine/srcs/managers/MemoryManager.cpp.s"
+	D:\Programming\C++\Compilers\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Programming\MyGames\MyMindustry\code\engine\srcs\managers\MemoryManager.cpp -o CMakeFiles\MyMindustry.dir\code\engine\srcs\managers\MemoryManager.cpp.s
+
+CMakeFiles/MyMindustry.dir/code/engine/srcs/Entity.cpp.obj: CMakeFiles/MyMindustry.dir/flags.make
+CMakeFiles/MyMindustry.dir/code/engine/srcs/Entity.cpp.obj: CMakeFiles/MyMindustry.dir/includes_CXX.rsp
+CMakeFiles/MyMindustry.dir/code/engine/srcs/Entity.cpp.obj: ../code/engine/srcs/Entity.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Programming\MyGames\MyMindustry\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/MyMindustry.dir/code/engine/srcs/Entity.cpp.obj"
+	D:\Programming\C++\Compilers\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\MyMindustry.dir\code\engine\srcs\Entity.cpp.obj -c D:\Programming\MyGames\MyMindustry\code\engine\srcs\Entity.cpp
+
+CMakeFiles/MyMindustry.dir/code/engine/srcs/Entity.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MyMindustry.dir/code/engine/srcs/Entity.cpp.i"
+	D:\Programming\C++\Compilers\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Programming\MyGames\MyMindustry\code\engine\srcs\Entity.cpp > CMakeFiles\MyMindustry.dir\code\engine\srcs\Entity.cpp.i
+
+CMakeFiles/MyMindustry.dir/code/engine/srcs/Entity.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyMindustry.dir/code/engine/srcs/Entity.cpp.s"
+	D:\Programming\C++\Compilers\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Programming\MyGames\MyMindustry\code\engine\srcs\Entity.cpp -o CMakeFiles\MyMindustry.dir\code\engine\srcs\Entity.cpp.s
+
+CMakeFiles/MyMindustry.dir/code/engine/srcs/GUI/Button.cpp.obj: CMakeFiles/MyMindustry.dir/flags.make
+CMakeFiles/MyMindustry.dir/code/engine/srcs/GUI/Button.cpp.obj: CMakeFiles/MyMindustry.dir/includes_CXX.rsp
+CMakeFiles/MyMindustry.dir/code/engine/srcs/GUI/Button.cpp.obj: ../code/engine/srcs/GUI/Button.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Programming\MyGames\MyMindustry\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/MyMindustry.dir/code/engine/srcs/GUI/Button.cpp.obj"
+	D:\Programming\C++\Compilers\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\MyMindustry.dir\code\engine\srcs\GUI\Button.cpp.obj -c D:\Programming\MyGames\MyMindustry\code\engine\srcs\GUI\Button.cpp
+
+CMakeFiles/MyMindustry.dir/code/engine/srcs/GUI/Button.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MyMindustry.dir/code/engine/srcs/GUI/Button.cpp.i"
+	D:\Programming\C++\Compilers\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Programming\MyGames\MyMindustry\code\engine\srcs\GUI\Button.cpp > CMakeFiles\MyMindustry.dir\code\engine\srcs\GUI\Button.cpp.i
+
+CMakeFiles/MyMindustry.dir/code/engine/srcs/GUI/Button.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyMindustry.dir/code/engine/srcs/GUI/Button.cpp.s"
+	D:\Programming\C++\Compilers\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Programming\MyGames\MyMindustry\code\engine\srcs\GUI\Button.cpp -o CMakeFiles\MyMindustry.dir\code\engine\srcs\GUI\Button.cpp.s
+
+CMakeFiles/MyMindustry.dir/code/engine/include/GUI/Text.cpp.obj: CMakeFiles/MyMindustry.dir/flags.make
+CMakeFiles/MyMindustry.dir/code/engine/include/GUI/Text.cpp.obj: CMakeFiles/MyMindustry.dir/includes_CXX.rsp
+CMakeFiles/MyMindustry.dir/code/engine/include/GUI/Text.cpp.obj: ../code/engine/include/GUI/Text.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Programming\MyGames\MyMindustry\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/MyMindustry.dir/code/engine/include/GUI/Text.cpp.obj"
+	D:\Programming\C++\Compilers\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\MyMindustry.dir\code\engine\include\GUI\Text.cpp.obj -c D:\Programming\MyGames\MyMindustry\code\engine\include\GUI\Text.cpp
+
+CMakeFiles/MyMindustry.dir/code/engine/include/GUI/Text.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MyMindustry.dir/code/engine/include/GUI/Text.cpp.i"
+	D:\Programming\C++\Compilers\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Programming\MyGames\MyMindustry\code\engine\include\GUI\Text.cpp > CMakeFiles\MyMindustry.dir\code\engine\include\GUI\Text.cpp.i
+
+CMakeFiles/MyMindustry.dir/code/engine/include/GUI/Text.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyMindustry.dir/code/engine/include/GUI/Text.cpp.s"
+	D:\Programming\C++\Compilers\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Programming\MyGames\MyMindustry\code\engine\include\GUI\Text.cpp -o CMakeFiles\MyMindustry.dir\code\engine\include\GUI\Text.cpp.s
+
 # Object files for target MyMindustry
 MyMindustry_OBJECTS = \
 "CMakeFiles/MyMindustry.dir/code/main.cpp.obj" \
@@ -156,7 +212,11 @@ MyMindustry_OBJECTS = \
 "CMakeFiles/MyMindustry.dir/code/engine/srcs/GameCore.cpp.obj" \
 "CMakeFiles/MyMindustry.dir/code/engine/srcs/managers/ScenesManager.cpp.obj" \
 "CMakeFiles/MyMindustry.dir/code/engine/srcs/Scene.cpp.obj" \
-"CMakeFiles/MyMindustry.dir/code/engine/srcs/managers/EntitiesManager.cpp.obj"
+"CMakeFiles/MyMindustry.dir/code/engine/srcs/managers/EntitiesManager.cpp.obj" \
+"CMakeFiles/MyMindustry.dir/code/engine/srcs/managers/MemoryManager.cpp.obj" \
+"CMakeFiles/MyMindustry.dir/code/engine/srcs/Entity.cpp.obj" \
+"CMakeFiles/MyMindustry.dir/code/engine/srcs/GUI/Button.cpp.obj" \
+"CMakeFiles/MyMindustry.dir/code/engine/include/GUI/Text.cpp.obj"
 
 # External object files for target MyMindustry
 MyMindustry_EXTERNAL_OBJECTS =
@@ -167,6 +227,10 @@ MyMindustry.exe: CMakeFiles/MyMindustry.dir/code/engine/srcs/GameCore.cpp.obj
 MyMindustry.exe: CMakeFiles/MyMindustry.dir/code/engine/srcs/managers/ScenesManager.cpp.obj
 MyMindustry.exe: CMakeFiles/MyMindustry.dir/code/engine/srcs/Scene.cpp.obj
 MyMindustry.exe: CMakeFiles/MyMindustry.dir/code/engine/srcs/managers/EntitiesManager.cpp.obj
+MyMindustry.exe: CMakeFiles/MyMindustry.dir/code/engine/srcs/managers/MemoryManager.cpp.obj
+MyMindustry.exe: CMakeFiles/MyMindustry.dir/code/engine/srcs/Entity.cpp.obj
+MyMindustry.exe: CMakeFiles/MyMindustry.dir/code/engine/srcs/GUI/Button.cpp.obj
+MyMindustry.exe: CMakeFiles/MyMindustry.dir/code/engine/include/GUI/Text.cpp.obj
 MyMindustry.exe: CMakeFiles/MyMindustry.dir/build.make
 MyMindustry.exe: ../externals/SFML-2.5.1/lib/libsfml-graphics-s-d.a
 MyMindustry.exe: ../externals/SFML-2.5.1/lib/libsfml-window-s-d.a
@@ -175,7 +239,7 @@ MyMindustry.exe: ../externals/SFML-2.5.1/lib/libfreetype.a
 MyMindustry.exe: CMakeFiles/MyMindustry.dir/linklibs.rsp
 MyMindustry.exe: CMakeFiles/MyMindustry.dir/objects1.rsp
 MyMindustry.exe: CMakeFiles/MyMindustry.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\Programming\MyGames\MyMindustry\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable MyMindustry.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\Programming\MyGames\MyMindustry\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable MyMindustry.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\MyMindustry.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

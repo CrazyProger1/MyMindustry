@@ -87,6 +87,18 @@
 		<Unit filename="D:/Programming/MyGames/MyMindustry/code/engine/engine.h">
 			<Option target="MyMindustry"/>
 		</Unit>
+		<Unit filename="D:/Programming/MyGames/MyMindustry/code/engine/include/Entity.h">
+			<Option target="MyMindustry"/>
+		</Unit>
+		<Unit filename="D:/Programming/MyGames/MyMindustry/code/engine/include/GUI/Button.h">
+			<Option target="MyMindustry"/>
+		</Unit>
+		<Unit filename="D:/Programming/MyGames/MyMindustry/code/engine/include/GUI/Text.cpp">
+			<Option target="MyMindustry"/>
+		</Unit>
+		<Unit filename="D:/Programming/MyGames/MyMindustry/code/engine/include/GUI/Text.h">
+			<Option target="MyMindustry"/>
+		</Unit>
 		<Unit filename="D:/Programming/MyGames/MyMindustry/code/engine/include/GameCore.h">
 			<Option target="MyMindustry"/>
 		</Unit>
@@ -99,10 +111,19 @@
 		<Unit filename="D:/Programming/MyGames/MyMindustry/code/engine/include/managers/LoggingManager.h">
 			<Option target="MyMindustry"/>
 		</Unit>
+		<Unit filename="D:/Programming/MyGames/MyMindustry/code/engine/include/managers/MemoryManager.h">
+			<Option target="MyMindustry"/>
+		</Unit>
 		<Unit filename="D:/Programming/MyGames/MyMindustry/code/engine/include/managers/ScenesManager.h">
 			<Option target="MyMindustry"/>
 		</Unit>
 		<Unit filename="D:/Programming/MyGames/MyMindustry/code/engine/include/types.h">
+			<Option target="MyMindustry"/>
+		</Unit>
+		<Unit filename="D:/Programming/MyGames/MyMindustry/code/engine/srcs/Entity.cpp">
+			<Option target="MyMindustry"/>
+		</Unit>
+		<Unit filename="D:/Programming/MyGames/MyMindustry/code/engine/srcs/GUI/Button.cpp">
 			<Option target="MyMindustry"/>
 		</Unit>
 		<Unit filename="D:/Programming/MyGames/MyMindustry/code/engine/srcs/GameCore.cpp">
@@ -115,6 +136,9 @@
 			<Option target="MyMindustry"/>
 		</Unit>
 		<Unit filename="D:/Programming/MyGames/MyMindustry/code/engine/srcs/managers/LoggingManager.cpp">
+			<Option target="MyMindustry"/>
+		</Unit>
+		<Unit filename="D:/Programming/MyGames/MyMindustry/code/engine/srcs/managers/MemoryManager.cpp">
 			<Option target="MyMindustry"/>
 		</Unit>
 		<Unit filename="D:/Programming/MyGames/MyMindustry/code/engine/srcs/managers/ScenesManager.cpp">

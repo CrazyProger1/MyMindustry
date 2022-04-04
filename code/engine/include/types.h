@@ -6,7 +6,7 @@
 #define MYMINDUSTRY_TYPES_H
 
 #include <string>
+#include <SFML/Graphics.hpp>
 
 typedef std::string str;
-
 #endif //MYMINDUSTRY_TYPES_H

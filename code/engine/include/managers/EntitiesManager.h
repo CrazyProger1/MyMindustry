@@ -8,11 +8,16 @@
 #include <map>
 #include <SFML/Graphics.hpp>
 #include "LoggingManager.h"
+#include "../Entity.h"
 
 namespace engine {
     class EntitiesManager {
     private:
         LoggingManager *m_pLoggingManager;
+
+        std::map<int, Entity *> m_mpEntities;
+
+        int m_iCurrentEntityId = 0;
 
     protected:
         static EntitiesManager *s_pSelf;
@@ -25,6 +30,18 @@ namespace engine {
         static EntitiesManager *getInstance();
 
         static bool deleteInstance();
+
+        int attach(Entity *entity);
+
+        void initEntities();
+
+        void drawEntities(sf::RenderTarget &rt);
+
+        void updateEntities();
+
+        void handleSFMLEvent(sf::Event &event);
+
+        void clear();
     };
 }
 

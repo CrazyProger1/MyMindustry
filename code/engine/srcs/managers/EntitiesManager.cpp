@@ -30,5 +30,41 @@ namespace engine {
     EntitiesManager::EntitiesManager() {
         m_pLoggingManager = LoggingManager::getInstance();
         m_pLoggingManager->logInfo("EntitiesManager initialized");
+
+
+    }
+
+    int EntitiesManager::attach(Entity *entity) {
+        m_iCurrentEntityId++;
+        m_mpEntities.insert(std::pair<int, Entity *>(m_iCurrentEntityId, entity));
+        return m_iCurrentEntityId;
+    }
+
+    void EntitiesManager::drawEntities(sf::RenderTarget &rt) {
+        for (auto e: m_mpEntities)
+            e.second->draw(rt);
+    }
+
+    void EntitiesManager::updateEntities() {
+        for (auto e: m_mpEntities)
+            e.second->update();
+    }
+
+    void EntitiesManager::handleSFMLEvent(sf::Event &event) {
+        for (auto e: m_mpEntities)
+            e.second->handleSFMLEvent(event);
+
+    }
+
+    void EntitiesManager::initEntities() {
+        for (auto e: m_mpEntities)
+            e.second->init();
+
+        m_pLoggingManager->logInfo("Entities initialized");
+    }
+
+    void EntitiesManager::clear() {
+        m_mpEntities.clear();
+        m_iCurrentEntityId = 0;
     }
 }
