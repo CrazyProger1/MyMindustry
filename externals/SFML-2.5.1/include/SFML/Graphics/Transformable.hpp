@@ -35,7 +35,7 @@
 namespace sf
 {
 ////////////////////////////////////////////////////////////
-/// \brief Decomposed transform defined by a position, a rotation and a scale
+/// \brief Decomposed transform defined by a m_position, a rotation and a scale
 ///
 ////////////////////////////////////////////////////////////
 class SFML_GRAPHICS_API Transformable
@@ -55,14 +55,14 @@ public:
     virtual ~Transformable();
 
     ////////////////////////////////////////////////////////////
-    /// \brief set the position of the object
+    /// \brief set the m_position of the object
     ///
-    /// This function completely overwrites the previous position.
-    /// See the move function to apply an offset based on the previous position instead.
-    /// The default position of a transformable object is (0, 0).
+    /// This function completely overwrites the previous m_position.
+    /// See the move function to apply an offset based on the previous m_position instead.
+    /// The default m_position of a transformable object is (0, 0).
     ///
-    /// \param x X coordinate of the new position
-    /// \param y Y coordinate of the new position
+    /// \param x X coordinate of the new m_position
+    /// \param y Y coordinate of the new m_position
     ///
     /// \see move, getPosition
     ///
@@ -70,13 +70,13 @@ public:
     void setPosition(float x, float y);
 
     ////////////////////////////////////////////////////////////
-    /// \brief set the position of the object
+    /// \brief set the m_position of the object
     ///
-    /// This function completely overwrites the previous position.
-    /// See the move function to apply an offset based on the previous position instead.
-    /// The default position of a transformable object is (0, 0).
+    /// This function completely overwrites the previous m_position.
+    /// See the move function to apply an offset based on the previous m_position instead.
+    /// The default m_position of a transformable object is (0, 0).
     ///
-    /// \param position New position
+    /// \param position New m_position
     ///
     /// \see move, getPosition
     ///
@@ -130,10 +130,10 @@ public:
     /// \brief set the local origin of the object
     ///
     /// The origin of an object defines the center point for
-    /// all transformations (position, scale, rotation).
+    /// all transformations (m_position, scale, rotation).
     /// The coordinates of this point must be relative to the
     /// top-left corner of the object, and ignore all
-    /// transformations (position, scale, rotation).
+    /// transformations (m_position, scale, rotation).
     /// The default origin of a transformable object is (0, 0).
     ///
     /// \param x X coordinate of the new origin
@@ -148,10 +148,10 @@ public:
     /// \brief set the local origin of the object
     ///
     /// The origin of an object defines the center point for
-    /// all transformations (position, scale, rotation).
+    /// all transformations (m_position, scale, rotation).
     /// The coordinates of this point must be relative to the
     /// top-left corner of the object, and ignore all
-    /// transformations (position, scale, rotation).
+    /// transformations (m_position, scale, rotation).
     /// The default origin of a transformable object is (0, 0).
     ///
     /// \param origin New origin
@@ -162,9 +162,9 @@ public:
     void setOrigin(const Vector2f& origin);
 
     ////////////////////////////////////////////////////////////
-    /// \brief get the position of the object
+    /// \brief get the m_position of the object
     ///
-    /// \return Current position
+    /// \return Current m_position
     ///
     /// \see setPosition
     ///
@@ -206,7 +206,7 @@ public:
     ////////////////////////////////////////////////////////////
     /// \brief Move the object by a given offset
     ///
-    /// This function adds to the current position of the object,
+    /// This function adds to the current m_position of the object,
     /// unlike setPosition which overwrites it.
     /// Thus, it is equivalent to the following code:
     /// \code
@@ -225,7 +225,7 @@ public:
     ////////////////////////////////////////////////////////////
     /// \brief Move the object by a given offset
     ///
-    /// This function adds to the current position of the object,
+    /// This function adds to the current m_position of the object,
     /// unlike setPosition which overwrites it.
     /// Thus, it is equivalent to the following code:
     /// \code
@@ -294,7 +294,7 @@ public:
     ////////////////////////////////////////////////////////////
     /// \brief get the combined transform of the object
     ///
-    /// \return Transform combining the position/rotation/scale/origin of the object
+    /// \return Transform combining the m_position/rotation/scale/origin of the object
     ///
     /// \see getInverseTransform
     ///
@@ -356,7 +356,7 @@ private:
 /// without worrying about the others. It also provides the composed
 /// transform (as a sf::Transform), and keeps it up-to-date.
 ///
-/// In addition to the position, rotation and scale, sf::Transformable
+/// In addition to the m_position, rotation and scale, sf::Transformable
 /// provides an "origin" component, which represents the local origin
 /// of the three other components. Let's take an example with a 10x10
 /// pixels sprite. By default, the sprite is positioned/rotated/scaled
@@ -367,7 +367,7 @@ private:
 /// bottom-right corner.
 ///
 /// To keep the sf::Transformable class simple, there's only one
-/// origin for all the components. You cannot position the sprite
+/// origin for all the components. You cannot m_position the sprite
 /// relatively to its top-left corner while rotating it around its
 /// center, for example. To do such things, use sf::Transform directly.
 ///
@@ -420,7 +420,7 @@ private:
 /// In order to render a sf::Drawable object pixel-perfectly, make sure
 /// the involved coordinates allow a 1:1 mapping of pixels in the window
 /// to texels (pixels in the texture). More specifically, this means:
-/// * The object's position, origin and scale have no fractional part
+/// * The object's m_position, origin and scale have no fractional part
 /// * The object's and the view's rotation are a multiple of 90 degrees
 /// * The view's center and size have no fractional part
 ///

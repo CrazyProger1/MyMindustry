@@ -373,7 +373,7 @@ private:
 ///
 /// In special cases, the user can make use of multiple threads to update
 /// vertex data in multiple distinct regions of the buffer simultaneously.
-/// This might make sense when e.g. the position of multiple objects has to
+/// This might make sense when e.g. the m_position of multiple objects has to
 /// be recalculated very frequently. The computation load can be spread
 /// across multiple threads as long as there are no other data dependencies.
 ///

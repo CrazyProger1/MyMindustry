@@ -9,6 +9,7 @@
 #include "managers/LoggingManager.h"
 #include "managers/ScenesManager.h"
 #include "managers/MemoryManager.h"
+#include "managers/AssetsManager.h"
 
 namespace engine {
     class GameCore {
@@ -18,6 +19,8 @@ namespace engine {
         ScenesManager *m_pScenesManager;
         EntitiesManager *m_pEntitiesManager;
         MemoryManager *m_pMemoryManager;
+        AssetsManager *m_pAssetsManager;
+
 
         bool m_bDebug = false;
 

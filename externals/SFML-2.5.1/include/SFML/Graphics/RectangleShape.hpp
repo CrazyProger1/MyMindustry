@@ -83,7 +83,7 @@ public:
     /// \brief Get a point of the rectangle
     ///
     /// The returned point is in local coordinates, that is,
-    /// the shape's transforms (position, rotation, scale) are
+    /// the shape's transforms (m_position, rotation, scale) are
     /// not taken into account.
     /// The result is undefined if \a index is out of the valid range.
     ///
@@ -113,7 +113,7 @@ private:
 /// \ingroup graphics
 ///
 /// This class inherits all the functions of sf::Transformable
-/// (position, rotation, scale, bounds, ...) as well as the
+/// (m_position, rotation, scale, bounds, ...) as well as the
 /// functions of sf::Shape (outline, color, texture, ...).
 ///
 /// Usage example:

@@ -74,11 +74,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:adff5270c521819639154d42d76fd4c34"><td class="memItemLeft" align="right" valign="top">virtual Int64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1MemoryInputStream.html#adff5270c521819639154d42d76fd4c34">read</a> (void *data, Int64 size)</td></tr>
 <tr class="memdesc:adff5270c521819639154d42d76fd4c34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read data from the stream.  <a href="#adff5270c521819639154d42d76fd4c34">More...</a><br /></td></tr>
 <tr class="separator:adff5270c521819639154d42d76fd4c34"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa2ac8fda2bdb4c95248ae90c71633034"><td class="memItemLeft" align="right" valign="top">virtual Int64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1MemoryInputStream.html#aa2ac8fda2bdb4c95248ae90c71633034">seek</a> (Int64 position)</td></tr>
-<tr class="memdesc:aa2ac8fda2bdb4c95248ae90c71633034"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the current reading position.  <a href="#aa2ac8fda2bdb4c95248ae90c71633034">More...</a><br /></td></tr>
+<tr class="memitem:aa2ac8fda2bdb4c95248ae90c71633034"><td class="memItemLeft" align="right" valign="top">virtual Int64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1MemoryInputStream.html#aa2ac8fda2bdb4c95248ae90c71633034">seek</a> (Int64 m_position)</td></tr>
+<tr class="memdesc:aa2ac8fda2bdb4c95248ae90c71633034"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the current reading m_position.  <a href="#aa2ac8fda2bdb4c95248ae90c71633034">More...</a><br /></td></tr>
 <tr class="separator:aa2ac8fda2bdb4c95248ae90c71633034"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ad4bdf721f29de8f66421ff29e23ee4"><td class="memItemLeft" align="right" valign="top">virtual Int64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1MemoryInputStream.html#a7ad4bdf721f29de8f66421ff29e23ee4">tell</a> ()</td></tr>
-<tr class="memdesc:a7ad4bdf721f29de8f66421ff29e23ee4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current reading position in the stream.  <a href="#a7ad4bdf721f29de8f66421ff29e23ee4">More...</a><br /></td></tr>
+<tr class="memdesc:a7ad4bdf721f29de8f66421ff29e23ee4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current reading m_position in the stream.  <a href="#a7ad4bdf721f29de8f66421ff29e23ee4">More...</a><br /></td></tr>
 <tr class="separator:a7ad4bdf721f29de8f66421ff29e23ee4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ade3ca45de361ffa0a718595f0b6763"><td class="memItemLeft" align="right" valign="top">virtual Int64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1MemoryInputStream.html#a6ade3ca45de361ffa0a718595f0b6763">getSize</a> ()</td></tr>
 <tr class="memdesc:a6ade3ca45de361ffa0a718595f0b6763"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the size of the stream.  <a href="#a6ade3ca45de361ffa0a718595f0b6763">More...</a><br /></td></tr>
@@ -216,7 +216,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Read data from the stream. </p>
-<p>After reading, the stream's reading position must be advanced by the amount of bytes read.</p>
+<p>After reading, the stream's reading m_position must be advanced by the amount of bytes read.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">data</td><td>Buffer where to copy the read data </td></tr>
@@ -243,7 +243,7 @@ Public Member Functions</h2></td></tr>
           <td class="memname">virtual Int64 sf::MemoryInputStream::seek </td>
           <td>(</td>
           <td class="paramtype">Int64&#160;</td>
-          <td class="paramname"><em>position</em></td><td>)</td>
+          <td class="paramname"><em>m_position</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -254,14 +254,14 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Change the current reading position. </p>
+<p>Change the current reading m_position. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">position</td><td>The position to seek to, from the beginning</td></tr>
+    <tr><td class="paramname">m_position</td><td>The m_position to seek to, from the beginning</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The position actually sought to, or -1 on error </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The m_position actually sought to, or -1 on error </dd></dl>
 
 <p>Implements <a class="el" href="classsf_1_1InputStream.html#a76aba8e5d5cf9b1c5902d5e04f7864fc">sf::InputStream</a>.</p>
 
@@ -290,8 +290,8 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Get the current reading position in the stream. </p>
-<dl class="section return"><dt>Returns</dt><dd>The current position, or -1 on error. </dd></dl>
+<p>Get the current reading m_position in the stream. </p>
+<dl class="section return"><dt>Returns</dt><dd>The current m_position, or -1 on error. </dd></dl>
 
 <p>Implements <a class="el" href="classsf_1_1InputStream.html#a599515b9ccdbddb6fef5a98424fd559c">sf::InputStream</a>.</p>
 

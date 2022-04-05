@@ -128,30 +128,6 @@ MyMindustry/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyMindustry.dir\build.make CMakeFiles/MyMindustry.dir/build
 .PHONY : MyMindustry/fast
 
-code/engine/include/GUI/Text.obj: code/engine/include/GUI/Text.cpp.obj
-.PHONY : code/engine/include/GUI/Text.obj
-
-# target to build an object file
-code/engine/include/GUI/Text.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyMindustry.dir\build.make CMakeFiles/MyMindustry.dir/code/engine/include/GUI/Text.cpp.obj
-.PHONY : code/engine/include/GUI/Text.cpp.obj
-
-code/engine/include/GUI/Text.i: code/engine/include/GUI/Text.cpp.i
-.PHONY : code/engine/include/GUI/Text.i
-
-# target to preprocess a source file
-code/engine/include/GUI/Text.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyMindustry.dir\build.make CMakeFiles/MyMindustry.dir/code/engine/include/GUI/Text.cpp.i
-.PHONY : code/engine/include/GUI/Text.cpp.i
-
-code/engine/include/GUI/Text.s: code/engine/include/GUI/Text.cpp.s
-.PHONY : code/engine/include/GUI/Text.s
-
-# target to generate assembly for a file
-code/engine/include/GUI/Text.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyMindustry.dir\build.make CMakeFiles/MyMindustry.dir/code/engine/include/GUI/Text.cpp.s
-.PHONY : code/engine/include/GUI/Text.cpp.s
-
 code/engine/srcs/Entity.obj: code/engine/srcs/Entity.cpp.obj
 .PHONY : code/engine/srcs/Entity.obj
 
@@ -200,6 +176,102 @@ code/engine/srcs/GUI/Button.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyMindustry.dir\build.make CMakeFiles/MyMindustry.dir/code/engine/srcs/GUI/Button.cpp.s
 .PHONY : code/engine/srcs/GUI/Button.cpp.s
 
+code/engine/srcs/GUI/ButtonStyle.obj: code/engine/srcs/GUI/ButtonStyle.cpp.obj
+.PHONY : code/engine/srcs/GUI/ButtonStyle.obj
+
+# target to build an object file
+code/engine/srcs/GUI/ButtonStyle.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyMindustry.dir\build.make CMakeFiles/MyMindustry.dir/code/engine/srcs/GUI/ButtonStyle.cpp.obj
+.PHONY : code/engine/srcs/GUI/ButtonStyle.cpp.obj
+
+code/engine/srcs/GUI/ButtonStyle.i: code/engine/srcs/GUI/ButtonStyle.cpp.i
+.PHONY : code/engine/srcs/GUI/ButtonStyle.i
+
+# target to preprocess a source file
+code/engine/srcs/GUI/ButtonStyle.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyMindustry.dir\build.make CMakeFiles/MyMindustry.dir/code/engine/srcs/GUI/ButtonStyle.cpp.i
+.PHONY : code/engine/srcs/GUI/ButtonStyle.cpp.i
+
+code/engine/srcs/GUI/ButtonStyle.s: code/engine/srcs/GUI/ButtonStyle.cpp.s
+.PHONY : code/engine/srcs/GUI/ButtonStyle.s
+
+# target to generate assembly for a file
+code/engine/srcs/GUI/ButtonStyle.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyMindustry.dir\build.make CMakeFiles/MyMindustry.dir/code/engine/srcs/GUI/ButtonStyle.cpp.s
+.PHONY : code/engine/srcs/GUI/ButtonStyle.cpp.s
+
+code/engine/srcs/GUI/Image.obj: code/engine/srcs/GUI/Image.cpp.obj
+.PHONY : code/engine/srcs/GUI/Image.obj
+
+# target to build an object file
+code/engine/srcs/GUI/Image.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyMindustry.dir\build.make CMakeFiles/MyMindustry.dir/code/engine/srcs/GUI/Image.cpp.obj
+.PHONY : code/engine/srcs/GUI/Image.cpp.obj
+
+code/engine/srcs/GUI/Image.i: code/engine/srcs/GUI/Image.cpp.i
+.PHONY : code/engine/srcs/GUI/Image.i
+
+# target to preprocess a source file
+code/engine/srcs/GUI/Image.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyMindustry.dir\build.make CMakeFiles/MyMindustry.dir/code/engine/srcs/GUI/Image.cpp.i
+.PHONY : code/engine/srcs/GUI/Image.cpp.i
+
+code/engine/srcs/GUI/Image.s: code/engine/srcs/GUI/Image.cpp.s
+.PHONY : code/engine/srcs/GUI/Image.s
+
+# target to generate assembly for a file
+code/engine/srcs/GUI/Image.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyMindustry.dir\build.make CMakeFiles/MyMindustry.dir/code/engine/srcs/GUI/Image.cpp.s
+.PHONY : code/engine/srcs/GUI/Image.cpp.s
+
+code/engine/srcs/GUI/Text.obj: code/engine/srcs/GUI/Text.cpp.obj
+.PHONY : code/engine/srcs/GUI/Text.obj
+
+# target to build an object file
+code/engine/srcs/GUI/Text.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyMindustry.dir\build.make CMakeFiles/MyMindustry.dir/code/engine/srcs/GUI/Text.cpp.obj
+.PHONY : code/engine/srcs/GUI/Text.cpp.obj
+
+code/engine/srcs/GUI/Text.i: code/engine/srcs/GUI/Text.cpp.i
+.PHONY : code/engine/srcs/GUI/Text.i
+
+# target to preprocess a source file
+code/engine/srcs/GUI/Text.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyMindustry.dir\build.make CMakeFiles/MyMindustry.dir/code/engine/srcs/GUI/Text.cpp.i
+.PHONY : code/engine/srcs/GUI/Text.cpp.i
+
+code/engine/srcs/GUI/Text.s: code/engine/srcs/GUI/Text.cpp.s
+.PHONY : code/engine/srcs/GUI/Text.s
+
+# target to generate assembly for a file
+code/engine/srcs/GUI/Text.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyMindustry.dir\build.make CMakeFiles/MyMindustry.dir/code/engine/srcs/GUI/Text.cpp.s
+.PHONY : code/engine/srcs/GUI/Text.cpp.s
+
+code/engine/srcs/GUI/TextStyle.obj: code/engine/srcs/GUI/TextStyle.cpp.obj
+.PHONY : code/engine/srcs/GUI/TextStyle.obj
+
+# target to build an object file
+code/engine/srcs/GUI/TextStyle.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyMindustry.dir\build.make CMakeFiles/MyMindustry.dir/code/engine/srcs/GUI/TextStyle.cpp.obj
+.PHONY : code/engine/srcs/GUI/TextStyle.cpp.obj
+
+code/engine/srcs/GUI/TextStyle.i: code/engine/srcs/GUI/TextStyle.cpp.i
+.PHONY : code/engine/srcs/GUI/TextStyle.i
+
+# target to preprocess a source file
+code/engine/srcs/GUI/TextStyle.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyMindustry.dir\build.make CMakeFiles/MyMindustry.dir/code/engine/srcs/GUI/TextStyle.cpp.i
+.PHONY : code/engine/srcs/GUI/TextStyle.cpp.i
+
+code/engine/srcs/GUI/TextStyle.s: code/engine/srcs/GUI/TextStyle.cpp.s
+.PHONY : code/engine/srcs/GUI/TextStyle.s
+
+# target to generate assembly for a file
+code/engine/srcs/GUI/TextStyle.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyMindustry.dir\build.make CMakeFiles/MyMindustry.dir/code/engine/srcs/GUI/TextStyle.cpp.s
+.PHONY : code/engine/srcs/GUI/TextStyle.cpp.s
+
 code/engine/srcs/GameCore.obj: code/engine/srcs/GameCore.cpp.obj
 .PHONY : code/engine/srcs/GameCore.obj
 
@@ -247,6 +319,30 @@ code/engine/srcs/Scene.s: code/engine/srcs/Scene.cpp.s
 code/engine/srcs/Scene.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyMindustry.dir\build.make CMakeFiles/MyMindustry.dir/code/engine/srcs/Scene.cpp.s
 .PHONY : code/engine/srcs/Scene.cpp.s
+
+code/engine/srcs/managers/AssetsManager.obj: code/engine/srcs/managers/AssetsManager.cpp.obj
+.PHONY : code/engine/srcs/managers/AssetsManager.obj
+
+# target to build an object file
+code/engine/srcs/managers/AssetsManager.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyMindustry.dir\build.make CMakeFiles/MyMindustry.dir/code/engine/srcs/managers/AssetsManager.cpp.obj
+.PHONY : code/engine/srcs/managers/AssetsManager.cpp.obj
+
+code/engine/srcs/managers/AssetsManager.i: code/engine/srcs/managers/AssetsManager.cpp.i
+.PHONY : code/engine/srcs/managers/AssetsManager.i
+
+# target to preprocess a source file
+code/engine/srcs/managers/AssetsManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyMindustry.dir\build.make CMakeFiles/MyMindustry.dir/code/engine/srcs/managers/AssetsManager.cpp.i
+.PHONY : code/engine/srcs/managers/AssetsManager.cpp.i
+
+code/engine/srcs/managers/AssetsManager.s: code/engine/srcs/managers/AssetsManager.cpp.s
+.PHONY : code/engine/srcs/managers/AssetsManager.s
+
+# target to generate assembly for a file
+code/engine/srcs/managers/AssetsManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyMindustry.dir\build.make CMakeFiles/MyMindustry.dir/code/engine/srcs/managers/AssetsManager.cpp.s
+.PHONY : code/engine/srcs/managers/AssetsManager.cpp.s
 
 code/engine/srcs/managers/EntitiesManager.obj: code/engine/srcs/managers/EntitiesManager.cpp.obj
 .PHONY : code/engine/srcs/managers/EntitiesManager.obj
@@ -377,21 +473,33 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... MyMindustry
-	@echo ... code/engine/include/GUI/Text.obj
-	@echo ... code/engine/include/GUI/Text.i
-	@echo ... code/engine/include/GUI/Text.s
 	@echo ... code/engine/srcs/Entity.obj
 	@echo ... code/engine/srcs/Entity.i
 	@echo ... code/engine/srcs/Entity.s
 	@echo ... code/engine/srcs/GUI/Button.obj
 	@echo ... code/engine/srcs/GUI/Button.i
 	@echo ... code/engine/srcs/GUI/Button.s
+	@echo ... code/engine/srcs/GUI/ButtonStyle.obj
+	@echo ... code/engine/srcs/GUI/ButtonStyle.i
+	@echo ... code/engine/srcs/GUI/ButtonStyle.s
+	@echo ... code/engine/srcs/GUI/Image.obj
+	@echo ... code/engine/srcs/GUI/Image.i
+	@echo ... code/engine/srcs/GUI/Image.s
+	@echo ... code/engine/srcs/GUI/Text.obj
+	@echo ... code/engine/srcs/GUI/Text.i
+	@echo ... code/engine/srcs/GUI/Text.s
+	@echo ... code/engine/srcs/GUI/TextStyle.obj
+	@echo ... code/engine/srcs/GUI/TextStyle.i
+	@echo ... code/engine/srcs/GUI/TextStyle.s
 	@echo ... code/engine/srcs/GameCore.obj
 	@echo ... code/engine/srcs/GameCore.i
 	@echo ... code/engine/srcs/GameCore.s
 	@echo ... code/engine/srcs/Scene.obj
 	@echo ... code/engine/srcs/Scene.i
 	@echo ... code/engine/srcs/Scene.s
+	@echo ... code/engine/srcs/managers/AssetsManager.obj
+	@echo ... code/engine/srcs/managers/AssetsManager.i
+	@echo ... code/engine/srcs/managers/AssetsManager.s
 	@echo ... code/engine/srcs/managers/EntitiesManager.obj
 	@echo ... code/engine/srcs/managers/EntitiesManager.i
 	@echo ... code/engine/srcs/managers/EntitiesManager.s

@@ -126,7 +126,7 @@ public:
     /// specify the location of the hotspot of the cursor. The
     /// hotspot is the pixel coordinate within the cursor image
     /// which will be located exactly where the mouse pointer
-    /// position is. Any mouse actions that are performed will
+    /// m_position is. Any mouse actions that are performed will
     /// return the window/screen location of the hotspot.
     ///
     /// \warning On Unix, the pixels are mapped into a monochrome

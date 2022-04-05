@@ -277,7 +277,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>Window</b></td></tr>
 <p>Create a cursor with the provided image. </p>
 <p><em>pixels</em> must be an array of <em>width</em> by <em>height</em> pixels in 32-bit RGBA format. If not, this will cause undefined behavior.</p>
 <p>If <em>pixels</em> is null or either <em>width</em> or <em>height</em> are 0, the current cursor is left unchanged and the function will return false.</p>
-<p>In addition to specifying the pixel data, you can also specify the location of the hotspot of the cursor. The hotspot is the pixel coordinate within the cursor image which will be located exactly where the mouse pointer position is. Any mouse actions that are performed will return the window/screen location of the hotspot.</p>
+<p>In addition to specifying the pixel data, you can also specify the location of the hotspot of the cursor. The hotspot is the pixel coordinate within the cursor image which will be located exactly where the mouse pointer m_position is. Any mouse actions that are performed will return the window/screen location of the hotspot.</p>
 <dl class="section warning"><dt>Warning</dt><dd>On Unix, the pixels are mapped into a monochrome bitmap: pixels with an alpha channel to 0 are transparent, black if the RGB channel are close to zero, and white otherwise.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">

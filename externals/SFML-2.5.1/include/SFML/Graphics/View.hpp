@@ -193,7 +193,7 @@ public:
     const FloatRect& getViewport() const;
 
     ////////////////////////////////////////////////////////////
-    /// \brief Move the view relatively to its current position
+    /// \brief Move the view relatively to its current m_position
     ///
     /// \param offsetX X coordinate of the move offset
     /// \param offsetY Y coordinate of the move offset
@@ -204,7 +204,7 @@ public:
     void move(float offsetX, float offsetY);
 
     ////////////////////////////////////////////////////////////
-    /// \brief Move the view relatively to its current position
+    /// \brief Move the view relatively to its current m_position
     ///
     /// \param offset Move offset
     ///

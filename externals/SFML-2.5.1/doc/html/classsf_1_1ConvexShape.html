@@ -62,7 +62,7 @@ Inheritance diagram for sf::ConvexShape:</div>
   <map id="sf::ConvexShape_map" name="sf::ConvexShape_map">
 <area href="classsf_1_1Shape.html" title="Base class for textured shapes with outline. " alt="sf::Shape" shape="rect" coords="59,56,168,80"/>
 <area href="classsf_1_1Drawable.html" title="Abstract base class for objects that can be drawn to a render target. " alt="sf::Drawable" shape="rect" coords="0,0,109,24"/>
-<area href="classsf_1_1Transformable.html" title="Decomposed transform defined by a position, a rotation and a scale. " alt="sf::Transformable" shape="rect" coords="119,0,228,24"/>
+<area href="classsf_1_1Transformable.html" title="Decomposed transform defined by a m_position, a rotation and a scale. " alt="sf::Transformable" shape="rect" coords="119,0,228,24"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -78,10 +78,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a0c54b8d48fe4e13414f6e667dbfc22a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of points of the polygon.  <a href="#a0c54b8d48fe4e13414f6e667dbfc22a3">More...</a><br /></td></tr>
 <tr class="separator:a0c54b8d48fe4e13414f6e667dbfc22a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5929e0ab0ba5ca1f102b40c234a8e92d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1ConvexShape.html#a5929e0ab0ba5ca1f102b40c234a8e92d">setPoint</a> (std::size_t index, const <a class="el" href="classsf_1_1Vector2.html">Vector2f</a> &amp;point)</td></tr>
-<tr class="memdesc:a5929e0ab0ba5ca1f102b40c234a8e92d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the position of a point.  <a href="#a5929e0ab0ba5ca1f102b40c234a8e92d">More...</a><br /></td></tr>
+<tr class="memdesc:a5929e0ab0ba5ca1f102b40c234a8e92d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the m_position of a point.  <a href="#a5929e0ab0ba5ca1f102b40c234a8e92d">More...</a><br /></td></tr>
 <tr class="separator:a5929e0ab0ba5ca1f102b40c234a8e92d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72a97bc426d8daf4d682a20fcb7f3fe7"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classsf_1_1Vector2.html">Vector2f</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1ConvexShape.html#a72a97bc426d8daf4d682a20fcb7f3fe7">getPoint</a> (std::size_t index) const</td></tr>
-<tr class="memdesc:a72a97bc426d8daf4d682a20fcb7f3fe7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the position of a point.  <a href="#a72a97bc426d8daf4d682a20fcb7f3fe7">More...</a><br /></td></tr>
+<tr class="memdesc:a72a97bc426d8daf4d682a20fcb7f3fe7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the m_position of a point.  <a href="#a72a97bc426d8daf4d682a20fcb7f3fe7">More...</a><br /></td></tr>
 <tr class="separator:a72a97bc426d8daf4d682a20fcb7f3fe7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af8fb22bab1956325be5d62282711e3b6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Shape.html#af8fb22bab1956325be5d62282711e3b6">setTexture</a> (const <a class="el" href="classsf_1_1Texture.html">Texture</a> *texture, bool resetRect=false)</td></tr>
 <tr class="memdesc:af8fb22bab1956325be5d62282711e3b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the source texture of the shape.  <a href="#af8fb22bab1956325be5d62282711e3b6">More...</a><br /></td></tr>
@@ -120,10 +120,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ac0e29425d908d5442060cc44790fe4da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the global (non-minimal) bounding rectangle of the entity.  <a href="#ac0e29425d908d5442060cc44790fe4da">More...</a><br /></td></tr>
 <tr class="separator:ac0e29425d908d5442060cc44790fe4da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4dbfb1a7c80688b0b4c477d706550208"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Transformable.html#a4dbfb1a7c80688b0b4c477d706550208">setPosition</a> (float x, float y)</td></tr>
-<tr class="memdesc:a4dbfb1a7c80688b0b4c477d706550208"><td class="mdescLeft">&#160;</td><td class="mdescRight">set the position of the object  <a href="#a4dbfb1a7c80688b0b4c477d706550208">More...</a><br /></td></tr>
+<tr class="memdesc:a4dbfb1a7c80688b0b4c477d706550208"><td class="mdescLeft">&#160;</td><td class="mdescRight">set the m_position of the object  <a href="#a4dbfb1a7c80688b0b4c477d706550208">More...</a><br /></td></tr>
 <tr class="separator:a4dbfb1a7c80688b0b4c477d706550208"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1a42209ce2b5d3f07b00f917bcd8015"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Transformable.html#af1a42209ce2b5d3f07b00f917bcd8015">setPosition</a> (const <a class="el" href="classsf_1_1Vector2.html">Vector2f</a> &amp;position)</td></tr>
-<tr class="memdesc:af1a42209ce2b5d3f07b00f917bcd8015"><td class="mdescLeft">&#160;</td><td class="mdescRight">set the position of the object  <a href="#af1a42209ce2b5d3f07b00f917bcd8015">More...</a><br /></td></tr>
+<tr class="memitem:af1a42209ce2b5d3f07b00f917bcd8015"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Transformable.html#af1a42209ce2b5d3f07b00f917bcd8015">setPosition</a> (const <a class="el" href="classsf_1_1Vector2.html">Vector2f</a> &amp;m_position)</td></tr>
+<tr class="memdesc:af1a42209ce2b5d3f07b00f917bcd8015"><td class="mdescLeft">&#160;</td><td class="mdescRight">set the m_position of the object  <a href="#af1a42209ce2b5d3f07b00f917bcd8015">More...</a><br /></td></tr>
 <tr class="separator:af1a42209ce2b5d3f07b00f917bcd8015"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a32baf2bf1a74699b03bf8c95030a38ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Transformable.html#a32baf2bf1a74699b03bf8c95030a38ed">setRotation</a> (float angle)</td></tr>
 <tr class="memdesc:a32baf2bf1a74699b03bf8c95030a38ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">set the orientation of the object  <a href="#a32baf2bf1a74699b03bf8c95030a38ed">More...</a><br /></td></tr>
@@ -141,7 +141,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:aa93a835ffbf3bee2098dfbbc695a7f05"><td class="mdescLeft">&#160;</td><td class="mdescRight">set the local origin of the object  <a href="#aa93a835ffbf3bee2098dfbbc695a7f05">More...</a><br /></td></tr>
 <tr class="separator:aa93a835ffbf3bee2098dfbbc695a7f05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a73f9739bc6e74db2cea154bc8e94ec46"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classsf_1_1Vector2.html">Vector2f</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Transformable.html#a73f9739bc6e74db2cea154bc8e94ec46">getPosition</a> () const</td></tr>
-<tr class="memdesc:a73f9739bc6e74db2cea154bc8e94ec46"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the position of the object  <a href="#a73f9739bc6e74db2cea154bc8e94ec46">More...</a><br /></td></tr>
+<tr class="memdesc:a73f9739bc6e74db2cea154bc8e94ec46"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the m_position of the object  <a href="#a73f9739bc6e74db2cea154bc8e94ec46">More...</a><br /></td></tr>
 <tr class="separator:a73f9739bc6e74db2cea154bc8e94ec46"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa00b5c5d4a06ac24a94dd72c56931d3a"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Transformable.html#aa00b5c5d4a06ac24a94dd72c56931d3a">getRotation</a> () const</td></tr>
 <tr class="memdesc:aa00b5c5d4a06ac24a94dd72c56931d3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the orientation of the object  <a href="#aa00b5c5d4a06ac24a94dd72c56931d3a">More...</a><br /></td></tr>
@@ -182,7 +182,7 @@ Protected Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Specialized shape representing a convex polygon. </p>
-<p>This class inherits all the functions of <a class="el" href="classsf_1_1Transformable.html" title="Decomposed transform defined by a position, a rotation and a scale. ">sf::Transformable</a> (position, rotation, scale, bounds, ...) as well as the functions of <a class="el" href="classsf_1_1Shape.html" title="Base class for textured shapes with outline. ">sf::Shape</a> (outline, color, texture, ...).</p>
+<p>This class inherits all the functions of <a class="el" href="classsf_1_1Transformable.html" title="Decomposed transform defined by a m_position, a rotation and a scale. ">sf::Transformable</a> (m_position, rotation, scale, bounds, ...) as well as the functions of <a class="el" href="classsf_1_1Shape.html" title="Base class for textured shapes with outline. ">sf::Shape</a> (outline, color, texture, ...).</p>
 <p>It is important to keep in mind that a convex shape must always be... convex, otherwise it may not be drawn correctly. Moreover, the points must be defined in order; using a random order would result in an incorrect shape.</p>
 <p>Usage example: </p><div class="fragment"><div class="line"><a class="code" href="classsf_1_1ConvexShape.html">sf::ConvexShape</a> polygon;</div><div class="line">polygon.<a class="code" href="classsf_1_1ConvexShape.html#a56e6e79ade6dd651cc1a0e39cb68deae">setPointCount</a>(3);</div><div class="line">polygon.<a class="code" href="classsf_1_1ConvexShape.html#a5929e0ab0ba5ca1f102b40c234a8e92d">setPoint</a>(0, <a class="code" href="classsf_1_1Vector2.html">sf::Vector2f</a>(0, 0));</div><div class="line">polygon.<a class="code" href="classsf_1_1ConvexShape.html#a5929e0ab0ba5ca1f102b40c234a8e92d">setPoint</a>(1, <a class="code" href="classsf_1_1Vector2.html">sf::Vector2f</a>(0, 10));</div><div class="line">polygon.<a class="code" href="classsf_1_1ConvexShape.html#a5929e0ab0ba5ca1f102b40c234a8e92d">setPoint</a>(2, <a class="code" href="classsf_1_1Vector2.html">sf::Vector2f</a>(25, 5));</div><div class="line">polygon.<a class="code" href="classsf_1_1Shape.html#a5978f41ee349ac3c52942996dcb184f7">setOutlineColor</a>(<a class="code" href="classsf_1_1Color.html#a127dbf55db9c07d0fa8f4bfcbb97594a">sf::Color::Red</a>);</div><div class="line">polygon.<a class="code" href="classsf_1_1Shape.html#a5ad336ad74fc1f567fce3b7e44cf87dc">setOutlineThickness</a>(5);</div><div class="line">polygon.<a class="code" href="classsf_1_1Transformable.html#a4dbfb1a7c80688b0b4c477d706550208">setPosition</a>(10, 20);</div><div class="line">...</div><div class="line">window.draw(polygon);</div></div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1Shape.html" title="Base class for textured shapes with outline. ">sf::Shape</a>, <a class="el" href="classsf_1_1RectangleShape.html" title="Specialized shape representing a rectangle. ">sf::RectangleShape</a>, <a class="el" href="classsf_1_1CircleShape.html" title="Specialized shape representing a circle. ">sf::CircleShape</a> </dd></dl>
 
@@ -451,8 +451,8 @@ Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Get the position of a point. </p>
-<p>The returned point is in local coordinates, that is, the shape's transforms (position, rotation, scale) are not taken into account. The result is undefined if <em>index</em> is out of the valid range.</p>
+<p>Get the m_position of a point. </p>
+<p>The returned point is in local coordinates, that is, the shape's transforms (m_position, rotation, scale) are not taken into account. The result is undefined if <em>index</em> is out of the valid range.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">index</td><td>Index of the point to get, in range [0 .. <a class="el" href="classsf_1_1ConvexShape.html#a0c54b8d48fe4e13414f6e667dbfc22a3" title="Get the number of points of the polygon. ">getPointCount()</a> - 1]</td></tr>
@@ -460,7 +460,7 @@ Protected Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Position of the index-th point of the polygon</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1ConvexShape.html#a5929e0ab0ba5ca1f102b40c234a8e92d" title="Set the position of a point. ">setPoint</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1ConvexShape.html#a5929e0ab0ba5ca1f102b40c234a8e92d" title="Set the m_position of a point. ">setPoint</a> </dd></dl>
 
 <p>Implements <a class="el" href="classsf_1_1Shape.html#a40e5d83713eb9f0c999944cf96458085">sf::Shape</a>.</p>
 
@@ -520,9 +520,9 @@ Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>get the position of the object </p>
-<dl class="section return"><dt>Returns</dt><dd>Current position</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1Transformable.html#a4dbfb1a7c80688b0b4c477d706550208" title="set the position of the object ">setPosition</a> </dd></dl>
+<p>get the m_position of the object </p>
+<dl class="section return"><dt>Returns</dt><dd>Current m_position</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1Transformable.html#a4dbfb1a7c80688b0b4c477d706550208" title="set the m_position of the object ">setPosition</a> </dd></dl>
 
 </div>
 </div>
@@ -668,7 +668,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>get the combined transform of the object </p>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classsf_1_1Transform.html" title="Define a 3x3 transform matrix. ">Transform</a> combining the position/rotation/scale/origin of the object</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classsf_1_1Transform.html" title="Define a 3x3 transform matrix. ">Transform</a> combining the m_position/rotation/scale/origin of the object</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1Transformable.html#ab18b25f51263252ff3811465eb7e9fb1" title="get the inverse of the combined transform of the object ">getInverseTransform</a> </dd></dl>
 
 </div>
@@ -708,14 +708,14 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Move the object by a given offset. </p>
-<p>This function adds to the current position of the object, unlike setPosition which overwrites it. Thus, it is equivalent to the following code: </p><div class="fragment"><div class="line"><a class="code" href="classsf_1_1Vector2.html">sf::Vector2f</a> pos = <span class="keywordtype">object</span>.getPosition();</div><div class="line"><span class="keywordtype">object</span>.setPosition(pos.<a class="code" href="classsf_1_1Vector2.html#a1e6ad77fa155f3753bfb92699bd28141">x</a> + offsetX, pos.<a class="code" href="classsf_1_1Vector2.html#a420f2481b015f4eb929c75f2af564299">y</a> + offsetY);</div></div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
+<p>This function adds to the current m_position of the object, unlike setPosition which overwrites it. Thus, it is equivalent to the following code: </p><div class="fragment"><div class="line"><a class="code" href="classsf_1_1Vector2.html">sf::Vector2f</a> pos = <span class="keywordtype">object</span>.getPosition();</div><div class="line"><span class="keywordtype">object</span>.setPosition(pos.<a class="code" href="classsf_1_1Vector2.html#a1e6ad77fa155f3753bfb92699bd28141">x</a> + offsetX, pos.<a class="code" href="classsf_1_1Vector2.html#a420f2481b015f4eb929c75f2af564299">y</a> + offsetY);</div></div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">offsetX</td><td>X offset </td></tr>
     <tr><td class="paramname">offsetY</td><td>Y offset</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1Transformable.html#a4dbfb1a7c80688b0b4c477d706550208" title="set the position of the object ">setPosition</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1Transformable.html#a4dbfb1a7c80688b0b4c477d706550208" title="set the m_position of the object ">setPosition</a> </dd></dl>
 
 </div>
 </div>
@@ -744,13 +744,13 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Move the object by a given offset. </p>
-<p>This function adds to the current position of the object, unlike setPosition which overwrites it. Thus, it is equivalent to the following code: </p><div class="fragment"><div class="line"><span class="keywordtype">object</span>.setPosition(<span class="keywordtype">object</span>.<a class="code" href="classsf_1_1Transformable.html#a73f9739bc6e74db2cea154bc8e94ec46">getPosition</a>() + offset);</div></div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
+<p>This function adds to the current m_position of the object, unlike setPosition which overwrites it. Thus, it is equivalent to the following code: </p><div class="fragment"><div class="line"><span class="keywordtype">object</span>.setPosition(<span class="keywordtype">object</span>.<a class="code" href="classsf_1_1Transformable.html#a73f9739bc6e74db2cea154bc8e94ec46">getPosition</a>() + offset);</div></div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">offset</td><td>Offset</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1Transformable.html#a4dbfb1a7c80688b0b4c477d706550208" title="set the position of the object ">setPosition</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1Transformable.html#a4dbfb1a7c80688b0b4c477d706550208" title="set the m_position of the object ">setPosition</a> </dd></dl>
 
 </div>
 </div>
@@ -940,7 +940,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>set the local origin of the object </p>
-<p>The origin of an object defines the center point for all transformations (position, scale, rotation). The coordinates of this point must be relative to the top-left corner of the object, and ignore all transformations (position, scale, rotation). The default origin of a transformable object is (0, 0).</p>
+<p>The origin of an object defines the center point for all transformations (m_position, scale, rotation). The coordinates of this point must be relative to the top-left corner of the object, and ignore all transformations (m_position, scale, rotation). The default origin of a transformable object is (0, 0).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">x</td><td>X coordinate of the new origin </td></tr>
@@ -977,7 +977,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>set the local origin of the object </p>
-<p>The origin of an object defines the center point for all transformations (position, scale, rotation). The coordinates of this point must be relative to the top-left corner of the object, and ignore all transformations (position, scale, rotation). The default origin of a transformable object is (0, 0).</p>
+<p>The origin of an object defines the center point for all transformations (m_position, scale, rotation). The coordinates of this point must be relative to the top-left corner of the object, and ignore all transformations (m_position, scale, rotation). The default origin of a transformable object is (0, 0).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">origin</td><td>New origin</td></tr>
@@ -1086,16 +1086,16 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Set the position of a point. </p>
+<p>Set the m_position of a point. </p>
 <p>Don't forget that the polygon must remain convex, and the points need to stay ordered! setPointCount must be called first in order to set the total number of points. The result is undefined if <em>index</em> is out of the valid range.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">index</td><td>Index of the point to change, in range [0 .. <a class="el" href="classsf_1_1ConvexShape.html#a0c54b8d48fe4e13414f6e667dbfc22a3" title="Get the number of points of the polygon. ">getPointCount()</a> - 1] </td></tr>
-    <tr><td class="paramname">point</td><td>New position of the point</td></tr>
+    <tr><td class="paramname">point</td><td>New m_position of the point</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1ConvexShape.html#a72a97bc426d8daf4d682a20fcb7f3fe7" title="Get the position of a point. ">getPoint</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1ConvexShape.html#a72a97bc426d8daf4d682a20fcb7f3fe7" title="Get the m_position of a point. ">getPoint</a> </dd></dl>
 
 </div>
 </div>
@@ -1161,16 +1161,16 @@ Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>set the position of the object </p>
-<p>This function completely overwrites the previous position. See the move function to apply an offset based on the previous position instead. The default position of a transformable object is (0, 0).</p>
+<p>set the m_position of the object </p>
+<p>This function completely overwrites the previous m_position. See the move function to apply an offset based on the previous m_position instead. The default m_position of a transformable object is (0, 0).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">x</td><td>X coordinate of the new position </td></tr>
-    <tr><td class="paramname">y</td><td>Y coordinate of the new position</td></tr>
+    <tr><td class="paramname">x</td><td>X coordinate of the new m_position </td></tr>
+    <tr><td class="paramname">y</td><td>Y coordinate of the new m_position</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1Transformable.html#a86b461d6a941ad390c2ad8b6a4a20391" title="Move the object by a given offset. ">move</a>, <a class="el" href="classsf_1_1Transformable.html#a73f9739bc6e74db2cea154bc8e94ec46" title="get the position of the object ">getPosition</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1Transformable.html#a86b461d6a941ad390c2ad8b6a4a20391" title="Move the object by a given offset. ">move</a>, <a class="el" href="classsf_1_1Transformable.html#a73f9739bc6e74db2cea154bc8e94ec46" title="get the m_position of the object ">getPosition</a> </dd></dl>
 
 </div>
 </div>
@@ -1187,7 +1187,7 @@ Protected Member Functions</h2></td></tr>
           <td class="memname">void sf::Transformable::setPosition </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classsf_1_1Vector2.html">Vector2f</a> &amp;&#160;</td>
-          <td class="paramname"><em>position</em></td><td>)</td>
+          <td class="paramname"><em>m_position</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1198,15 +1198,15 @@ Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>set the position of the object </p>
-<p>This function completely overwrites the previous position. See the move function to apply an offset based on the previous position instead. The default position of a transformable object is (0, 0).</p>
+<p>set the m_position of the object </p>
+<p>This function completely overwrites the previous m_position. See the move function to apply an offset based on the previous m_position instead. The default m_position of a transformable object is (0, 0).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">position</td><td>New position</td></tr>
+    <tr><td class="paramname">m_position</td><td>New m_position</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1Transformable.html#a86b461d6a941ad390c2ad8b6a4a20391" title="Move the object by a given offset. ">move</a>, <a class="el" href="classsf_1_1Transformable.html#a73f9739bc6e74db2cea154bc8e94ec46" title="get the position of the object ">getPosition</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1Transformable.html#a86b461d6a941ad390c2ad8b6a4a20391" title="Move the object by a given offset. ">move</a>, <a class="el" href="classsf_1_1Transformable.html#a73f9739bc6e74db2cea154bc8e94ec46" title="get the m_position of the object ">getPosition</a> </dd></dl>
 
 </div>
 </div>

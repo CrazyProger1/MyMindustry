@@ -190,8 +190,8 @@ public:
     /// copied unchanged with their alpha value.
     ///
     /// \param source     Source image to copy
-    /// \param destX      X coordinate of the destination position
-    /// \param destY      Y coordinate of the destination position
+    /// \param destX      X coordinate of the destination m_position
+    /// \param destY      Y coordinate of the destination m_position
     /// \param sourceRect Sub-rectangle of the source image to copy
     /// \param applyAlpha Should the copy take into account the source transparency?
     ///
@@ -306,7 +306,7 @@ private:
 /// sf::Image image;
 /// image.create(20, 20, sf::Color::Black);
 ///
-/// // Copy image1 on image2 at position (10, 10)
+/// // Copy image1 on image2 at m_position (10, 10)
 /// image.copy(background, 10, 10);
 ///
 /// // Make the top-left pixel transparent

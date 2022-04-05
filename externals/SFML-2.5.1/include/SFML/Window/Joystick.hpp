@@ -131,14 +131,14 @@ public:
     static bool isButtonPressed(unsigned int joystick, unsigned int button);
 
     ////////////////////////////////////////////////////////////
-    /// \brief Get the current position of a joystick axis
+    /// \brief Get the current m_position of a joystick axis
     ///
     /// If the joystick is not connected, this function returns 0.
     ///
     /// \param joystick Index of the joystick
     /// \param axis     Axis to check
     ///
-    /// \return Current position of the axis, in range [-100 .. 100]
+    /// \return Current m_position of the axis, in range [-100 .. 100]
     ///
     ////////////////////////////////////////////////////////////
     static float getAxisPosition(unsigned int joystick, Axis axis);
@@ -218,8 +218,8 @@ public:
 /// // Is button #2 pressed on joystick #0?
 /// bool pressed = sf::Joystick::isButtonPressed(0, 2);
 ///
-/// // What's the current position of the Y axis on joystick #0?
-/// float position = sf::Joystick::getAxisPosition(0, sf::Joystick::Y);
+/// // What's the current m_position of the Y axis on joystick #0?
+/// float m_position = sf::Joystick::getAxisPosition(0, sf::Joystick::Y);
 /// \endcode
 ///
 /// \see sf::Keyboard, sf::Mouse

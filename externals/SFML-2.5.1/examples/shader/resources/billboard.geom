@@ -27,7 +27,7 @@ void main()
     // Iterate over all vertices
     for (int i = 0; i < gl_in.length(); i++)
     {
-        // Retrieve the passed vertex position
+        // Retrieve the passed vertex m_position
         vec2 pos = gl_in[i].gl_Position.xy;
 
         // Bottom left vertex

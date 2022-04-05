@@ -50,41 +50,41 @@ public:
     Vertex();
 
     ////////////////////////////////////////////////////////////
-    /// \brief Construct the vertex from its position
+    /// \brief Construct the vertex from its m_position
     ///
     /// The vertex color is white and texture coordinates are (0, 0).
     ///
-    /// \param thePosition Vertex position
+    /// \param thePosition Vertex m_position
     ///
     ////////////////////////////////////////////////////////////
     Vertex(const Vector2f& thePosition);
 
     ////////////////////////////////////////////////////////////
-    /// \brief Construct the vertex from its position and color
+    /// \brief Construct the vertex from its m_position and color
     ///
     /// The texture coordinates are (0, 0).
     ///
-    /// \param thePosition Vertex position
+    /// \param thePosition Vertex m_position
     /// \param theColor    Vertex color
     ///
     ////////////////////////////////////////////////////////////
     Vertex(const Vector2f& thePosition, const Color& theColor);
 
     ////////////////////////////////////////////////////////////
-    /// \brief Construct the vertex from its position and texture coordinates
+    /// \brief Construct the vertex from its m_position and texture coordinates
     ///
     /// The vertex color is white.
     ///
-    /// \param thePosition  Vertex position
+    /// \param thePosition  Vertex m_position
     /// \param theTexCoords Vertex texture coordinates
     ///
     ////////////////////////////////////////////////////////////
     Vertex(const Vector2f& thePosition, const Vector2f& theTexCoords);
 
     ////////////////////////////////////////////////////////////
-    /// \brief Construct the vertex from its position, color and texture coordinates
+    /// \brief Construct the vertex from its m_position, color and texture coordinates
     ///
-    /// \param thePosition  Vertex position
+    /// \param thePosition  Vertex m_position
     /// \param theColor     Vertex color
     /// \param theTexCoords Vertex texture coordinates
     ///
@@ -94,7 +94,7 @@ public:
     ////////////////////////////////////////////////////////////
     // Member data
     ////////////////////////////////////////////////////////////
-    Vector2f  position;  ///< 2D position of the vertex
+    Vector2f  position;  ///< 2D m_position of the vertex
     Color     color;     ///< Color of the vertex
     Vector2f  texCoords; ///< Coordinates of the texture's pixel to map to the vertex
 };
@@ -109,7 +109,7 @@ public:
 /// \class sf::Vertex
 /// \ingroup graphics
 ///
-/// A vertex is an improved point. It has a position and other
+/// A vertex is an improved point. It has a m_position and other
 /// extra attributes that will be used for drawing: in SFML,
 /// vertices also have a color and a pair of texture coordinates.
 ///

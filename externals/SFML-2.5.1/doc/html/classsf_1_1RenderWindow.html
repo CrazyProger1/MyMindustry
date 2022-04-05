@@ -113,10 +113,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:aaf02ab64fbc1d374eef3696df54137bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for an event and return it.  <a href="#aaf02ab64fbc1d374eef3696df54137bc">More...</a><br /></td></tr>
 <tr class="separator:aaf02ab64fbc1d374eef3696df54137bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a420028b8e4d9baedcaaba7b2047b8cb3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsf_1_1Vector2.html">Vector2i</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Window.html#a420028b8e4d9baedcaaba7b2047b8cb3">getPosition</a> () const</td></tr>
-<tr class="memdesc:a420028b8e4d9baedcaaba7b2047b8cb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the position of the window.  <a href="#a420028b8e4d9baedcaaba7b2047b8cb3">More...</a><br /></td></tr>
+<tr class="memdesc:a420028b8e4d9baedcaaba7b2047b8cb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the m_position of the window.  <a href="#a420028b8e4d9baedcaaba7b2047b8cb3">More...</a><br /></td></tr>
 <tr class="separator:a420028b8e4d9baedcaaba7b2047b8cb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c4078bfbf61c29bfc4b4732ce764f17"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Window.html#a6c4078bfbf61c29bfc4b4732ce764f17">setPosition</a> (const <a class="el" href="classsf_1_1Vector2.html">Vector2i</a> &amp;position)</td></tr>
-<tr class="memdesc:a6c4078bfbf61c29bfc4b4732ce764f17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the position of the window on screen.  <a href="#a6c4078bfbf61c29bfc4b4732ce764f17">More...</a><br /></td></tr>
+<tr class="memitem:a6c4078bfbf61c29bfc4b4732ce764f17"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Window.html#a6c4078bfbf61c29bfc4b4732ce764f17">setPosition</a> (const <a class="el" href="classsf_1_1Vector2.html">Vector2i</a> &amp;m_position)</td></tr>
+<tr class="memdesc:a6c4078bfbf61c29bfc4b4732ce764f17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the m_position of the window on screen.  <a href="#a6c4078bfbf61c29bfc4b4732ce764f17">More...</a><br /></td></tr>
 <tr class="separator:a6c4078bfbf61c29bfc4b4732ce764f17"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab94ea32f22d15c0df11588e319de2546"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Window.html#ab94ea32f22d15c0df11588e319de2546">setSize</a> (const <a class="el" href="classsf_1_1Vector2.html">Vector2u</a> &amp;size)</td></tr>
 <tr class="memdesc:ab94ea32f22d15c0df11588e319de2546"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the size of the rendering region of the window.  <a href="#ab94ea32f22d15c0df11588e319de2546">More...</a><br /></td></tr>
@@ -869,9 +869,9 @@ Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Get the position of the window. </p>
+<p>Get the m_position of the window. </p>
 <dl class="section return"><dt>Returns</dt><dd>Position of the window, in pixels</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1Window.html#a6c4078bfbf61c29bfc4b4732ce764f17" title="Change the position of the window on screen. ">setPosition</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1Window.html#a6c4078bfbf61c29bfc4b4732ce764f17" title="Change the m_position of the window on screen. ">setPosition</a> </dd></dl>
 
 </div>
 </div>
@@ -1187,7 +1187,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Convert a point from world coordinates to target coordinates. </p>
-<p>This function finds the pixel of the render target that matches the given 2D point. In other words, it goes through the same process as the graphics card, to compute the final position of a rendered point.</p>
+<p>This function finds the pixel of the render target that matches the given 2D point. In other words, it goes through the same process as the graphics card, to compute the final m_position of a rendered point.</p>
 <p>Initially, both coordinate systems (world units and target pixels) match perfectly. But if you define a custom view or resize your render target, this assertion is not true anymore, i.e. a point located at (150, 75) in your 2D world may map to the pixel (10, 50) of your render target &ndash; if the view is translated by (140, 25).</p>
 <p>This version uses a custom view for calculations, see the other overload of the function if you want to use the current view of the render target.</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -1273,7 +1273,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Convert a point from target coordinates to world coordinates. </p>
-<p>This function finds the 2D position that matches the given pixel of the render target. In other words, it does the inverse of what the graphics card does, to find the initial position of a rendered pixel.</p>
+<p>This function finds the 2D m_position that matches the given pixel of the render target. In other words, it does the inverse of what the graphics card does, to find the initial m_position of a rendered pixel.</p>
 <p>Initially, both coordinate systems (world units and target pixels) match perfectly. But if you define a custom view or resize your render target, this assertion is not true anymore, i.e. a point located at (10, 50) in your render target may map to the point (150, 75) in your 2D world &ndash; if the view is translated by (140, 25).</p>
 <p>For render-windows, this function is typically used to find which point (or object) is located below the mouse cursor.</p>
 <p>This version uses a custom view for calculations, see the other overload of the function if you want to use the current view of the render target.</p>
@@ -1864,7 +1864,7 @@ Features related to <a class="el" href="classsf_1_1Cursor.html" title="Cursor de
           <td class="memname">void sf::Window::setPosition </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classsf_1_1Vector2.html">Vector2i</a> &amp;&#160;</td>
-          <td class="paramname"><em>position</em></td><td>)</td>
+          <td class="paramname"><em>m_position</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1875,15 +1875,15 @@ Features related to <a class="el" href="classsf_1_1Cursor.html" title="Cursor de
 </table>
 </div><div class="memdoc">
 
-<p>Change the position of the window on screen. </p>
+<p>Change the m_position of the window on screen. </p>
 <p>This function only works for top-level windows (i.e. it will be ignored for windows created from the handle of a child window/control).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">position</td><td>New position, in pixels</td></tr>
+    <tr><td class="paramname">m_position</td><td>New m_position, in pixels</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1Window.html#a420028b8e4d9baedcaaba7b2047b8cb3" title="Get the position of the window. ">getPosition</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1Window.html#a420028b8e4d9baedcaaba7b2047b8cb3" title="Get the m_position of the window. ">getPosition</a> </dd></dl>
 
 </div>
 </div>

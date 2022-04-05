@@ -80,47 +80,47 @@ public:
     static bool isButtonPressed(Button button);
 
     ////////////////////////////////////////////////////////////
-    /// \brief Get the current position of the mouse in desktop coordinates
+    /// \brief Get the current m_position of the mouse in desktop coordinates
     ///
-    /// This function returns the global position of the mouse
+    /// This function returns the global m_position of the mouse
     /// cursor on the desktop.
     ///
-    /// \return Current position of the mouse
+    /// \return Current m_position of the mouse
     ///
     ////////////////////////////////////////////////////////////
     static Vector2i getPosition();
 
     ////////////////////////////////////////////////////////////
-    /// \brief Get the current position of the mouse in window coordinates
+    /// \brief Get the current m_position of the mouse in window coordinates
     ///
-    /// This function returns the current position of the mouse
+    /// This function returns the current m_position of the mouse
     /// cursor, relative to the given window.
     ///
     /// \param relativeTo Reference window
     ///
-    /// \return Current position of the mouse
+    /// \return Current m_position of the mouse
     ///
     ////////////////////////////////////////////////////////////
     static Vector2i getPosition(const Window& relativeTo);
 
     ////////////////////////////////////////////////////////////
-    /// \brief Set the current position of the mouse in desktop coordinates
+    /// \brief Set the current m_position of the mouse in desktop coordinates
     ///
-    /// This function sets the global position of the mouse
+    /// This function sets the global m_position of the mouse
     /// cursor on the desktop.
     ///
-    /// \param position New position of the mouse
+    /// \param position New m_position of the mouse
     ///
     ////////////////////////////////////////////////////////////
     static void setPosition(const Vector2i& position);
 
     ////////////////////////////////////////////////////////////
-    /// \brief Set the current position of the mouse in window coordinates
+    /// \brief Set the current m_position of the mouse in window coordinates
     ///
-    /// This function sets the current position of the mouse
+    /// This function sets the current m_position of the mouse
     /// cursor, relative to the given window.
     ///
-    /// \param position New position of the mouse
+    /// \param position New m_position of the mouse
     /// \param relativeTo Reference window
     ///
     ////////////////////////////////////////////////////////////
@@ -153,7 +153,7 @@ public:
 /// and no event is triggered.
 ///
 /// The setPosition and getPosition functions can be used to change
-/// or retrieve the current position of the mouse pointer. There are
+/// or retrieve the current m_position of the mouse pointer. There are
 /// two versions: one that operates in global coordinates (relative
 /// to the desktop) and one that operates in window coordinates
 /// (relative to a specific window).
@@ -165,10 +165,10 @@ public:
 ///     // left click...
 /// }
 ///
-/// // get global mouse position
-/// sf::Vector2i position = sf::Mouse::getPosition();
+/// // get global mouse m_position
+/// sf::Vector2i m_position = sf::Mouse::getPosition();
 ///
-/// // set mouse position relative to a window
+/// // set mouse m_position relative to a window
 /// sf::Mouse::setPosition(sf::Vector2i(100, 200), window);
 /// \endcode
 ///

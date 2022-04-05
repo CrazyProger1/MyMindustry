@@ -152,10 +152,10 @@ public:
     ////////////////////////////////////////////////////////////
     /// \brief Convert a point from target coordinates to world coordinates
     ///
-    /// This function finds the 2D position that matches the
+    /// This function finds the 2D m_position that matches the
     /// given pixel of the render target. In other words, it does
     /// the inverse of what the graphics card does, to find the
-    /// initial position of a rendered pixel.
+    /// initial m_position of a rendered pixel.
     ///
     /// Initially, both coordinate systems (world units and target pixels)
     /// match perfectly. But if you define a custom view or resize your
@@ -205,7 +205,7 @@ public:
     ///
     /// This function finds the pixel of the render target that matches
     /// the given 2D point. In other words, it goes through the same process
-    /// as the graphics card, to compute the final position of a rendered point.
+    /// as the graphics card, to compute the final m_position of a rendered point.
     ///
     /// Initially, both coordinate systems (world units and target pixels)
     /// match perfectly. But if you define a custom view or resize your

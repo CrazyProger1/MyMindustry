@@ -449,7 +449,7 @@ SFML_GRAPHICS_API bool operator !=(const Transform& left, const Transform& right
 /// For example, if you apply a rotation transform to a sprite, the
 /// result will be a rotated sprite. And anything that is transformed
 /// by this rotation transform will be rotated the same way, according
-/// to its initial position.
+/// to its initial m_position.
 ///
 /// Transforms are typically used for drawing. But they can also be
 /// used for any computation that requires to transform points between

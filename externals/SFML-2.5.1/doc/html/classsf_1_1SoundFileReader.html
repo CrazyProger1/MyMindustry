@@ -70,7 +70,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:aa1d2fee2ba8f359c833ab74590d55935"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open a sound file for reading.  <a href="#aa1d2fee2ba8f359c833ab74590d55935">More...</a><br /></td></tr>
 <tr class="separator:aa1d2fee2ba8f359c833ab74590d55935"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e18ade5ffe882bdfa20a2ebe7e2b015"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1SoundFileReader.html#a1e18ade5ffe882bdfa20a2ebe7e2b015">seek</a> (Uint64 sampleOffset)=0</td></tr>
-<tr class="memdesc:a1e18ade5ffe882bdfa20a2ebe7e2b015"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the current read position to the given sample offset.  <a href="#a1e18ade5ffe882bdfa20a2ebe7e2b015">More...</a><br /></td></tr>
+<tr class="memdesc:a1e18ade5ffe882bdfa20a2ebe7e2b015"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the current read m_position to the given sample offset.  <a href="#a1e18ade5ffe882bdfa20a2ebe7e2b015">More...</a><br /></td></tr>
 <tr class="separator:a1e18ade5ffe882bdfa20a2ebe7e2b015"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b7d86769ea07e24e7b0f0486bed7591"><td class="memItemLeft" align="right" valign="top">virtual Uint64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1SoundFileReader.html#a3b7d86769ea07e24e7b0f0486bed7591">read</a> (Int16 *samples, Uint64 maxCount)=0</td></tr>
 <tr class="memdesc:a3b7d86769ea07e24e7b0f0486bed7591"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read audio samples from the open file.  <a href="#a3b7d86769ea07e24e7b0f0486bed7591">More...</a><br /></td></tr>
@@ -232,7 +232,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Change the current read position to the given sample offset. </p>
+<p>Change the current read m_position to the given sample offset. </p>
 <p>The sample offset takes the channels into account. If you have a time offset instead, you can easily find the corresponding sample offset with the following formula: <code>timeInSeconds * sampleRate * channelCount</code> If the given offset exceeds to total number of samples, this function must jump to the end of the file.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">

@@ -63,13 +63,13 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memdesc:a137ea535799bdf70be6ec969673d4d33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current value of the global volume.  <a href="#a137ea535799bdf70be6ec969673d4d33">More...</a><br /></td></tr>
 <tr class="separator:a137ea535799bdf70be6ec969673d4d33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5bc2d8d18ea2d8f339d23cbf17678564"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Listener.html#a5bc2d8d18ea2d8f339d23cbf17678564">setPosition</a> (float x, float y, float z)</td></tr>
-<tr class="memdesc:a5bc2d8d18ea2d8f339d23cbf17678564"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the position of the listener in the scene.  <a href="#a5bc2d8d18ea2d8f339d23cbf17678564">More...</a><br /></td></tr>
+<tr class="memdesc:a5bc2d8d18ea2d8f339d23cbf17678564"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the m_position of the listener in the scene.  <a href="#a5bc2d8d18ea2d8f339d23cbf17678564">More...</a><br /></td></tr>
 <tr class="separator:a5bc2d8d18ea2d8f339d23cbf17678564"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a28a27d85cfbf8065c535c39176898fcb"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Listener.html#a28a27d85cfbf8065c535c39176898fcb">setPosition</a> (const <a class="el" href="classsf_1_1Vector3.html">Vector3f</a> &amp;position)</td></tr>
-<tr class="memdesc:a28a27d85cfbf8065c535c39176898fcb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the position of the listener in the scene.  <a href="#a28a27d85cfbf8065c535c39176898fcb">More...</a><br /></td></tr>
+<tr class="memitem:a28a27d85cfbf8065c535c39176898fcb"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Listener.html#a28a27d85cfbf8065c535c39176898fcb">setPosition</a> (const <a class="el" href="classsf_1_1Vector3.html">Vector3f</a> &amp;m_position)</td></tr>
+<tr class="memdesc:a28a27d85cfbf8065c535c39176898fcb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the m_position of the listener in the scene.  <a href="#a28a27d85cfbf8065c535c39176898fcb">More...</a><br /></td></tr>
 <tr class="separator:a28a27d85cfbf8065c535c39176898fcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd7ee65bc948ca38e1c669aa12340c54"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classsf_1_1Vector3.html">Vector3f</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Listener.html#acd7ee65bc948ca38e1c669aa12340c54">getPosition</a> ()</td></tr>
-<tr class="memdesc:acd7ee65bc948ca38e1c669aa12340c54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current position of the listener in the scene.  <a href="#acd7ee65bc948ca38e1c669aa12340c54">More...</a><br /></td></tr>
+<tr class="memdesc:acd7ee65bc948ca38e1c669aa12340c54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current m_position of the listener in the scene.  <a href="#acd7ee65bc948ca38e1c669aa12340c54">More...</a><br /></td></tr>
 <tr class="separator:acd7ee65bc948ca38e1c669aa12340c54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae479dc15513c6557984d26e32d06d06e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Listener.html#ae479dc15513c6557984d26e32d06d06e">setDirection</a> (float x, float y, float z)</td></tr>
 <tr class="memdesc:ae479dc15513c6557984d26e32d06d06e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the forward vector of the listener in the scene.  <a href="#ae479dc15513c6557984d26e32d06d06e">More...</a><br /></td></tr>
@@ -93,10 +93,10 @@ Static Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The audio listener is the point in the scene from where all the sounds are heard. </p>
 <p>The audio listener defines the global properties of the audio environment, it defines where and how sounds and musics are heard.</p>
-<p>If <a class="el" href="classsf_1_1View.html" title="2D camera that defines what region is shown on screen ">sf::View</a> is the eyes of the user, then <a class="el" href="classsf_1_1Listener.html" title="The audio listener is the point in the scene from where all the sounds are heard. ...">sf::Listener</a> is his ears (by the way, they are often linked together &ndash; same position, orientation, etc.).</p>
-<p><a class="el" href="classsf_1_1Listener.html" title="The audio listener is the point in the scene from where all the sounds are heard. ...">sf::Listener</a> is a simple interface, which allows to setup the listener in the 3D audio environment (position, direction and up vector), and to adjust the global volume.</p>
+<p>If <a class="el" href="classsf_1_1View.html" title="2D camera that defines what region is shown on screen ">sf::View</a> is the eyes of the user, then <a class="el" href="classsf_1_1Listener.html" title="The audio listener is the point in the scene from where all the sounds are heard. ...">sf::Listener</a> is his ears (by the way, they are often linked together &ndash; same m_position, orientation, etc.).</p>
+<p><a class="el" href="classsf_1_1Listener.html" title="The audio listener is the point in the scene from where all the sounds are heard. ...">sf::Listener</a> is a simple interface, which allows to setup the listener in the 3D audio environment (m_position, direction and up vector), and to adjust the global volume.</p>
 <p>Because the listener is unique in the scene, <a class="el" href="classsf_1_1Listener.html" title="The audio listener is the point in the scene from where all the sounds are heard. ...">sf::Listener</a> only contains static functions and doesn't have to be instantiated.</p>
-<p>Usage example: </p><div class="fragment"><div class="line"><span class="comment">// Move the listener to the position (1, 0, -5)</span></div><div class="line"><a class="code" href="classsf_1_1Listener.html#a5bc2d8d18ea2d8f339d23cbf17678564">sf::Listener::setPosition</a>(1, 0, -5);</div><div class="line"></div><div class="line"><span class="comment">// Make it face the right axis (1, 0, 0)</span></div><div class="line"><a class="code" href="classsf_1_1Listener.html#ae479dc15513c6557984d26e32d06d06e">sf::Listener::setDirection</a>(1, 0, 0);</div><div class="line"></div><div class="line"><span class="comment">// Reduce the global volume</span></div><div class="line"><a class="code" href="classsf_1_1Listener.html#a803a24a1fc04620cacc9f88c6fbc0e3a">sf::Listener::setGlobalVolume</a>(50);</div></div><!-- fragment --> 
+<p>Usage example: </p><div class="fragment"><div class="line"><span class="comment">// Move the listener to the m_position (1, 0, -5)</span></div><div class="line"><a class="code" href="classsf_1_1Listener.html#a5bc2d8d18ea2d8f339d23cbf17678564">sf::Listener::setPosition</a>(1, 0, -5);</div><div class="line"></div><div class="line"><span class="comment">// Make it face the right axis (1, 0, 0)</span></div><div class="line"><a class="code" href="classsf_1_1Listener.html#ae479dc15513c6557984d26e32d06d06e">sf::Listener::setDirection</a>(1, 0, 0);</div><div class="line"></div><div class="line"><span class="comment">// Reduce the global volume</span></div><div class="line"><a class="code" href="classsf_1_1Listener.html#a803a24a1fc04620cacc9f88c6fbc0e3a">sf::Listener::setGlobalVolume</a>(50);</div></div><!-- fragment -->
 <p class="definition">Definition at line <a class="el" href="Listener_8hpp_source.html#l00042">42</a> of file <a class="el" href="Listener_8hpp_source.html">Listener.hpp</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a54e91baba51d4431474f53ff7f9309f9"></a>
@@ -180,9 +180,9 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Get the current position of the listener in the scene. </p>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classsf_1_1Listener.html" title="The audio listener is the point in the scene from where all the sounds are heard. ...">Listener</a>'s position</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1Listener.html#a5bc2d8d18ea2d8f339d23cbf17678564" title="Set the position of the listener in the scene. ">setPosition</a> </dd></dl>
+<p>Get the current m_position of the listener in the scene. </p>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classsf_1_1Listener.html" title="The audio listener is the point in the scene from where all the sounds are heard. ...">Listener</a>'s m_position</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1Listener.html#a5bc2d8d18ea2d8f339d23cbf17678564" title="Set the m_position of the listener in the scene. ">setPosition</a> </dd></dl>
 
 </div>
 </div>
@@ -265,7 +265,7 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1Listener.html#a54e91baba51d4431474f53ff7f9309f9" title="Get the current forward vector of the listener in the scene. ">getDirection</a>, <a class="el" href="classsf_1_1Listener.html#a0ea9b3083a994b2b90253543bc4e3ad6" title="Set the upward vector of the listener in the scene. ">setUpVector</a>, <a class="el" href="classsf_1_1Listener.html#a5bc2d8d18ea2d8f339d23cbf17678564" title="Set the position of the listener in the scene. ">setPosition</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1Listener.html#a54e91baba51d4431474f53ff7f9309f9" title="Get the current forward vector of the listener in the scene. ">getDirection</a>, <a class="el" href="classsf_1_1Listener.html#a0ea9b3083a994b2b90253543bc4e3ad6" title="Set the upward vector of the listener in the scene. ">setUpVector</a>, <a class="el" href="classsf_1_1Listener.html#a5bc2d8d18ea2d8f339d23cbf17678564" title="Set the m_position of the listener in the scene. ">setPosition</a> </dd></dl>
 
 </div>
 </div>
@@ -301,7 +301,7 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1Listener.html#a54e91baba51d4431474f53ff7f9309f9" title="Get the current forward vector of the listener in the scene. ">getDirection</a>, <a class="el" href="classsf_1_1Listener.html#a0ea9b3083a994b2b90253543bc4e3ad6" title="Set the upward vector of the listener in the scene. ">setUpVector</a>, <a class="el" href="classsf_1_1Listener.html#a5bc2d8d18ea2d8f339d23cbf17678564" title="Set the position of the listener in the scene. ">setPosition</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1Listener.html#a54e91baba51d4431474f53ff7f9309f9" title="Get the current forward vector of the listener in the scene. ">getDirection</a>, <a class="el" href="classsf_1_1Listener.html#a0ea9b3083a994b2b90253543bc4e3ad6" title="Set the upward vector of the listener in the scene. ">setUpVector</a>, <a class="el" href="classsf_1_1Listener.html#a5bc2d8d18ea2d8f339d23cbf17678564" title="Set the m_position of the listener in the scene. ">setPosition</a> </dd></dl>
 
 </div>
 </div>
@@ -381,17 +381,17 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Set the position of the listener in the scene. </p>
-<p>The default listener's position is (0, 0, 0).</p>
+<p>Set the m_position of the listener in the scene. </p>
+<p>The default listener's m_position is (0, 0, 0).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">x</td><td>X coordinate of the listener's position </td></tr>
-    <tr><td class="paramname">y</td><td>Y coordinate of the listener's position </td></tr>
-    <tr><td class="paramname">z</td><td>Z coordinate of the listener's position</td></tr>
+    <tr><td class="paramname">x</td><td>X coordinate of the listener's m_position </td></tr>
+    <tr><td class="paramname">y</td><td>Y coordinate of the listener's m_position </td></tr>
+    <tr><td class="paramname">z</td><td>Z coordinate of the listener's m_position</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1Listener.html#acd7ee65bc948ca38e1c669aa12340c54" title="Get the current position of the listener in the scene. ">getPosition</a>, <a class="el" href="classsf_1_1Listener.html#ae479dc15513c6557984d26e32d06d06e" title="Set the forward vector of the listener in the scene. ">setDirection</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1Listener.html#acd7ee65bc948ca38e1c669aa12340c54" title="Get the current m_position of the listener in the scene. ">getPosition</a>, <a class="el" href="classsf_1_1Listener.html#ae479dc15513c6557984d26e32d06d06e" title="Set the forward vector of the listener in the scene. ">setDirection</a> </dd></dl>
 
 </div>
 </div>
@@ -408,7 +408,7 @@ Static Public Member Functions</h2></td></tr>
           <td class="memname">static void sf::Listener::setPosition </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classsf_1_1Vector3.html">Vector3f</a> &amp;&#160;</td>
-          <td class="paramname"><em>position</em></td><td>)</td>
+          <td class="paramname"><em>m_position</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -419,15 +419,15 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Set the position of the listener in the scene. </p>
-<p>The default listener's position is (0, 0, 0).</p>
+<p>Set the m_position of the listener in the scene. </p>
+<p>The default listener's m_position is (0, 0, 0).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">position</td><td>New listener's position</td></tr>
+    <tr><td class="paramname">m_position</td><td>New listener's m_position</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1Listener.html#acd7ee65bc948ca38e1c669aa12340c54" title="Get the current position of the listener in the scene. ">getPosition</a>, <a class="el" href="classsf_1_1Listener.html#ae479dc15513c6557984d26e32d06d06e" title="Set the forward vector of the listener in the scene. ">setDirection</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1Listener.html#acd7ee65bc948ca38e1c669aa12340c54" title="Get the current m_position of the listener in the scene. ">getPosition</a>, <a class="el" href="classsf_1_1Listener.html#ae479dc15513c6557984d26e32d06d06e" title="Set the forward vector of the listener in the scene. ">setDirection</a> </dd></dl>
 
 </div>
 </div>
@@ -481,7 +481,7 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1Listener.html#ae1427dd7e9b425b0c23b7b766bd6c6e6" title="Get the current upward vector of the listener in the scene. ">getUpVector</a>, <a class="el" href="classsf_1_1Listener.html#ae479dc15513c6557984d26e32d06d06e" title="Set the forward vector of the listener in the scene. ">setDirection</a>, <a class="el" href="classsf_1_1Listener.html#a5bc2d8d18ea2d8f339d23cbf17678564" title="Set the position of the listener in the scene. ">setPosition</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1Listener.html#ae1427dd7e9b425b0c23b7b766bd6c6e6" title="Get the current upward vector of the listener in the scene. ">getUpVector</a>, <a class="el" href="classsf_1_1Listener.html#ae479dc15513c6557984d26e32d06d06e" title="Set the forward vector of the listener in the scene. ">setDirection</a>, <a class="el" href="classsf_1_1Listener.html#a5bc2d8d18ea2d8f339d23cbf17678564" title="Set the m_position of the listener in the scene. ">setPosition</a> </dd></dl>
 
 </div>
 </div>
@@ -517,7 +517,7 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1Listener.html#ae1427dd7e9b425b0c23b7b766bd6c6e6" title="Get the current upward vector of the listener in the scene. ">getUpVector</a>, <a class="el" href="classsf_1_1Listener.html#ae479dc15513c6557984d26e32d06d06e" title="Set the forward vector of the listener in the scene. ">setDirection</a>, <a class="el" href="classsf_1_1Listener.html#a5bc2d8d18ea2d8f339d23cbf17678564" title="Set the position of the listener in the scene. ">setPosition</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1Listener.html#ae1427dd7e9b425b0c23b7b766bd6c6e6" title="Get the current upward vector of the listener in the scene. ">getUpVector</a>, <a class="el" href="classsf_1_1Listener.html#ae479dc15513c6557984d26e32d06d06e" title="Set the forward vector of the listener in the scene. ">setDirection</a>, <a class="el" href="classsf_1_1Listener.html#a5bc2d8d18ea2d8f339d23cbf17678564" title="Set the m_position of the listener in the scene. ">setPosition</a> </dd></dl>
 
 </div>
 </div>

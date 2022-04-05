@@ -74,7 +74,7 @@ public:
     virtual std::size_t getPointCount() const;
 
     ////////////////////////////////////////////////////////////
-    /// \brief Set the position of a point
+    /// \brief Set the m_position of a point
     ///
     /// Don't forget that the polygon must remain convex, and
     /// the points need to stay ordered!
@@ -83,7 +83,7 @@ public:
     /// of the valid range.
     ///
     /// \param index Index of the point to change, in range [0 .. getPointCount() - 1]
-    /// \param point New position of the point
+    /// \param point New m_position of the point
     ///
     /// \see getPoint
     ///
@@ -91,10 +91,10 @@ public:
     void setPoint(std::size_t index, const Vector2f& point);
 
     ////////////////////////////////////////////////////////////
-    /// \brief Get the position of a point
+    /// \brief Get the m_position of a point
     ///
     /// The returned point is in local coordinates, that is,
-    /// the shape's transforms (position, rotation, scale) are
+    /// the shape's transforms (m_position, rotation, scale) are
     /// not taken into account.
     /// The result is undefined if \a index is out of the valid range.
     ///
@@ -126,7 +126,7 @@ private:
 /// \ingroup graphics
 ///
 /// This class inherits all the functions of sf::Transformable
-/// (position, rotation, scale, bounds, ...) as well as the
+/// (m_position, rotation, scale, bounds, ...) as well as the
 /// functions of sf::Shape (outline, color, texture, ...).
 ///
 /// It is important to keep in mind that a convex shape must

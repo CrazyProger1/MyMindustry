@@ -73,7 +73,7 @@ namespace engine {
     }
 
     void ScenesManager::handleSFMLEvent(sf::Event &event) {
-        m_pActiveScene->onSFMLEvent(event);
+        m_pActiveScene->handleSFMLEvent(event);
     }
 
     void ScenesManager::destroyActiveScene() {

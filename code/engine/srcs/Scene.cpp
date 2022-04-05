@@ -25,6 +25,7 @@ namespace engine {
 
     void Scene::handleSFMLEvent(sf::Event &event) {
         m_pEntitiesManager->handleSFMLEvent(event);
+        onSFMLEvent(event);
     }
 
     void Scene::init() {
@@ -32,8 +33,8 @@ namespace engine {
         m_pEntitiesManager->initEntities();
     }
 
-    void Scene::attachEntity(Entity *entity) {
-        m_pEntitiesManager->attach(entity);
+    int Scene::attachEntity(Entity *entity) {
+        return m_pEntitiesManager->attach(entity);
     }
 
     void Scene::destroy() {

@@ -62,7 +62,7 @@ public:
     ////////////////////////////////////////////////////////////
     /// \brief Read data from the stream
     ///
-    /// After reading, the stream's reading position must be
+    /// After reading, the stream's reading m_position must be
     /// advanced by the amount of bytes read.
     ///
     /// \param data Buffer where to copy the read data
@@ -74,19 +74,19 @@ public:
     virtual Int64 read(void* data, Int64 size);
 
     ////////////////////////////////////////////////////////////
-    /// \brief Change the current reading position
+    /// \brief Change the current reading m_position
     ///
-    /// \param position The position to seek to, from the beginning
+    /// \param position The m_position to seek to, from the beginning
     ///
-    /// \return The position actually sought to, or -1 on error
+    /// \return The m_position actually sought to, or -1 on error
     ///
     ////////////////////////////////////////////////////////////
     virtual Int64 seek(Int64 position);
 
     ////////////////////////////////////////////////////////////
-    /// \brief Get the current reading position in the stream
+    /// \brief Get the current reading m_position in the stream
     ///
-    /// \return The current position, or -1 on error.
+    /// \return The current m_position, or -1 on error.
     ///
     ////////////////////////////////////////////////////////////
     virtual Int64 tell();
@@ -106,7 +106,7 @@ private:
     ////////////////////////////////////////////////////////////
     const char* m_data;   ///< Pointer to the data in memory
     Int64       m_size;   ///< Total size of the data
-    Int64       m_offset; ///< Current reading position
+    Int64       m_offset; ///< Current reading m_position
 };
 
 } // namespace sf

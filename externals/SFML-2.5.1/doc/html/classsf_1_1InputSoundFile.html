@@ -99,10 +99,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a73a99f159e8aca6e39478f6cf686d7ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the read offset of the file in samples.  <a href="#a73a99f159e8aca6e39478f6cf686d7ad">More...</a><br /></td></tr>
 <tr class="separator:a73a99f159e8aca6e39478f6cf686d7ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf97be15020a42e159ff88f76f22af20"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1InputSoundFile.html#aaf97be15020a42e159ff88f76f22af20">seek</a> (Uint64 sampleOffset)</td></tr>
-<tr class="memdesc:aaf97be15020a42e159ff88f76f22af20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the current read position to the given sample offset.  <a href="#aaf97be15020a42e159ff88f76f22af20">More...</a><br /></td></tr>
+<tr class="memdesc:aaf97be15020a42e159ff88f76f22af20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the current read m_position to the given sample offset.  <a href="#aaf97be15020a42e159ff88f76f22af20">More...</a><br /></td></tr>
 <tr class="separator:aaf97be15020a42e159ff88f76f22af20"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8eee7af58ad75ddc61f93ad72e2d66c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1InputSoundFile.html#a8eee7af58ad75ddc61f93ad72e2d66c1">seek</a> (<a class="el" href="classsf_1_1Time.html">Time</a> timeOffset)</td></tr>
-<tr class="memdesc:a8eee7af58ad75ddc61f93ad72e2d66c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the current read position to the given time offset.  <a href="#a8eee7af58ad75ddc61f93ad72e2d66c1">More...</a><br /></td></tr>
+<tr class="memdesc:a8eee7af58ad75ddc61f93ad72e2d66c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the current read m_position to the given time offset.  <a href="#a8eee7af58ad75ddc61f93ad72e2d66c1">More...</a><br /></td></tr>
 <tr class="separator:a8eee7af58ad75ddc61f93ad72e2d66c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83d6f64617456601edeb0daf9d14a17f"><td class="memItemLeft" align="right" valign="top">Uint64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1InputSoundFile.html#a83d6f64617456601edeb0daf9d14a17f">read</a> (Int16 *samples, Uint64 maxCount)</td></tr>
 <tr class="memdesc:a83d6f64617456601edeb0daf9d14a17f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read audio samples from the open file.  <a href="#a83d6f64617456601edeb0daf9d14a17f">More...</a><br /></td></tr>
@@ -232,7 +232,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get the read offset of the file in samples. </p>
-<dl class="section return"><dt>Returns</dt><dd>Sample position </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Sample m_position </dd></dl>
 
 </div>
 </div>
@@ -272,7 +272,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get the read offset of the file in time. </p>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classsf_1_1Time.html" title="Represents a time value. ">Time</a> position </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classsf_1_1Time.html" title="Represents a time value. ">Time</a> m_position </dd></dl>
 
 </div>
 </div>
@@ -425,7 +425,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Change the current read position to the given sample offset. </p>
+<p>Change the current read m_position to the given sample offset. </p>
 <p>This function takes a sample offset to provide maximum precision. If you need to jump to a given time, use the other overload.</p>
 <p>The sample offset takes the channels into account. If you have a time offset instead, you can easily find the corresponding sample offset with the following formula: <code>timeInSeconds * sampleRate * channelCount</code> If the given offset exceeds to total number of samples, this function jumps to the end of the sound file.</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -453,7 +453,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Change the current read position to the given time offset. </p>
+<p>Change the current read m_position to the given time offset. </p>
 <p>Using a time offset is handy but imprecise. If you need an accurate result, consider using the overload which takes a sample offset.</p>
 <p>If the given time exceeds to total duration, this function jumps to the end of the sound file.</p>
 <dl class="params"><dt>Parameters</dt><dd>

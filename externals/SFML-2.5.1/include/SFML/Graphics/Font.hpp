@@ -211,14 +211,14 @@ public:
     float getLineSpacing(unsigned int characterSize) const;
 
     ////////////////////////////////////////////////////////////
-    /// \brief Get the position of the underline
+    /// \brief Get the m_position of the underline
     ///
-    /// Underline position is the vertical offset to apply between the
+    /// Underline m_position is the vertical offset to apply between the
     /// baseline and the underline.
     ///
     /// \param characterSize Reference character size
     ///
-    /// \return Underline position, in pixels
+    /// \return Underline m_position, in pixels
     ///
     /// \see getUnderlineThickness
     ///
@@ -274,7 +274,7 @@ private:
         Row(unsigned int rowTop, unsigned int rowHeight) : width(0), top(rowTop), height(rowHeight) {}
 
         unsigned int width;  ///< Current width of the row
-        unsigned int top;    ///< Y position of the row into the texture
+        unsigned int top;    ///< Y m_position of the row into the texture
         unsigned int height; ///< Height of the row
     };
 
@@ -293,8 +293,8 @@ private:
 
         GlyphTable       glyphs;  ///< Table mapping code points to their corresponding glyph
         Texture          texture; ///< Texture containing the pixels of the glyphs
-        unsigned int     nextRow; ///< Y position of the next new row in the texture
-        std::vector<Row> rows;    ///< List containing the position of all the existing rows
+        unsigned int     nextRow; ///< Y m_position of the next new row in the texture
+        std::vector<Row> rows;    ///< List containing the m_position of all the existing rows
     };
 
     ////////////////////////////////////////////////////////////
@@ -383,7 +383,7 @@ private:
 /// but cannot make anything useful of it. To do so you need to
 /// use the sf::Text class, which is able to properly output text
 /// with several options such as character size, style, color,
-/// position, rotation, etc.
+/// m_position, rotation, etc.
 /// This separation allows more flexibility and better performances:
 /// indeed a sf::Font is a heavy resource, and any operation on it
 /// is slow (often too slow for real-time applications). On the other

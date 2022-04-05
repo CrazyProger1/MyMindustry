@@ -46,8 +46,11 @@ namespace engine {
     }
 
     void EntitiesManager::updateEntities() {
+
         for (auto e: m_mpEntities)
             e.second->update();
+
+
     }
 
     void EntitiesManager::handleSFMLEvent(sf::Event &event) {

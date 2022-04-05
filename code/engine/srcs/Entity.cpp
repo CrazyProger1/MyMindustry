@@ -37,4 +37,8 @@ namespace engine {
         m_position.y += offsetY;
     }
 
+    sf::Vector2f &Entity::getPosition() {
+        return m_position;
+    }
+
 }

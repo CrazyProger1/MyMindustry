@@ -61,7 +61,7 @@ Inheritance diagram for sf::Text:</div>
   <img src="classsf_1_1Text.png" usemap="#sf::Text_map" alt=""/>
   <map id="sf::Text_map" name="sf::Text_map">
 <area href="classsf_1_1Drawable.html" title="Abstract base class for objects that can be drawn to a render target. " alt="sf::Drawable" shape="rect" coords="0,0,109,24"/>
-<area href="classsf_1_1Transformable.html" title="Decomposed transform defined by a position, a rotation and a scale. " alt="sf::Transformable" shape="rect" coords="119,0,228,24"/>
+<area href="classsf_1_1Transformable.html" title="Decomposed transform defined by a m_position, a rotation and a scale. " alt="sf::Transformable" shape="rect" coords="119,0,228,24"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -148,7 +148,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:af6bf01c23189edf52c8b38708db6f3f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the outline thickness of the text.  <a href="#af6bf01c23189edf52c8b38708db6f3f6">More...</a><br /></td></tr>
 <tr class="separator:af6bf01c23189edf52c8b38708db6f3f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e252d8dcae3eb61c6c962c0bc674b12"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsf_1_1Vector2.html">Vector2f</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Text.html#a2e252d8dcae3eb61c6c962c0bc674b12">findCharacterPos</a> (std::size_t index) const</td></tr>
-<tr class="memdesc:a2e252d8dcae3eb61c6c962c0bc674b12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the position of the <em>index-th</em> character.  <a href="#a2e252d8dcae3eb61c6c962c0bc674b12">More...</a><br /></td></tr>
+<tr class="memdesc:a2e252d8dcae3eb61c6c962c0bc674b12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the m_position of the <em>index-th</em> character.  <a href="#a2e252d8dcae3eb61c6c962c0bc674b12">More...</a><br /></td></tr>
 <tr class="separator:a2e252d8dcae3eb61c6c962c0bc674b12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e6b3b298827f853b41165eee2cbbc66"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsf_1_1Rect.html">FloatRect</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Text.html#a3e6b3b298827f853b41165eee2cbbc66">getLocalBounds</a> () const</td></tr>
 <tr class="memdesc:a3e6b3b298827f853b41165eee2cbbc66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the local bounding rectangle of the entity.  <a href="#a3e6b3b298827f853b41165eee2cbbc66">More...</a><br /></td></tr>
@@ -157,10 +157,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ad33ed96ce9fbe99610f7f8b6874a16b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the global bounding rectangle of the entity.  <a href="#ad33ed96ce9fbe99610f7f8b6874a16b4">More...</a><br /></td></tr>
 <tr class="separator:ad33ed96ce9fbe99610f7f8b6874a16b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4dbfb1a7c80688b0b4c477d706550208"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Transformable.html#a4dbfb1a7c80688b0b4c477d706550208">setPosition</a> (float x, float y)</td></tr>
-<tr class="memdesc:a4dbfb1a7c80688b0b4c477d706550208"><td class="mdescLeft">&#160;</td><td class="mdescRight">set the position of the object  <a href="#a4dbfb1a7c80688b0b4c477d706550208">More...</a><br /></td></tr>
+<tr class="memdesc:a4dbfb1a7c80688b0b4c477d706550208"><td class="mdescLeft">&#160;</td><td class="mdescRight">set the m_position of the object  <a href="#a4dbfb1a7c80688b0b4c477d706550208">More...</a><br /></td></tr>
 <tr class="separator:a4dbfb1a7c80688b0b4c477d706550208"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1a42209ce2b5d3f07b00f917bcd8015"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Transformable.html#af1a42209ce2b5d3f07b00f917bcd8015">setPosition</a> (const <a class="el" href="classsf_1_1Vector2.html">Vector2f</a> &amp;position)</td></tr>
-<tr class="memdesc:af1a42209ce2b5d3f07b00f917bcd8015"><td class="mdescLeft">&#160;</td><td class="mdescRight">set the position of the object  <a href="#af1a42209ce2b5d3f07b00f917bcd8015">More...</a><br /></td></tr>
+<tr class="memitem:af1a42209ce2b5d3f07b00f917bcd8015"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Transformable.html#af1a42209ce2b5d3f07b00f917bcd8015">setPosition</a> (const <a class="el" href="classsf_1_1Vector2.html">Vector2f</a> &amp;m_position)</td></tr>
+<tr class="memdesc:af1a42209ce2b5d3f07b00f917bcd8015"><td class="mdescLeft">&#160;</td><td class="mdescRight">set the m_position of the object  <a href="#af1a42209ce2b5d3f07b00f917bcd8015">More...</a><br /></td></tr>
 <tr class="separator:af1a42209ce2b5d3f07b00f917bcd8015"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a32baf2bf1a74699b03bf8c95030a38ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Transformable.html#a32baf2bf1a74699b03bf8c95030a38ed">setRotation</a> (float angle)</td></tr>
 <tr class="memdesc:a32baf2bf1a74699b03bf8c95030a38ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">set the orientation of the object  <a href="#a32baf2bf1a74699b03bf8c95030a38ed">More...</a><br /></td></tr>
@@ -178,7 +178,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:aa93a835ffbf3bee2098dfbbc695a7f05"><td class="mdescLeft">&#160;</td><td class="mdescRight">set the local origin of the object  <a href="#aa93a835ffbf3bee2098dfbbc695a7f05">More...</a><br /></td></tr>
 <tr class="separator:aa93a835ffbf3bee2098dfbbc695a7f05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a73f9739bc6e74db2cea154bc8e94ec46"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classsf_1_1Vector2.html">Vector2f</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Transformable.html#a73f9739bc6e74db2cea154bc8e94ec46">getPosition</a> () const</td></tr>
-<tr class="memdesc:a73f9739bc6e74db2cea154bc8e94ec46"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the position of the object  <a href="#a73f9739bc6e74db2cea154bc8e94ec46">More...</a><br /></td></tr>
+<tr class="memdesc:a73f9739bc6e74db2cea154bc8e94ec46"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the m_position of the object  <a href="#a73f9739bc6e74db2cea154bc8e94ec46">More...</a><br /></td></tr>
 <tr class="separator:a73f9739bc6e74db2cea154bc8e94ec46"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa00b5c5d4a06ac24a94dd72c56931d3a"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1Transformable.html#aa00b5c5d4a06ac24a94dd72c56931d3a">getRotation</a> () const</td></tr>
 <tr class="memdesc:aa00b5c5d4a06ac24a94dd72c56931d3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the orientation of the object  <a href="#aa00b5c5d4a06ac24a94dd72c56931d3a">More...</a><br /></td></tr>
@@ -214,12 +214,12 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Graphical text that can be drawn to a render target. </p>
 <p><a class="el" href="classsf_1_1Text.html" title="Graphical text that can be drawn to a render target. ">sf::Text</a> is a drawable class that allows to easily display some text with custom style and color on a render target.</p>
-<p>It inherits all the functions from <a class="el" href="classsf_1_1Transformable.html" title="Decomposed transform defined by a position, a rotation and a scale. ">sf::Transformable</a>: position, rotation, scale, origin. It also adds text-specific properties such as the font to use, the character size, the font style (bold, italic, underlined and strike through), the text color, the outline thickness, the outline color, the character spacing, the line spacing and the text to display of course. It also provides convenience functions to calculate the graphical size of the text, or to get the global position of a given character.</p>
+<p>It inherits all the functions from <a class="el" href="classsf_1_1Transformable.html" title="Decomposed transform defined by a m_position, a rotation and a scale. ">sf::Transformable</a>: m_position, rotation, scale, origin. It also adds text-specific properties such as the font to use, the character size, the font style (bold, italic, underlined and strike through), the text color, the outline thickness, the outline color, the character spacing, the line spacing and the text to display of course. It also provides convenience functions to calculate the graphical size of the text, or to get the global m_position of a given character.</p>
 <p><a class="el" href="classsf_1_1Text.html" title="Graphical text that can be drawn to a render target. ">sf::Text</a> works in combination with the <a class="el" href="classsf_1_1Font.html" title="Class for loading and manipulating character fonts. ">sf::Font</a> class, which loads and provides the glyphs (visual characters) of a given font.</p>
 <p>The separation of <a class="el" href="classsf_1_1Font.html" title="Class for loading and manipulating character fonts. ">sf::Font</a> and <a class="el" href="classsf_1_1Text.html" title="Graphical text that can be drawn to a render target. ">sf::Text</a> allows more flexibility and better performances: indeed a <a class="el" href="classsf_1_1Font.html" title="Class for loading and manipulating character fonts. ">sf::Font</a> is a heavy resource, and any operation on it is slow (often too slow for real-time applications). On the other side, a <a class="el" href="classsf_1_1Text.html" title="Graphical text that can be drawn to a render target. ">sf::Text</a> is a lightweight object which can combine the glyphs data and metrics of a <a class="el" href="classsf_1_1Font.html" title="Class for loading and manipulating character fonts. ">sf::Font</a> to display any text on a render target.</p>
 <p>It is important to note that the <a class="el" href="classsf_1_1Text.html" title="Graphical text that can be drawn to a render target. ">sf::Text</a> instance doesn't copy the font that it uses, it only keeps a reference to it. Thus, a <a class="el" href="classsf_1_1Font.html" title="Class for loading and manipulating character fonts. ">sf::Font</a> must not be destructed while it is used by a <a class="el" href="classsf_1_1Text.html" title="Graphical text that can be drawn to a render target. ">sf::Text</a> (i.e. never write a function that uses a local <a class="el" href="classsf_1_1Font.html" title="Class for loading and manipulating character fonts. ">sf::Font</a> instance for creating a text).</p>
-<p>See also the note on coordinates and undistorted rendering in <a class="el" href="classsf_1_1Transformable.html" title="Decomposed transform defined by a position, a rotation and a scale. ">sf::Transformable</a>.</p>
-<p>Usage example: </p><div class="fragment"><div class="line"><span class="comment">// Declare and load a font</span></div><div class="line"><a class="code" href="classsf_1_1Font.html">sf::Font</a> font;</div><div class="line">font.<a class="code" href="classsf_1_1Font.html#ab020052ef4e01f6c749a85571c0f3fd1">loadFromFile</a>(<span class="stringliteral">&quot;arial.ttf&quot;</span>);</div><div class="line"></div><div class="line"><span class="comment">// Create a text</span></div><div class="line"><a class="code" href="classsf_1_1Text.html">sf::Text</a> text(<span class="stringliteral">&quot;hello&quot;</span>, font);</div><div class="line">text.<a class="code" href="classsf_1_1Text.html#ae96f835fc1bff858f8a23c5b01eaaf7e">setCharacterSize</a>(30);</div><div class="line">text.<a class="code" href="classsf_1_1Text.html#ad791702bc2d1b6590a1719aa60635edf">setStyle</a>(<a class="code" href="classsf_1_1Text.html#aa8add4aef484c6e6b20faff07452bd82af1b47f98fb1e10509ba930a596987171">sf::Text::Bold</a>);</div><div class="line">text.<a class="code" href="classsf_1_1Text.html#ab7bb3babac5a6da1802b2c3e1a3e6dcc">setFillColor</a>(<a class="code" href="classsf_1_1Color.html#a127dbf55db9c07d0fa8f4bfcbb97594a">sf::Color::Red</a>);</div><div class="line"></div><div class="line"><span class="comment">// Draw it</span></div><div class="line">window.draw(text);</div></div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1Font.html" title="Class for loading and manipulating character fonts. ">sf::Font</a>, <a class="el" href="classsf_1_1Transformable.html" title="Decomposed transform defined by a position, a rotation and a scale. ">sf::Transformable</a> </dd></dl>
+<p>See also the note on coordinates and undistorted rendering in <a class="el" href="classsf_1_1Transformable.html" title="Decomposed transform defined by a m_position, a rotation and a scale. ">sf::Transformable</a>.</p>
+<p>Usage example: </p><div class="fragment"><div class="line"><span class="comment">// Declare and load a font</span></div><div class="line"><a class="code" href="classsf_1_1Font.html">sf::Font</a> font;</div><div class="line">font.<a class="code" href="classsf_1_1Font.html#ab020052ef4e01f6c749a85571c0f3fd1">loadFromFile</a>(<span class="stringliteral">&quot;arial.ttf&quot;</span>);</div><div class="line"></div><div class="line"><span class="comment">// Create a text</span></div><div class="line"><a class="code" href="classsf_1_1Text.html">sf::Text</a> text(<span class="stringliteral">&quot;hello&quot;</span>, font);</div><div class="line">text.<a class="code" href="classsf_1_1Text.html#ae96f835fc1bff858f8a23c5b01eaaf7e">setCharacterSize</a>(30);</div><div class="line">text.<a class="code" href="classsf_1_1Text.html#ad791702bc2d1b6590a1719aa60635edf">setStyle</a>(<a class="code" href="classsf_1_1Text.html#aa8add4aef484c6e6b20faff07452bd82af1b47f98fb1e10509ba930a596987171">sf::Text::Bold</a>);</div><div class="line">text.<a class="code" href="classsf_1_1Text.html#ab7bb3babac5a6da1802b2c3e1a3e6dcc">setFillColor</a>(<a class="code" href="classsf_1_1Color.html#a127dbf55db9c07d0fa8f4bfcbb97594a">sf::Color::Red</a>);</div><div class="line"></div><div class="line"><span class="comment">// Draw it</span></div><div class="line">window.draw(text);</div></div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1Font.html" title="Class for loading and manipulating character fonts. ">sf::Font</a>, <a class="el" href="classsf_1_1Transformable.html" title="Decomposed transform defined by a m_position, a rotation and a scale. ">sf::Transformable</a> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="Text_8hpp_source.html#l00048">48</a> of file <a class="el" href="Text_8hpp_source.html">Text.hpp</a>.</p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
@@ -336,8 +336,8 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Return the position of the <em>index-th</em> character. </p>
-<p>This function computes the visual position of a character from its index in the string. The returned position is in global coordinates (translation, rotation, scale and origin are applied). If <em>index</em> is out of range, the position of the end of the string is returned.</p>
+<p>Return the m_position of the <em>index-th</em> character. </p>
+<p>This function computes the visual m_position of a character from its index in the string. The returned m_position is in global coordinates (translation, rotation, scale and origin are applied). If <em>index</em> is out of range, the m_position of the end of the string is returned.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">index</td><td>Index of the character</td></tr>
@@ -641,9 +641,9 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>get the position of the object </p>
-<dl class="section return"><dt>Returns</dt><dd>Current position</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1Transformable.html#a4dbfb1a7c80688b0b4c477d706550208" title="set the position of the object ">setPosition</a> </dd></dl>
+<p>get the m_position of the object </p>
+<dl class="section return"><dt>Returns</dt><dd>Current m_position</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1Transformable.html#a4dbfb1a7c80688b0b4c477d706550208" title="set the m_position of the object ">setPosition</a> </dd></dl>
 
 </div>
 </div>
@@ -772,7 +772,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>get the combined transform of the object </p>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classsf_1_1Transform.html" title="Define a 3x3 transform matrix. ">Transform</a> combining the position/rotation/scale/origin of the object</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classsf_1_1Transform.html" title="Define a 3x3 transform matrix. ">Transform</a> combining the m_position/rotation/scale/origin of the object</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1Transformable.html#ab18b25f51263252ff3811465eb7e9fb1" title="get the inverse of the combined transform of the object ">getInverseTransform</a> </dd></dl>
 
 </div>
@@ -812,14 +812,14 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Move the object by a given offset. </p>
-<p>This function adds to the current position of the object, unlike setPosition which overwrites it. Thus, it is equivalent to the following code: </p><div class="fragment"><div class="line"><a class="code" href="classsf_1_1Vector2.html">sf::Vector2f</a> pos = <span class="keywordtype">object</span>.getPosition();</div><div class="line"><span class="keywordtype">object</span>.setPosition(pos.<a class="code" href="classsf_1_1Vector2.html#a1e6ad77fa155f3753bfb92699bd28141">x</a> + offsetX, pos.<a class="code" href="classsf_1_1Vector2.html#a420f2481b015f4eb929c75f2af564299">y</a> + offsetY);</div></div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
+<p>This function adds to the current m_position of the object, unlike setPosition which overwrites it. Thus, it is equivalent to the following code: </p><div class="fragment"><div class="line"><a class="code" href="classsf_1_1Vector2.html">sf::Vector2f</a> pos = <span class="keywordtype">object</span>.getPosition();</div><div class="line"><span class="keywordtype">object</span>.setPosition(pos.<a class="code" href="classsf_1_1Vector2.html#a1e6ad77fa155f3753bfb92699bd28141">x</a> + offsetX, pos.<a class="code" href="classsf_1_1Vector2.html#a420f2481b015f4eb929c75f2af564299">y</a> + offsetY);</div></div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">offsetX</td><td>X offset </td></tr>
     <tr><td class="paramname">offsetY</td><td>Y offset</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1Transformable.html#a4dbfb1a7c80688b0b4c477d706550208" title="set the position of the object ">setPosition</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1Transformable.html#a4dbfb1a7c80688b0b4c477d706550208" title="set the m_position of the object ">setPosition</a> </dd></dl>
 
 </div>
 </div>
@@ -848,13 +848,13 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Move the object by a given offset. </p>
-<p>This function adds to the current position of the object, unlike setPosition which overwrites it. Thus, it is equivalent to the following code: </p><div class="fragment"><div class="line"><span class="keywordtype">object</span>.setPosition(<span class="keywordtype">object</span>.<a class="code" href="classsf_1_1Transformable.html#a73f9739bc6e74db2cea154bc8e94ec46">getPosition</a>() + offset);</div></div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
+<p>This function adds to the current m_position of the object, unlike setPosition which overwrites it. Thus, it is equivalent to the following code: </p><div class="fragment"><div class="line"><span class="keywordtype">object</span>.setPosition(<span class="keywordtype">object</span>.<a class="code" href="classsf_1_1Transformable.html#a73f9739bc6e74db2cea154bc8e94ec46">getPosition</a>() + offset);</div></div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">offset</td><td>Offset</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1Transformable.html#a4dbfb1a7c80688b0b4c477d706550208" title="set the position of the object ">setPosition</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1Transformable.html#a4dbfb1a7c80688b0b4c477d706550208" title="set the m_position of the object ">setPosition</a> </dd></dl>
 
 </div>
 </div>
@@ -1178,7 +1178,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>set the local origin of the object </p>
-<p>The origin of an object defines the center point for all transformations (position, scale, rotation). The coordinates of this point must be relative to the top-left corner of the object, and ignore all transformations (position, scale, rotation). The default origin of a transformable object is (0, 0).</p>
+<p>The origin of an object defines the center point for all transformations (m_position, scale, rotation). The coordinates of this point must be relative to the top-left corner of the object, and ignore all transformations (m_position, scale, rotation). The default origin of a transformable object is (0, 0).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">x</td><td>X coordinate of the new origin </td></tr>
@@ -1215,7 +1215,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>set the local origin of the object </p>
-<p>The origin of an object defines the center point for all transformations (position, scale, rotation). The coordinates of this point must be relative to the top-left corner of the object, and ignore all transformations (position, scale, rotation). The default origin of a transformable object is (0, 0).</p>
+<p>The origin of an object defines the center point for all transformations (m_position, scale, rotation). The coordinates of this point must be relative to the top-left corner of the object, and ignore all transformations (m_position, scale, rotation). The default origin of a transformable object is (0, 0).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">origin</td><td>New origin</td></tr>
@@ -1317,16 +1317,16 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>set the position of the object </p>
-<p>This function completely overwrites the previous position. See the move function to apply an offset based on the previous position instead. The default position of a transformable object is (0, 0).</p>
+<p>set the m_position of the object </p>
+<p>This function completely overwrites the previous m_position. See the move function to apply an offset based on the previous m_position instead. The default m_position of a transformable object is (0, 0).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">x</td><td>X coordinate of the new position </td></tr>
-    <tr><td class="paramname">y</td><td>Y coordinate of the new position</td></tr>
+    <tr><td class="paramname">x</td><td>X coordinate of the new m_position </td></tr>
+    <tr><td class="paramname">y</td><td>Y coordinate of the new m_position</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1Transformable.html#a86b461d6a941ad390c2ad8b6a4a20391" title="Move the object by a given offset. ">move</a>, <a class="el" href="classsf_1_1Transformable.html#a73f9739bc6e74db2cea154bc8e94ec46" title="get the position of the object ">getPosition</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1Transformable.html#a86b461d6a941ad390c2ad8b6a4a20391" title="Move the object by a given offset. ">move</a>, <a class="el" href="classsf_1_1Transformable.html#a73f9739bc6e74db2cea154bc8e94ec46" title="get the m_position of the object ">getPosition</a> </dd></dl>
 
 </div>
 </div>
@@ -1343,7 +1343,7 @@ Public Member Functions</h2></td></tr>
           <td class="memname">void sf::Transformable::setPosition </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classsf_1_1Vector2.html">Vector2f</a> &amp;&#160;</td>
-          <td class="paramname"><em>position</em></td><td>)</td>
+          <td class="paramname"><em>m_position</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1354,15 +1354,15 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>set the position of the object </p>
-<p>This function completely overwrites the previous position. See the move function to apply an offset based on the previous position instead. The default position of a transformable object is (0, 0).</p>
+<p>set the m_position of the object </p>
+<p>This function completely overwrites the previous m_position. See the move function to apply an offset based on the previous m_position instead. The default m_position of a transformable object is (0, 0).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">position</td><td>New position</td></tr>
+    <tr><td class="paramname">m_position</td><td>New m_position</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1Transformable.html#a86b461d6a941ad390c2ad8b6a4a20391" title="Move the object by a given offset. ">move</a>, <a class="el" href="classsf_1_1Transformable.html#a73f9739bc6e74db2cea154bc8e94ec46" title="get the position of the object ">getPosition</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1Transformable.html#a86b461d6a941ad390c2ad8b6a4a20391" title="Move the object by a given offset. ">move</a>, <a class="el" href="classsf_1_1Transformable.html#a73f9739bc6e74db2cea154bc8e94ec46" title="get the m_position of the object ">getPosition</a> </dd></dl>
 
 </div>
 </div>

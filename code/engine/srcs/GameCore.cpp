@@ -15,6 +15,7 @@ namespace engine {
         m_pScenesManager = ScenesManager::getInstance();
         m_pEntitiesManager = EntitiesManager::getInstance();
         m_pMemoryManager = MemoryManager::getInstance();
+        m_pAssetsManager = AssetsManager::getInstance();
     };
 
 

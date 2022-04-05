@@ -8,11 +8,15 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "D:/Programming/MyGames/MyMindustry/code/engine/include/GUI/Text.cpp" "D:/Programming/MyGames/MyMindustry/cmake-build-debug/CMakeFiles/MyMindustry.dir/code/engine/include/GUI/Text.cpp.obj"
   "D:/Programming/MyGames/MyMindustry/code/engine/srcs/Entity.cpp" "D:/Programming/MyGames/MyMindustry/cmake-build-debug/CMakeFiles/MyMindustry.dir/code/engine/srcs/Entity.cpp.obj"
   "D:/Programming/MyGames/MyMindustry/code/engine/srcs/GUI/Button.cpp" "D:/Programming/MyGames/MyMindustry/cmake-build-debug/CMakeFiles/MyMindustry.dir/code/engine/srcs/GUI/Button.cpp.obj"
+  "D:/Programming/MyGames/MyMindustry/code/engine/srcs/GUI/ButtonStyle.cpp" "D:/Programming/MyGames/MyMindustry/cmake-build-debug/CMakeFiles/MyMindustry.dir/code/engine/srcs/GUI/ButtonStyle.cpp.obj"
+  "D:/Programming/MyGames/MyMindustry/code/engine/srcs/GUI/Image.cpp" "D:/Programming/MyGames/MyMindustry/cmake-build-debug/CMakeFiles/MyMindustry.dir/code/engine/srcs/GUI/Image.cpp.obj"
+  "D:/Programming/MyGames/MyMindustry/code/engine/srcs/GUI/Text.cpp" "D:/Programming/MyGames/MyMindustry/cmake-build-debug/CMakeFiles/MyMindustry.dir/code/engine/srcs/GUI/Text.cpp.obj"
+  "D:/Programming/MyGames/MyMindustry/code/engine/srcs/GUI/TextStyle.cpp" "D:/Programming/MyGames/MyMindustry/cmake-build-debug/CMakeFiles/MyMindustry.dir/code/engine/srcs/GUI/TextStyle.cpp.obj"
   "D:/Programming/MyGames/MyMindustry/code/engine/srcs/GameCore.cpp" "D:/Programming/MyGames/MyMindustry/cmake-build-debug/CMakeFiles/MyMindustry.dir/code/engine/srcs/GameCore.cpp.obj"
   "D:/Programming/MyGames/MyMindustry/code/engine/srcs/Scene.cpp" "D:/Programming/MyGames/MyMindustry/cmake-build-debug/CMakeFiles/MyMindustry.dir/code/engine/srcs/Scene.cpp.obj"
+  "D:/Programming/MyGames/MyMindustry/code/engine/srcs/managers/AssetsManager.cpp" "D:/Programming/MyGames/MyMindustry/cmake-build-debug/CMakeFiles/MyMindustry.dir/code/engine/srcs/managers/AssetsManager.cpp.obj"
   "D:/Programming/MyGames/MyMindustry/code/engine/srcs/managers/EntitiesManager.cpp" "D:/Programming/MyGames/MyMindustry/cmake-build-debug/CMakeFiles/MyMindustry.dir/code/engine/srcs/managers/EntitiesManager.cpp.obj"
   "D:/Programming/MyGames/MyMindustry/code/engine/srcs/managers/LoggingManager.cpp" "D:/Programming/MyGames/MyMindustry/cmake-build-debug/CMakeFiles/MyMindustry.dir/code/engine/srcs/managers/LoggingManager.cpp.obj"
   "D:/Programming/MyGames/MyMindustry/code/engine/srcs/managers/MemoryManager.cpp" "D:/Programming/MyGames/MyMindustry/cmake-build-debug/CMakeFiles/MyMindustry.dir/code/engine/srcs/managers/MemoryManager.cpp.obj"

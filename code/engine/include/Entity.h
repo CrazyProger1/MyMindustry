@@ -8,6 +8,7 @@
 #include <SFML/Graphics.hpp>
 #include "./types.h"
 
+
 namespace engine {
     class Entity {
     private:
@@ -30,6 +31,8 @@ namespace engine {
 
         str &getType();
 
+        sf::Vector2f &getPosition();
+
 
         void init();
 
@@ -45,8 +48,6 @@ namespace engine {
         virtual void update() {};
 
         virtual void handleSFMLEvent(sf::Event &event) {};
-
-
 
 
     };

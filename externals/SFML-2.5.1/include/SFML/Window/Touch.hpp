@@ -55,28 +55,28 @@ public:
     static bool isDown(unsigned int finger);
 
     ////////////////////////////////////////////////////////////
-    /// \brief Get the current position of a touch in desktop coordinates
+    /// \brief Get the current m_position of a touch in desktop coordinates
     ///
-    /// This function returns the current touch position
+    /// This function returns the current touch m_position
     /// in global (desktop) coordinates.
     ///
     /// \param finger Finger index
     ///
-    /// \return Current position of \a finger, or undefined if it's not down
+    /// \return Current m_position of \a finger, or undefined if it's not down
     ///
     ////////////////////////////////////////////////////////////
     static Vector2i getPosition(unsigned int finger);
 
     ////////////////////////////////////////////////////////////
-    /// \brief Get the current position of a touch in window coordinates
+    /// \brief Get the current m_position of a touch in window coordinates
     ///
-    /// This function returns the current touch position
+    /// This function returns the current touch m_position
     /// relative to the given window.
     ///
     /// \param finger Finger index
     /// \param relativeTo Reference window
     ///
-    /// \return Current position of \a finger, or undefined if it's not down
+    /// \return Current m_position of \a finger, or undefined if it's not down
     ///
     ////////////////////////////////////////////////////////////
     static Vector2i getPosition(unsigned int finger, const Window& relativeTo);
@@ -106,7 +106,7 @@ public:
 /// happen when your window is out of focus and no event is triggered.
 ///
 /// The getPosition function can be used to retrieve the current
-/// position of a touch. There are two versions: one that operates
+/// m_position of a touch. There are two versions: one that operates
 /// in global coordinates (relative to the desktop) and one that
 /// operates in window coordinates (relative to a specific window).
 ///
@@ -125,10 +125,10 @@ public:
 ///     // touch 0 is down
 /// }
 ///
-/// // get global position of touch 1
+/// // get global m_position of touch 1
 /// sf::Vector2i globalPos = sf::Touch::getPosition(1);
 ///
-/// // get position of touch 1 relative to a window
+/// // get m_position of touch 1 relative to a window
 /// sf::Vector2i relativePos = sf::Touch::getPosition(1, window);
 /// \endcode
 ///

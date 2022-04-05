@@ -239,7 +239,7 @@ public:
     bool waitEvent(Event& event);
 
     ////////////////////////////////////////////////////////////
-    /// \brief Get the position of the window
+    /// \brief Get the m_position of the window
     ///
     /// \return Position of the window, in pixels
     ///
@@ -249,13 +249,13 @@ public:
     Vector2i getPosition() const;
 
     ////////////////////////////////////////////////////////////
-    /// \brief Change the position of the window on screen
+    /// \brief Change the m_position of the window on screen
     ///
     /// This function only works for top-level windows
     /// (i.e. it will be ignored for windows created from
     /// the handle of a child window/control).
     ///
-    /// \param position New position, in pixels
+    /// \param position New m_position, in pixels
     ///
     /// \see getPosition
     ///

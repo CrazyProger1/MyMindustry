@@ -131,10 +131,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ae6563ce2c243ae2160eea8a354199f4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of += operator to append an UTF-32 string.  <a href="#ae6563ce2c243ae2160eea8a354199f4e">More...</a><br /></td></tr>
 <tr class="separator:ae6563ce2c243ae2160eea8a354199f4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a035c1b585a0ebed81e773ecafed57926"><td class="memItemLeft" align="right" valign="top">Uint32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1String.html#a035c1b585a0ebed81e773ecafed57926">operator[]</a> (std::size_t index) const</td></tr>
-<tr class="memdesc:a035c1b585a0ebed81e773ecafed57926"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of [] operator to access a character by its position.  <a href="#a035c1b585a0ebed81e773ecafed57926">More...</a><br /></td></tr>
+<tr class="memdesc:a035c1b585a0ebed81e773ecafed57926"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of [] operator to access a character by its m_position.  <a href="#a035c1b585a0ebed81e773ecafed57926">More...</a><br /></td></tr>
 <tr class="separator:a035c1b585a0ebed81e773ecafed57926"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abc989da7f4fb873ab29188d40772ab24"><td class="memItemLeft" align="right" valign="top">Uint32 &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1String.html#abc989da7f4fb873ab29188d40772ab24">operator[]</a> (std::size_t index)</td></tr>
-<tr class="memdesc:abc989da7f4fb873ab29188d40772ab24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of [] operator to access a character by its position.  <a href="#abc989da7f4fb873ab29188d40772ab24">More...</a><br /></td></tr>
+<tr class="memdesc:abc989da7f4fb873ab29188d40772ab24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload of [] operator to access a character by its m_position.  <a href="#abc989da7f4fb873ab29188d40772ab24">More...</a><br /></td></tr>
 <tr class="separator:abc989da7f4fb873ab29188d40772ab24"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a391c1b4950cbf3d3f8040cea73af2969"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1String.html#a391c1b4950cbf3d3f8040cea73af2969">clear</a> ()</td></tr>
 <tr class="memdesc:a391c1b4950cbf3d3f8040cea73af2969"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear the string.  <a href="#a391c1b4950cbf3d3f8040cea73af2969">More...</a><br /></td></tr>
@@ -145,22 +145,22 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2ba26cb6945d2bbb210b822f222aa7f6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1String.html#a2ba26cb6945d2bbb210b822f222aa7f6">isEmpty</a> () const</td></tr>
 <tr class="memdesc:a2ba26cb6945d2bbb210b822f222aa7f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether the string is empty or not.  <a href="#a2ba26cb6945d2bbb210b822f222aa7f6">More...</a><br /></td></tr>
 <tr class="separator:a2ba26cb6945d2bbb210b822f222aa7f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa78a0a46b3fbe200a4ccdedc326eb93"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1String.html#aaa78a0a46b3fbe200a4ccdedc326eb93">erase</a> (std::size_t position, std::size_t count=1)</td></tr>
+<tr class="memitem:aaa78a0a46b3fbe200a4ccdedc326eb93"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1String.html#aaa78a0a46b3fbe200a4ccdedc326eb93">erase</a> (std::size_t m_position, std::size_t count=1)</td></tr>
 <tr class="memdesc:aaa78a0a46b3fbe200a4ccdedc326eb93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Erase one or more characters from the string.  <a href="#aaa78a0a46b3fbe200a4ccdedc326eb93">More...</a><br /></td></tr>
 <tr class="separator:aaa78a0a46b3fbe200a4ccdedc326eb93"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0b1455deabf07af13ee79812e05fa02"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1String.html#ad0b1455deabf07af13ee79812e05fa02">insert</a> (std::size_t position, const <a class="el" href="classsf_1_1String.html">String</a> &amp;str)</td></tr>
+<tr class="memitem:ad0b1455deabf07af13ee79812e05fa02"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1String.html#ad0b1455deabf07af13ee79812e05fa02">insert</a> (std::size_t m_position, const <a class="el" href="classsf_1_1String.html">String</a> &amp;str)</td></tr>
 <tr class="memdesc:ad0b1455deabf07af13ee79812e05fa02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insert one or more characters into the string.  <a href="#ad0b1455deabf07af13ee79812e05fa02">More...</a><br /></td></tr>
 <tr class="separator:ad0b1455deabf07af13ee79812e05fa02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa189ec8656854106ab8d2e935fd9cbcc"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1String.html#aa189ec8656854106ab8d2e935fd9cbcc">find</a> (const <a class="el" href="classsf_1_1String.html">String</a> &amp;str, std::size_t start=0) const</td></tr>
 <tr class="memdesc:aa189ec8656854106ab8d2e935fd9cbcc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find a sequence of one or more characters in the string.  <a href="#aa189ec8656854106ab8d2e935fd9cbcc">More...</a><br /></td></tr>
 <tr class="separator:aa189ec8656854106ab8d2e935fd9cbcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad460e628c287b0fa88deba2eb0b6744b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1String.html#ad460e628c287b0fa88deba2eb0b6744b">replace</a> (std::size_t position, std::size_t length, const <a class="el" href="classsf_1_1String.html">String</a> &amp;replaceWith)</td></tr>
+<tr class="memitem:ad460e628c287b0fa88deba2eb0b6744b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1String.html#ad460e628c287b0fa88deba2eb0b6744b">replace</a> (std::size_t m_position, std::size_t length, const <a class="el" href="classsf_1_1String.html">String</a> &amp;replaceWith)</td></tr>
 <tr class="memdesc:ad460e628c287b0fa88deba2eb0b6744b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Replace a substring with another string.  <a href="#ad460e628c287b0fa88deba2eb0b6744b">More...</a><br /></td></tr>
 <tr class="separator:ad460e628c287b0fa88deba2eb0b6744b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82bbfee2bf23c641e5361ad505c07921"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1String.html#a82bbfee2bf23c641e5361ad505c07921">replace</a> (const <a class="el" href="classsf_1_1String.html">String</a> &amp;searchFor, const <a class="el" href="classsf_1_1String.html">String</a> &amp;replaceWith)</td></tr>
 <tr class="memdesc:a82bbfee2bf23c641e5361ad505c07921"><td class="mdescLeft">&#160;</td><td class="mdescRight">Replace all occurrences of a substring with a replacement string.  <a href="#a82bbfee2bf23c641e5361ad505c07921">More...</a><br /></td></tr>
 <tr class="separator:a82bbfee2bf23c641e5361ad505c07921"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a492645e00032455e6d92ff0e992654ce"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsf_1_1String.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1String.html#a492645e00032455e6d92ff0e992654ce">substring</a> (std::size_t position, std::size_t length=<a class="el" href="classsf_1_1String.html#abaadecaf12a6b41c54d725c75fd28527">InvalidPos</a>) const</td></tr>
+<tr class="memitem:a492645e00032455e6d92ff0e992654ce"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classsf_1_1String.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1String.html#a492645e00032455e6d92ff0e992654ce">substring</a> (std::size_t m_position, std::size_t length=<a class="el" href="classsf_1_1String.html#abaadecaf12a6b41c54d725c75fd28527">InvalidPos</a>) const</td></tr>
 <tr class="memdesc:a492645e00032455e6d92ff0e992654ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a part of the string.  <a href="#a492645e00032455e6d92ff0e992654ce">More...</a><br /></td></tr>
 <tr class="separator:a492645e00032455e6d92ff0e992654ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b38001f1a6b7bdf35bb180da5391929"><td class="memItemLeft" align="right" valign="top">const Uint32 *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1String.html#a0b38001f1a6b7bdf35bb180da5391929">getData</a> () const</td></tr>
@@ -197,7 +197,7 @@ Static Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:abaadecaf12a6b41c54d725c75fd28527"><td class="memItemLeft" align="right" valign="top">static const std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsf_1_1String.html#abaadecaf12a6b41c54d725c75fd28527">InvalidPos</a></td></tr>
-<tr class="memdesc:abaadecaf12a6b41c54d725c75fd28527"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents an invalid position in the string.  <a href="#abaadecaf12a6b41c54d725c75fd28527">More...</a><br /></td></tr>
+<tr class="memdesc:abaadecaf12a6b41c54d725c75fd28527"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents an invalid m_position in the string.  <a href="#abaadecaf12a6b41c54d725c75fd28527">More...</a><br /></td></tr>
 <tr class="separator:abaadecaf12a6b41c54d725c75fd28527"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
@@ -678,7 +678,7 @@ Related Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Return an iterator to the end of the string. </p>
-<p>The end iterator refers to 1 position past the last character; thus it represents an invalid character and should never be accessed.</p>
+<p>The end iterator refers to 1 m_position past the last character; thus it represents an invalid character and should never be accessed.</p>
 <dl class="section return"><dt>Returns</dt><dd>Read-write iterator to the end of the string characters</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1String.html#a8ec30ddc08e3a6bd11c99aed782f6dfe" title="Return an iterator to the beginning of the string. ">begin</a> </dd></dl>
 
@@ -700,7 +700,7 @@ Related Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Return an iterator to the end of the string. </p>
-<p>The end iterator refers to 1 position past the last character; thus it represents an invalid character and should never be accessed.</p>
+<p>The end iterator refers to 1 m_position past the last character; thus it represents an invalid character and should never be accessed.</p>
 <dl class="section return"><dt>Returns</dt><dd>Read-only iterator to the end of the string characters</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classsf_1_1String.html#a8ec30ddc08e3a6bd11c99aed782f6dfe" title="Return an iterator to the beginning of the string. ">begin</a> </dd></dl>
 
@@ -716,7 +716,7 @@ Related Functions</h2></td></tr>
           <td class="memname">void sf::String::erase </td>
           <td>(</td>
           <td class="paramtype">std::size_t&#160;</td>
-          <td class="paramname"><em>position</em>, </td>
+          <td class="paramname"><em>m_position</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -733,10 +733,10 @@ Related Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Erase one or more characters from the string. </p>
-<p>This function removes a sequence of <em>count</em> characters starting from <em>position</em>.</p>
+<p>This function removes a sequence of <em>count</em> characters starting from <em>m_position</em>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">position</td><td>Position of the first character to erase </td></tr>
+    <tr><td class="paramname">m_position</td><td>Position of the first character to erase </td></tr>
     <tr><td class="paramname">count</td><td>Number of characters to erase </td></tr>
   </table>
   </dd>
@@ -779,7 +779,7 @@ Related Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Position of <em>str</em> in the string, or <a class="el" href="classsf_1_1String.html#abaadecaf12a6b41c54d725c75fd28527" title="Represents an invalid position in the string. ">String::InvalidPos</a> if not found </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Position of <em>str</em> in the string, or <a class="el" href="classsf_1_1String.html#abaadecaf12a6b41c54d725c75fd28527" title="Represents an invalid m_position in the string. ">String::InvalidPos</a> if not found </dd></dl>
 
 </div>
 </div>
@@ -983,7 +983,7 @@ template&lt;typename T &gt; </div>
           <td class="memname">void sf::String::insert </td>
           <td>(</td>
           <td class="paramtype">std::size_t&#160;</td>
-          <td class="paramname"><em>position</em>, </td>
+          <td class="paramname"><em>m_position</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1000,10 +1000,10 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p>Insert one or more characters into the string. </p>
-<p>This function inserts the characters of <em>str</em> into the string, starting from <em>position</em>.</p>
+<p>This function inserts the characters of <em>str</em> into the string, starting from <em>m_position</em>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">position</td><td>Position of insertion </td></tr>
+    <tr><td class="paramname">m_position</td><td>Position of insertion </td></tr>
     <tr><td class="paramname">str</td><td>Characters to insert </td></tr>
   </table>
   </dd>
@@ -1146,7 +1146,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Overload of [] operator to access a character by its position. </p>
+<p>Overload of [] operator to access a character by its m_position. </p>
 <p>This function provides read-only access to characters. Note: the behavior is undefined if <em>index</em> is out of range.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1154,7 +1154,7 @@ template&lt;typename T &gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Character at position <em>index</em> </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Character at m_position <em>index</em> </dd></dl>
 
 </div>
 </div>
@@ -1174,7 +1174,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Overload of [] operator to access a character by its position. </p>
+<p>Overload of [] operator to access a character by its m_position. </p>
 <p>This function provides read and write access to characters. Note: the behavior is undefined if <em>index</em> is out of range.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1182,7 +1182,7 @@ template&lt;typename T &gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Reference to the character at position <em>index</em> </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Reference to the character at m_position <em>index</em> </dd></dl>
 
 </div>
 </div>
@@ -1196,7 +1196,7 @@ template&lt;typename T &gt; </div>
           <td class="memname">void sf::String::replace </td>
           <td>(</td>
           <td class="paramtype">std::size_t&#160;</td>
-          <td class="paramname"><em>position</em>, </td>
+          <td class="paramname"><em>m_position</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1219,10 +1219,10 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p>Replace a substring with another string. </p>
-<p>This function replaces the substring that starts at index <em>position</em> and spans <em>length</em> characters with the string <em>replaceWith</em>.</p>
+<p>This function replaces the substring that starts at index <em>m_position</em> and spans <em>length</em> characters with the string <em>replaceWith</em>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">position</td><td>Index of the first character to be replaced </td></tr>
+    <tr><td class="paramname">m_position</td><td>Index of the first character to be replaced </td></tr>
     <tr><td class="paramname">length</td><td>Number of characters to replace. You can pass InvalidPos to replace all characters until the end of the string. </td></tr>
     <tr><td class="paramname">replaceWith</td><td><a class="el" href="classsf_1_1String.html" title="Utility string class that automatically handles conversions between types and encodings. ">String</a> that replaces the given substring. </td></tr>
   </table>
@@ -1279,7 +1279,7 @@ template&lt;typename T &gt; </div>
           <td class="memname"><a class="el" href="classsf_1_1String.html">String</a> sf::String::substring </td>
           <td>(</td>
           <td class="paramtype">std::size_t&#160;</td>
-          <td class="paramname"><em>position</em>, </td>
+          <td class="paramname"><em>m_position</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1296,10 +1296,10 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p>Return a part of the string. </p>
-<p>This function returns the substring that starts at index <em>position</em> and spans <em>length</em> characters.</p>
+<p>This function returns the substring that starts at index <em>m_position</em> and spans <em>length</em> characters.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">position</td><td>Index of the first character </td></tr>
+    <tr><td class="paramname">m_position</td><td>Index of the first character </td></tr>
     <tr><td class="paramname">length</td><td>Number of characters to include in the substring (if the string is shorter, as many characters as possible are included). <a class="el" href="classsf_1_1String.html#abaadecaf12a6b41c54d725c75fd28527">InvalidPos</a> can be used to include all characters until the end of the string.</td></tr>
   </table>
   </dd>
@@ -1767,7 +1767,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Represents an invalid position in the string. </p>
+<p>Represents an invalid m_position in the string. </p>
 
 <p class="definition">Definition at line <a class="el" href="String_8hpp_source.html#l00058">58</a> of file <a class="el" href="String_8hpp_source.html">String.hpp</a>.</p>
 

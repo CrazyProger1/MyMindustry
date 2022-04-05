@@ -30,7 +30,8 @@ namespace engine {
 
         void handleSFMLEvent(sf::Event &event);
 
-        void attachEntity(Entity *entity);
+        int attachEntity(Entity *entity);
+
 
 
         virtual void onInitializeScene() {};

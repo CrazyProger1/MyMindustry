@@ -55,7 +55,7 @@ public:
     ////////////////////////////////////////////////////////////
     // Static member data
     ////////////////////////////////////////////////////////////
-    static const std::size_t InvalidPos; ///< Represents an invalid position in the string
+    static const std::size_t InvalidPos; ///< Represents an invalid m_position in the string
 
     ////////////////////////////////////////////////////////////
     /// \brief Default constructor
@@ -319,27 +319,27 @@ public:
     String& operator +=(const String& right);
 
     ////////////////////////////////////////////////////////////
-    /// \brief Overload of [] operator to access a character by its position
+    /// \brief Overload of [] operator to access a character by its m_position
     ///
     /// This function provides read-only access to characters.
     /// Note: the behavior is undefined if \a index is out of range.
     ///
     /// \param index Index of the character to get
     ///
-    /// \return Character at position \a index
+    /// \return Character at m_position \a index
     ///
     ////////////////////////////////////////////////////////////
     Uint32 operator [](std::size_t index) const;
 
     ////////////////////////////////////////////////////////////
-    /// \brief Overload of [] operator to access a character by its position
+    /// \brief Overload of [] operator to access a character by its m_position
     ///
     /// This function provides read and write access to characters.
     /// Note: the behavior is undefined if \a index is out of range.
     ///
     /// \param index Index of the character to get
     ///
-    /// \return Reference to the character at position \a index
+    /// \return Reference to the character at m_position \a index
     ///
     ////////////////////////////////////////////////////////////
     Uint32& operator [](std::size_t index);
@@ -378,7 +378,7 @@ public:
     /// \brief Erase one or more characters from the string
     ///
     /// This function removes a sequence of \a count characters
-    /// starting from \a position.
+    /// starting from \a m_position.
     ///
     /// \param position Position of the first character to erase
     /// \param count    Number of characters to erase
@@ -390,7 +390,7 @@ public:
     /// \brief Insert one or more characters into the string
     ///
     /// This function inserts the characters of \a str
-    /// into the string, starting from \a position.
+    /// into the string, starting from \a m_position.
     ///
     /// \param position Position of insertion
     /// \param str      Characters to insert
@@ -415,7 +415,7 @@ public:
     ////////////////////////////////////////////////////////////
     /// \brief Replace a substring with another string
     ///
-    /// This function replaces the substring that starts at index \a position
+    /// This function replaces the substring that starts at index \a m_position
     /// and spans \a length characters with the string \a replaceWith.
     ///
     /// \param position    Index of the first character to be replaced
@@ -441,7 +441,7 @@ public:
     ////////////////////////////////////////////////////////////
     /// \brief Return a part of the string
     ///
-    /// This function returns the substring that starts at index \a position
+    /// This function returns the substring that starts at index \a m_position
     /// and spans \a length characters.
     ///
     /// \param position Index of the first character
@@ -491,7 +491,7 @@ public:
     ////////////////////////////////////////////////////////////
     /// \brief Return an iterator to the end of the string
     ///
-    /// The end iterator refers to 1 position past the last character;
+    /// The end iterator refers to 1 m_position past the last character;
     /// thus it represents an invalid character and should never be
     /// accessed.
     ///
@@ -505,7 +505,7 @@ public:
     ////////////////////////////////////////////////////////////
     /// \brief Return an iterator to the end of the string
     ///
-    /// The end iterator refers to 1 position past the last character;
+    /// The end iterator refers to 1 m_position past the last character;
     /// thus it represents an invalid character and should never be
     /// accessed.
     ///

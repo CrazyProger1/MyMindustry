@@ -93,16 +93,25 @@
 		<Unit filename="D:/Programming/MyGames/MyMindustry/code/engine/include/GUI/Button.h">
 			<Option target="MyMindustry"/>
 		</Unit>
-		<Unit filename="D:/Programming/MyGames/MyMindustry/code/engine/include/GUI/Text.cpp">
+		<Unit filename="D:/Programming/MyGames/MyMindustry/code/engine/include/GUI/ButtonStyle.h">
+			<Option target="MyMindustry"/>
+		</Unit>
+		<Unit filename="D:/Programming/MyGames/MyMindustry/code/engine/include/GUI/Image.h">
 			<Option target="MyMindustry"/>
 		</Unit>
 		<Unit filename="D:/Programming/MyGames/MyMindustry/code/engine/include/GUI/Text.h">
+			<Option target="MyMindustry"/>
+		</Unit>
+		<Unit filename="D:/Programming/MyGames/MyMindustry/code/engine/include/GUI/TextStyle.h">
 			<Option target="MyMindustry"/>
 		</Unit>
 		<Unit filename="D:/Programming/MyGames/MyMindustry/code/engine/include/GameCore.h">
 			<Option target="MyMindustry"/>
 		</Unit>
 		<Unit filename="D:/Programming/MyGames/MyMindustry/code/engine/include/Scene.h">
+			<Option target="MyMindustry"/>
+		</Unit>
+		<Unit filename="D:/Programming/MyGames/MyMindustry/code/engine/include/managers/AssetsManager.h">
 			<Option target="MyMindustry"/>
 		</Unit>
 		<Unit filename="D:/Programming/MyGames/MyMindustry/code/engine/include/managers/EntitiesManager.h">
@@ -126,10 +135,25 @@
 		<Unit filename="D:/Programming/MyGames/MyMindustry/code/engine/srcs/GUI/Button.cpp">
 			<Option target="MyMindustry"/>
 		</Unit>
+		<Unit filename="D:/Programming/MyGames/MyMindustry/code/engine/srcs/GUI/ButtonStyle.cpp">
+			<Option target="MyMindustry"/>
+		</Unit>
+		<Unit filename="D:/Programming/MyGames/MyMindustry/code/engine/srcs/GUI/Image.cpp">
+			<Option target="MyMindustry"/>
+		</Unit>
+		<Unit filename="D:/Programming/MyGames/MyMindustry/code/engine/srcs/GUI/Text.cpp">
+			<Option target="MyMindustry"/>
+		</Unit>
+		<Unit filename="D:/Programming/MyGames/MyMindustry/code/engine/srcs/GUI/TextStyle.cpp">
+			<Option target="MyMindustry"/>
+		</Unit>
 		<Unit filename="D:/Programming/MyGames/MyMindustry/code/engine/srcs/GameCore.cpp">
 			<Option target="MyMindustry"/>
 		</Unit>
 		<Unit filename="D:/Programming/MyGames/MyMindustry/code/engine/srcs/Scene.cpp">
+			<Option target="MyMindustry"/>
+		</Unit>
+		<Unit filename="D:/Programming/MyGames/MyMindustry/code/engine/srcs/managers/AssetsManager.cpp">
 			<Option target="MyMindustry"/>
 		</Unit>
 		<Unit filename="D:/Programming/MyGames/MyMindustry/code/engine/srcs/managers/EntitiesManager.cpp">
@@ -145,6 +169,9 @@
 			<Option target="MyMindustry"/>
 		</Unit>
 		<Unit filename="D:/Programming/MyGames/MyMindustry/code/game/game.h">
+			<Option target="MyMindustry"/>
+		</Unit>
+		<Unit filename="D:/Programming/MyGames/MyMindustry/code/game/scenes.h">
 			<Option target="MyMindustry"/>
 		</Unit>
 		<Unit filename="D:/Programming/MyGames/MyMindustry/code/main.cpp">

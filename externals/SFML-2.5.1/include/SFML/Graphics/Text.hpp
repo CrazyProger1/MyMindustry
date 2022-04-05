@@ -368,13 +368,13 @@ public:
     float getOutlineThickness() const;
 
     ////////////////////////////////////////////////////////////
-    /// \brief Return the position of the \a index-th character
+    /// \brief Return the m_position of the \a index-th character
     ///
-    /// This function computes the visual position of a character
-    /// from its index in the string. The returned position is
+    /// This function computes the visual m_position of a character
+    /// from its index in the string. The returned m_position is
     /// in global coordinates (translation, rotation, scale and
     /// origin are applied).
-    /// If \a index is out of range, the position of the end of
+    /// If \a index is out of range, the m_position of the end of
     /// the string is returned.
     ///
     /// \param index Index of the character
@@ -465,13 +465,13 @@ private:
 /// some text with custom style and color on a render target.
 ///
 /// It inherits all the functions from sf::Transformable:
-/// position, rotation, scale, origin. It also adds text-specific
+/// m_position, rotation, scale, origin. It also adds text-specific
 /// properties such as the font to use, the character size,
 /// the font style (bold, italic, underlined and strike through), the
 /// text color, the outline thickness, the outline color, the character
 /// spacing, the line spacing and the text to display of course.
 /// It also provides convenience functions to calculate the
-/// graphical size of the text, or to get the global position
+/// graphical size of the text, or to get the global m_position
 /// of a given character.
 ///
 /// sf::Text works in combination with the sf::Font class, which

@@ -67,7 +67,7 @@ public:
     Rect(T rectLeft, T rectTop, T rectWidth, T rectHeight);
 
     ////////////////////////////////////////////////////////////
-    /// \brief Construct the rectangle from position and size
+    /// \brief Construct the rectangle from m_position and size
     ///
     /// Be careful, the last parameter is the size,
     /// not the bottom-right corner!
@@ -237,9 +237,9 @@ typedef Rect<float> FloatRect;
 /// sf::IntRect r1(0, 0, 20, 5);
 ///
 /// // Define another rectangle, located at (4, 2) with a size of 18x10
-/// sf::Vector2i position(4, 2);
+/// sf::Vector2i m_position(4, 2);
 /// sf::Vector2i size(18, 10);
-/// sf::IntRect r2(position, size);
+/// sf::IntRect r2(m_position, size);
 ///
 /// // Test intersections with the point (3, 1)
 /// bool b1 = r1.contains(3, 1); // true

@@ -199,7 +199,7 @@ public:
     /// \brief Get a point of the shape
     ///
     /// The returned point is in local coordinates, that is,
-    /// the shape's transforms (position, rotation, scale) are
+    /// the shape's transforms (m_position, rotation, scale) are
     /// not taken into account.
     /// The result is undefined if \a index is out of the valid range.
     ///
@@ -289,7 +289,7 @@ private:
     void updateTexCoords();
 
     ////////////////////////////////////////////////////////////
-    /// \brief Update the outline vertices' position
+    /// \brief Update the outline vertices' m_position
     ///
     ////////////////////////////////////////////////////////////
     void updateOutline();
