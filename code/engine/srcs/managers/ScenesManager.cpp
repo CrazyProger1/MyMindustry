@@ -32,13 +32,14 @@ namespace engine {
         m_pLoggingManager->logInfo("ScenesManager initialized");
     }
 
-    void ScenesManager::addScene(int id, Scene *scene) {
+    void ScenesManager::addScene(int id, const ScenePtr &scene) {
         m_mpScenes.emplace(id, scene);
 
         m_pLoggingManager->logInfo("Added new scene (id = " + std::to_string(id) + ")");
 
         if (m_pActiveScene == nullptr)
             setActiveScene(id);
+
     }
 
     void ScenesManager::updateScene() {

@@ -136,9 +136,9 @@ public:
 /// \li the shader: what custom effect is applied to the object
 ///
 /// High-level objects such as sprites or text force some of
-/// these states when they are drawn. For example, a sprite
+/// these states when they are drawn. For example, a m_pSprite
 /// will set its own texture, so that you don't have to care
-/// about it when drawing the sprite.
+/// about it when drawing the m_pSprite.
 ///
 /// The transform is a special case: sprites, texts and shapes
 /// (and it's a good idea to do it with your own drawable classes
@@ -150,7 +150,7 @@ public:
 /// directly without defining render states explicitly -- the
 /// default set of states is ok in most cases.
 /// \code
-/// window.draw(sprite);
+/// window.draw(m_pSprite);
 /// \endcode
 ///
 /// If you want to use a single specific render state,
@@ -158,7 +158,7 @@ public:
 /// function: sf::RenderStates has an implicit one-argument
 /// constructor for each state.
 /// \code
-/// window.draw(sprite, shader);
+/// window.draw(m_pSprite, shader);
 /// \endcode
 ///
 /// When you're inside the Draw function of a drawable
@@ -166,7 +166,7 @@ public:
 /// either pass the render states unmodified, or change
 /// some of them.
 /// For example, a transformable object will combine the
-/// current transform with its own transform. A sprite will
+/// current transform with its own transform. A m_pSprite will
 /// set its texture. Etc.
 ///
 /// \see sf::RenderTarget, sf::Drawable

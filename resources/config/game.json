@@ -1,0 +1,5 @@
+{
+  "block_size": 60,
+  "control": "WASD",
+  "sidebar_size": [256, 384]
+}

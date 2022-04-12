@@ -344,6 +344,54 @@ code/engine/srcs/managers/AssetsManager.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyMindustry.dir\build.make CMakeFiles/MyMindustry.dir/code/engine/srcs/managers/AssetsManager.cpp.s
 .PHONY : code/engine/srcs/managers/AssetsManager.cpp.s
 
+code/engine/srcs/managers/CameraManager.obj: code/engine/srcs/managers/CameraManager.cpp.obj
+.PHONY : code/engine/srcs/managers/CameraManager.obj
+
+# target to build an object file
+code/engine/srcs/managers/CameraManager.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyMindustry.dir\build.make CMakeFiles/MyMindustry.dir/code/engine/srcs/managers/CameraManager.cpp.obj
+.PHONY : code/engine/srcs/managers/CameraManager.cpp.obj
+
+code/engine/srcs/managers/CameraManager.i: code/engine/srcs/managers/CameraManager.cpp.i
+.PHONY : code/engine/srcs/managers/CameraManager.i
+
+# target to preprocess a source file
+code/engine/srcs/managers/CameraManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyMindustry.dir\build.make CMakeFiles/MyMindustry.dir/code/engine/srcs/managers/CameraManager.cpp.i
+.PHONY : code/engine/srcs/managers/CameraManager.cpp.i
+
+code/engine/srcs/managers/CameraManager.s: code/engine/srcs/managers/CameraManager.cpp.s
+.PHONY : code/engine/srcs/managers/CameraManager.s
+
+# target to generate assembly for a file
+code/engine/srcs/managers/CameraManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyMindustry.dir\build.make CMakeFiles/MyMindustry.dir/code/engine/srcs/managers/CameraManager.cpp.s
+.PHONY : code/engine/srcs/managers/CameraManager.cpp.s
+
+code/engine/srcs/managers/ConfigManager.obj: code/engine/srcs/managers/ConfigManager.cpp.obj
+.PHONY : code/engine/srcs/managers/ConfigManager.obj
+
+# target to build an object file
+code/engine/srcs/managers/ConfigManager.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyMindustry.dir\build.make CMakeFiles/MyMindustry.dir/code/engine/srcs/managers/ConfigManager.cpp.obj
+.PHONY : code/engine/srcs/managers/ConfigManager.cpp.obj
+
+code/engine/srcs/managers/ConfigManager.i: code/engine/srcs/managers/ConfigManager.cpp.i
+.PHONY : code/engine/srcs/managers/ConfigManager.i
+
+# target to preprocess a source file
+code/engine/srcs/managers/ConfigManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyMindustry.dir\build.make CMakeFiles/MyMindustry.dir/code/engine/srcs/managers/ConfigManager.cpp.i
+.PHONY : code/engine/srcs/managers/ConfigManager.cpp.i
+
+code/engine/srcs/managers/ConfigManager.s: code/engine/srcs/managers/ConfigManager.cpp.s
+.PHONY : code/engine/srcs/managers/ConfigManager.s
+
+# target to generate assembly for a file
+code/engine/srcs/managers/ConfigManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyMindustry.dir\build.make CMakeFiles/MyMindustry.dir/code/engine/srcs/managers/ConfigManager.cpp.s
+.PHONY : code/engine/srcs/managers/ConfigManager.cpp.s
+
 code/engine/srcs/managers/EntitiesManager.obj: code/engine/srcs/managers/EntitiesManager.cpp.obj
 .PHONY : code/engine/srcs/managers/EntitiesManager.obj
 
@@ -500,6 +548,12 @@ help:
 	@echo ... code/engine/srcs/managers/AssetsManager.obj
 	@echo ... code/engine/srcs/managers/AssetsManager.i
 	@echo ... code/engine/srcs/managers/AssetsManager.s
+	@echo ... code/engine/srcs/managers/CameraManager.obj
+	@echo ... code/engine/srcs/managers/CameraManager.i
+	@echo ... code/engine/srcs/managers/CameraManager.s
+	@echo ... code/engine/srcs/managers/ConfigManager.obj
+	@echo ... code/engine/srcs/managers/ConfigManager.i
+	@echo ... code/engine/srcs/managers/ConfigManager.s
 	@echo ... code/engine/srcs/managers/EntitiesManager.obj
 	@echo ... code/engine/srcs/managers/EntitiesManager.i
 	@echo ... code/engine/srcs/managers/EntitiesManager.s

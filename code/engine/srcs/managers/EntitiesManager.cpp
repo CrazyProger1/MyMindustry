@@ -30,25 +30,32 @@ namespace engine {
     EntitiesManager::EntitiesManager() {
         m_pLoggingManager = LoggingManager::getInstance();
         m_pLoggingManager->logInfo("EntitiesManager initialized");
+        m_pCameraManager = CameraManager::getInstance();
 
 
     }
 
-    int EntitiesManager::attach(Entity *entity) {
+    int EntitiesManager::attach(const EntityPtr &entity) {
         m_iCurrentEntityId++;
-        m_mpEntities.insert(std::pair<int, Entity *>(m_iCurrentEntityId, entity));
+//        m_mpEntities.insert(std::pair<int, EntityPtr>(m_iCurrentEntityId, ent)); // entity
+        m_mpEntities.emplace(m_iCurrentEntityId, entity);
         return m_iCurrentEntityId;
     }
 
     void EntitiesManager::drawEntities(sf::RenderTarget &rt) {
         for (auto e: m_mpEntities)
-            e.second->draw(rt);
+            if (!e.second->isHidden())
+                e.second->draw(rt);
     }
 
     void EntitiesManager::updateEntities() {
 
-        for (auto e: m_mpEntities)
+        for (auto e: m_mpEntities) {
+            if (m_pCameraManager->isCameraShiftingNow() && e.second->isDependsOnCamera()) {
+                e.second->handleCameraShifting(m_pCameraManager->getCurrentTickShift());
+            }
             e.second->update();
+        }
 
 
     }
@@ -67,6 +74,9 @@ namespace engine {
     }
 
     void EntitiesManager::clear() {
+//        for (auto &m_mpEntity: m_mpEntities) {
+//            delete (m_mpEntity.second);
+//        }
         m_mpEntities.clear();
         m_iCurrentEntityId = 0;
     }

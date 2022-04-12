@@ -6,16 +6,21 @@
 #define MYMINDUSTRY_ENTITIESMANAGER_H
 
 #include <map>
+#include <memory>
 #include <SFML/Graphics.hpp>
 #include "LoggingManager.h"
 #include "../Entity.h"
+#include "CameraManager.h"
 
 namespace engine {
+    typedef std::shared_ptr<Entity> EntityPtr;
+
     class EntitiesManager {
     private:
         LoggingManager *m_pLoggingManager;
+        CameraManager *m_pCameraManager;
 
-        std::map<int, Entity *> m_mpEntities;
+        std::map<int, EntityPtr> m_mpEntities;
 
         int m_iCurrentEntityId = 0;
 
@@ -31,7 +36,7 @@ namespace engine {
 
         static bool deleteInstance();
 
-        int attach(Entity *entity);
+        int attach(const EntityPtr &entity);
 
         void initEntities();
 

@@ -5,6 +5,7 @@
 #ifndef MYMINDUSTRY_ENTITY_H
 #define MYMINDUSTRY_ENTITY_H
 
+#include <memory>
 #include <SFML/Graphics.hpp>
 #include "./types.h"
 
@@ -16,6 +17,9 @@ namespace engine {
 
         str m_sType = "entity";
 
+        bool m_bDependsOnCamera = false;
+
+        bool m_bIsHidden = false;
 
     public:
 
@@ -25,20 +29,30 @@ namespace engine {
 
         void setType(const str &type);
 
-        void setPosition(const sf::Vector2f &position);
+        virtual void setPosition(const sf::Vector2f &position);
 
-        void setPosition(float x, float y);
+        virtual void setPosition(float x, float y);
+
+        void setCameraDependent(bool dependsOnCameraView = true);
 
         str &getType();
 
         sf::Vector2f &getPosition();
 
 
+        [[nodiscard]] bool isDependsOnCamera() const;
+
+        [[nodiscard]] bool isHidden() const;
+
+        void hide();
+
+        void show();
+
         void init();
 
-        void move(const sf::Vector2f &offset);
+        virtual void move(const sf::Vector2f &offset);
 
-        void move(float offsetX, float offsetY);
+        virtual void move(float offsetX, float offsetY);
 
 
         virtual void initialize() {};
@@ -49,8 +63,11 @@ namespace engine {
 
         virtual void handleSFMLEvent(sf::Event &event) {};
 
+        virtual void handleCameraShifting(sf::Vector2f shift) {};
 
     };
+
+    typedef std::shared_ptr<Entity> EntityPtr;
 }
 
 

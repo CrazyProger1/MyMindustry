@@ -6,19 +6,21 @@
 #define MYMINDUSTRY_SCENESMANAGER_H
 
 #include <map>
+#include <memory>
 #include "LoggingManager.h"
 #include "../Scene.h"
 #include <SFML/Graphics.hpp>
 
 namespace engine {
-    class ScenesManager {
+    typedef std::shared_ptr<Scene> ScenePtr;
 
+    class ScenesManager {
     private:
         LoggingManager *m_pLoggingManager;
 
-        Scene *m_pActiveScene = nullptr;
+        ScenePtr m_pActiveScene = nullptr;
 
-        std::map<int, Scene *> m_mpScenes;
+        std::map<int, ScenePtr> m_mpScenes;
 
     protected:
         static ScenesManager *s_pSelf;
@@ -34,7 +36,7 @@ namespace engine {
 
         void setActiveScene(int id);
 
-        void addScene(int id, Scene *scene);
+        void addScene(int id, const ScenePtr& scene);
 
         void updateScene();
 

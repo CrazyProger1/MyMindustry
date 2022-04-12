@@ -16,6 +16,8 @@ namespace engine {
         m_pEntitiesManager = EntitiesManager::getInstance();
         m_pMemoryManager = MemoryManager::getInstance();
         m_pAssetsManager = AssetsManager::getInstance();
+        m_pCameraManager = CameraManager::getInstance();
+        m_pConfigManager = ConfigManager::getInstance();
     };
 
 
@@ -35,15 +37,27 @@ namespace engine {
         m_pScenesManager->setActiveScene(id);
     }
 
-    void GameCore::addScene(int id, Scene *scene) {
+    void GameCore::addScene(int id, const ScenePtr &scene) {
         m_pScenesManager->addScene(id, scene);
 
     }
 
     void GameCore::run() {
+        std::chrono::high_resolution_clock::time_point start;
+        std::chrono::high_resolution_clock::time_point end;
+        float fps;
+
         m_pLoggingManager->logInfo("Mainloop ran");
-        while (m_pMainWindow->isOpen())
+        while (m_pMainWindow->isOpen()) {
+            start = std::chrono::high_resolution_clock::now();
+            // window.draw, etc.
             tick();
+            end = std::chrono::high_resolution_clock::now();
+
+            fps = (float) 1e9 / (float) std::chrono::duration_cast<std::chrono::nanoseconds>(end - start).count();
+//            std::cout << fps << std::endl;
+        }
+
 
     }
 

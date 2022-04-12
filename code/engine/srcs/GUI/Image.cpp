@@ -15,10 +15,16 @@ namespace engine {
         m_pLoggingManager = LoggingManager::getInstance();
     }
 
+    Image::Image(const sf::Texture &texture) {
+        m_texture = texture;
+        m_bTextureIsSet = true;
+        m_pLoggingManager = LoggingManager::getInstance();
+    }
+
     void Image::initialize() {
         setType("image");
 
-        if (!m_texture.loadFromFile(m_sImagePath)) {
+        if (!m_bTextureIsSet && !m_texture.loadFromFile(m_sImagePath)) {
             m_pLoggingManager->logError("Unable to open file (" + m_sImagePath + ")");
 
         }
@@ -61,6 +67,13 @@ namespace engine {
         m_sprite.setScale(factorX, factorY);
         initialize();
     }
+
+    void Image::setTexture(const sf::Texture &texture) {
+        m_texture = texture;
+        m_bTextureIsSet = true;
+        initialize();
+    }
+
 
     sf::Vector2f Image::getSize() {
         return m_size;

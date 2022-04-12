@@ -10,6 +10,8 @@
 #include "managers/ScenesManager.h"
 #include "managers/MemoryManager.h"
 #include "managers/AssetsManager.h"
+#include "managers/CameraManager.h"
+#include "managers/ConfigManager.h"
 
 namespace engine {
     class GameCore {
@@ -20,6 +22,8 @@ namespace engine {
         EntitiesManager *m_pEntitiesManager;
         MemoryManager *m_pMemoryManager;
         AssetsManager *m_pAssetsManager;
+        CameraManager *m_pCameraManager;
+        ConfigManager *m_pConfigManager;
 
 
         bool m_bDebug = false;
@@ -37,7 +41,7 @@ namespace engine {
 
         void setActiveScene(int id);
 
-        void addScene(int id, Scene *scene);
+        void addScene(int id, const ScenePtr &scene);
 
         void run();
 

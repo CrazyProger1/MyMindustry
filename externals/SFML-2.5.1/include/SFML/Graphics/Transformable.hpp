@@ -359,15 +359,15 @@ private:
 /// In addition to the m_position, rotation and scale, sf::Transformable
 /// provides an "origin" component, which represents the local origin
 /// of the three other components. Let's take an example with a 10x10
-/// pixels sprite. By default, the sprite is positioned/rotated/scaled
+/// pixels m_pSprite. By default, the m_pSprite is positioned/rotated/scaled
 /// relatively to its top-left corner, because it is the local point
-/// (0, 0). But if we change the origin to be (5, 5), the sprite will
+/// (0, 0). But if we change the origin to be (5, 5), the m_pSprite will
 /// be positioned/rotated/scaled around its center instead. And if
 /// we set the origin to (10, 10), it will be transformed around its
 /// bottom-right corner.
 ///
 /// To keep the sf::Transformable class simple, there's only one
-/// origin for all the components. You cannot m_position the sprite
+/// origin for all the components. You cannot m_position the m_pSprite
 /// relatively to its top-left corner while rotating it around its
 /// center, for example. To do such things, use sf::Transform directly.
 ///

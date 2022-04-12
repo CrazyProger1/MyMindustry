@@ -17,6 +17,8 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "D:/Programming/MyGames/MyMindustry/code/engine/srcs/GameCore.cpp" "D:/Programming/MyGames/MyMindustry/cmake-build-debug/CMakeFiles/MyMindustry.dir/code/engine/srcs/GameCore.cpp.obj"
   "D:/Programming/MyGames/MyMindustry/code/engine/srcs/Scene.cpp" "D:/Programming/MyGames/MyMindustry/cmake-build-debug/CMakeFiles/MyMindustry.dir/code/engine/srcs/Scene.cpp.obj"
   "D:/Programming/MyGames/MyMindustry/code/engine/srcs/managers/AssetsManager.cpp" "D:/Programming/MyGames/MyMindustry/cmake-build-debug/CMakeFiles/MyMindustry.dir/code/engine/srcs/managers/AssetsManager.cpp.obj"
+  "D:/Programming/MyGames/MyMindustry/code/engine/srcs/managers/CameraManager.cpp" "D:/Programming/MyGames/MyMindustry/cmake-build-debug/CMakeFiles/MyMindustry.dir/code/engine/srcs/managers/CameraManager.cpp.obj"
+  "D:/Programming/MyGames/MyMindustry/code/engine/srcs/managers/ConfigManager.cpp" "D:/Programming/MyGames/MyMindustry/cmake-build-debug/CMakeFiles/MyMindustry.dir/code/engine/srcs/managers/ConfigManager.cpp.obj"
   "D:/Programming/MyGames/MyMindustry/code/engine/srcs/managers/EntitiesManager.cpp" "D:/Programming/MyGames/MyMindustry/cmake-build-debug/CMakeFiles/MyMindustry.dir/code/engine/srcs/managers/EntitiesManager.cpp.obj"
   "D:/Programming/MyGames/MyMindustry/code/engine/srcs/managers/LoggingManager.cpp" "D:/Programming/MyGames/MyMindustry/cmake-build-debug/CMakeFiles/MyMindustry.dir/code/engine/srcs/managers/LoggingManager.cpp.obj"
   "D:/Programming/MyGames/MyMindustry/code/engine/srcs/managers/MemoryManager.cpp" "D:/Programming/MyGames/MyMindustry/cmake-build-debug/CMakeFiles/MyMindustry.dir/code/engine/srcs/managers/MemoryManager.cpp.obj"

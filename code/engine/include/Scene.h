@@ -8,13 +8,16 @@
 #include <SFML/Graphics.hpp>
 
 #include "managers/EntitiesManager.h"
-
+#include "managers/AssetsManager.h"
+#include "managers/CameraManager.h"
 
 namespace engine {
     class Scene {
     private:
         EntitiesManager *m_pEntitiesManager;
         LoggingManager *m_pLoggingManager;
+        AssetsManager *m_pAssetsManager;
+        CameraManager *m_pCameraManager;
 
     public:
         Scene();
@@ -30,8 +33,7 @@ namespace engine {
 
         void handleSFMLEvent(sf::Event &event);
 
-        int attachEntity(Entity *entity);
-
+        int attachEntity(const EntityPtr &entity);
 
 
         virtual void onInitializeScene() {};

@@ -637,7 +637,7 @@ private:
 /// \class sf::Texture
 /// \ingroup graphics
 ///
-/// sf::Texture stores pixels that can be drawn, with a sprite
+/// sf::Texture stores pixels that can be drawn, with a m_pSprite
 /// for example. A texture lives in the graphics card memory,
 /// therefore it is very fast to draw a texture to a render target,
 /// or copy a render target to a texture (the graphics card can
@@ -676,19 +676,19 @@ private:
 /// Usage example:
 /// \code
 /// // This example shows the most common use of sf::Texture:
-/// // drawing a sprite
+/// // drawing a m_pSprite
 ///
 /// // Load a texture from a file
 /// sf::Texture texture;
 /// if (!texture.loadFromFile("texture.png"))
 ///     return -1;
 ///
-/// // Assign it to a sprite
-/// sf::Sprite sprite;
-/// sprite.setTexture(texture);
+/// // Assign it to a m_pSprite
+/// sf::Sprite m_pSprite;
+/// m_pSprite.setTexture(texture);
 ///
-/// // Draw the textured sprite
-/// window.draw(sprite);
+/// // Draw the textured m_pSprite
+/// window.draw(m_pSprite);
 /// \endcode
 ///
 /// \code
@@ -700,8 +700,8 @@ private:
 /// if (!texture.create(640, 480))
 ///     return -1;
 ///
-/// // Create a sprite that will display the texture
-/// sf::Sprite sprite(texture);
+/// // Create a m_pSprite that will display the texture
+/// sf::Sprite m_pSprite(texture);
 ///
 /// while (...) // the main loop
 /// {
@@ -712,7 +712,7 @@ private:
 ///     texture.update(pixels);
 ///
 ///     // draw it
-///     window.draw(sprite);
+///     window.draw(m_pSprite);
 ///
 ///     ...
 /// }

@@ -5,10 +5,13 @@
 #ifndef MYMINDUSTRY_IMAGE_H
 #define MYMINDUSTRY_IMAGE_H
 
+#include <memory>
 #include "../Entity.h"
 #include "../managers/LoggingManager.h"
 
+
 namespace engine {
+
     class Image : public Entity {
     private:
         str m_sImagePath;
@@ -17,12 +20,16 @@ namespace engine {
         sf::Texture m_texture;
         sf::Sprite m_sprite;
 
+        bool m_bTextureIsSet = false;
+
         LoggingManager *m_pLoggingManager;
 
     public:
         Image();
 
         explicit Image(const str &path);
+
+        explicit Image(const sf::Texture &texture);
 
 
         void initialize() override;
@@ -38,6 +45,7 @@ namespace engine {
 
         void setImageFilepath(const str &path);
 
+        void setTexture(const sf::Texture &texture);
 
         sf::Vector2f getSize();
 
@@ -46,6 +54,8 @@ namespace engine {
 
 
     };
+
+    typedef std::shared_ptr<Image> ImagePtr;
 }
 
 

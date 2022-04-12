@@ -5,6 +5,7 @@
 #ifndef MYMINDUSTRY_TEXT_H
 #define MYMINDUSTRY_TEXT_H
 
+#include <memory>
 #include <SFML/Graphics.hpp>
 #include "../types.h"
 #include "../Entity.h"
@@ -112,6 +113,8 @@ namespace engine {
 
 
     };
+
+    typedef std::shared_ptr<Text> TextPtr;
 }
 
 

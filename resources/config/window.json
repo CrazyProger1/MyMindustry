@@ -1,6 +1,6 @@
 {
-  "title": "ZSB 0.0.0",
-  "width": 1024,
-  "height": 768,
-  "fullscreen": false
+  "title": "Some title",
+  "width": 1920,
+  "height": 1080,
+  "fullscreen": true
 }

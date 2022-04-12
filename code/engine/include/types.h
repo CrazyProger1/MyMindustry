@@ -7,6 +7,8 @@
 
 #include <string>
 #include <SFML/Graphics.hpp>
+#include "../nlohmann/json.hpp"
 
 typedef std::string str;
+typedef nlohmann::json json;
 #endif //MYMINDUSTRY_TYPES_H

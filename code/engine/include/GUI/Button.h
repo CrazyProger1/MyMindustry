@@ -5,12 +5,14 @@
 #ifndef MYMINDUSTRY_BUTTON_H
 #define MYMINDUSTRY_BUTTON_H
 
+#include <memory>
 #include <SFML/Graphics.hpp>
 #include "Text.h"
 #include "Image.h"
 #include "ButtonStyle.h"
 
 namespace engine {
+
     class Button : public Entity {
     private:
         sf::RenderWindow *m_pMainWindow;
@@ -46,11 +48,12 @@ namespace engine {
         bool m_bCenterImage = false;
         bool m_bIsImageSet = false;
 
-        Text *m_pText;
+        TextPtr m_pText;
         sf::Color m_textColor;
         sf::Color m_textHoverColor;
 
-        Image *m_pImage;
+        ImagePtr m_pImage;
+
 
         bool m_bJustHovered = false; // for optimization
 
@@ -71,8 +74,8 @@ namespace engine {
         explicit Button(const sf::Vector2f &size,
                         const sf::Color &color = {250, 0, 100},
                         const sf::Color &hoverColor = {0, 250, 0},
-                        Text *text = nullptr,
-                        Image *image = nullptr,
+                        TextPtr text = nullptr,
+                        ImagePtr image = nullptr,
                         const sf::Vector2f &textOffset = {0, 0},
                         const sf::Vector2f &imageOffset = {0, 0},
                         int borderWidth = 0,
@@ -109,9 +112,11 @@ namespace engine {
 
         void setCenteringImage(bool center = true);
 
-        void setText(Text &text);
+        void setText(const TextPtr &text);
 
         void setImage(Image &image);
+
+        void setImage(const ImagePtr &image);
 
         void setStyle(ButtonStyle &buttonStyle);
 
@@ -138,6 +143,7 @@ namespace engine {
 
     };
 
+    typedef std::shared_ptr<Button> ButtonPtr;
 }
 
 

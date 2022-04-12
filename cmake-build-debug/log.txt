@@ -1,26 +1,58 @@
-INFO : 2022-3-5 16:49 : LoggingManager initialized
-INFO : 2022-3-5 16:49 : Core (v1) initialized
-INFO : 2022-3-5 16:49 : ScenesManager initialized
-INFO : 2022-3-5 16:49 : EntitiesManager initialized
-INFO : 2022-3-5 16:49 : MemoryManager initialized
-INFO : 2022-3-5 16:49 : AssetsManager initialized
-INFO : 2022-3-5 16:49 : Window is set (1920x1080)
-INFO : 2022-3-5 16:49 : Added new scene (id = 1)
-INFO : 2022-3-5 16:49 : New active scene is set (id = 1)
-INFO : 2022-3-5 16:49 : Resources loaded
-INFO : 2022-3-5 16:49 : Entities initialized
-INFO : 2022-3-5 16:49 : Scene initialized
-INFO : 2022-3-5 16:49 : Added new scene (id = 2)
-INFO : 2022-3-5 16:49 : Scene destroyed
-INFO : 2022-3-5 16:49 : New active scene is set (id = 1)
-INFO : 2022-3-5 16:49 : Resources loaded
-INFO : 2022-3-5 16:49 : Entities initialized
-INFO : 2022-3-5 16:49 : Scene initialized
-INFO : 2022-3-5 16:49 : Mainloop ran
-INFO : 2022-3-5 16:49 : Scene destroyed
-INFO : 2022-3-5 16:49 : New active scene is set (id = 2)
-INFO : 2022-3-5 16:49 : Resources loaded
-INFO : 2022-3-5 16:49 : Entities initialized
-INFO : 2022-3-5 16:49 : Scene initialized
-INFO : 2022-3-5 16:49 : Scene destroyed
-INFO : 2022-3-5 16:49 : Game successfully terminated
+INFO : 2022-3-12 12:54 : LoggingManager initialized
+INFO : 2022-3-12 12:54 : Core (v1) initialized
+INFO : 2022-3-12 12:54 : ScenesManager initialized
+INFO : 2022-3-12 12:54 : EntitiesManager initialized
+INFO : 2022-3-12 12:54 : CameraManager initialized
+INFO : 2022-3-12 12:54 : MemoryManager initialized
+INFO : 2022-3-12 12:54 : AssetsManager initialized
+INFO : 2022-3-12 12:54 : ConfigManager initialized
+INFO : 2022-3-12 12:54 : ../resources/config/window.json was successfully loaded
+INFO : 2022-3-12 12:54 : ../resources/config/game.json was successfully loaded
+INFO : 2022-3-12 12:54 : Window is set (1920x1080)
+INFO : 2022-3-12 12:54 : Added new scene (id = 1)
+INFO : 2022-3-12 12:54 : New active scene is set (id = 1)
+INFO : 2022-3-12 12:54 : Resources loaded
+INFO : 2022-3-12 12:54 : Entities initialized
+INFO : 2022-3-12 12:54 : Scene initialized
+INFO : 2022-3-12 12:54 : Added new scene (id = 2)
+INFO : 2022-3-12 12:54 : Added new scene (id = 3)
+INFO : 2022-3-12 12:54 : Scene destroyed
+INFO : 2022-3-12 12:54 : New active scene is set (id = 1)
+INFO : 2022-3-12 12:54 : Resources loaded
+INFO : 2022-3-12 12:54 : Entities initialized
+INFO : 2022-3-12 12:54 : Scene initialized
+INFO : 2022-3-12 12:54 : Mainloop ran
+INFO : 2022-3-12 12:54 : Scene destroyed
+INFO : 2022-3-12 12:54 : New active scene is set (id = 2)
+INFO : 2022-3-12 12:54 : ../resources/config/resources.json was successfully loaded
+INFO : 2022-3-12 12:54 : ../resources/sprites/minerals\charcoal.png was successfully loaded
+INFO : 2022-3-12 12:54 : ../resources/sprites/minerals\magnui.png was successfully loaded
+INFO : 2022-3-12 12:54 : ../resources/sprites/minerals\metal.png was successfully loaded
+INFO : 2022-3-12 12:54 : ../resources/sprites/minerals\stone.png was successfully loaded
+INFO : 2022-3-12 12:54 : ../resources/sprites/minerals\titan.png was successfully loaded
+INFO : 2022-3-12 12:54 : ../resources/sprites/minerals\uranium.png was successfully loaded
+INFO : 2022-3-12 12:54 : ../resources/sprites/sidebar\conveyors.png was successfully loaded
+INFO : 2022-3-12 12:54 : ../resources/sprites/sidebar\defenses.png was successfully loaded
+INFO : 2022-3-12 12:54 : ../resources/sprites/sidebar\drills.png was successfully loaded
+INFO : 2022-3-12 12:54 : ../resources/sprites/sidebar\electronics.png was successfully loaded
+INFO : 2022-3-12 12:54 : ../resources/sprites/sidebar\manufactures.png was successfully loaded
+INFO : 2022-3-12 12:54 : ../resources/sprites/sidebar\others.png was successfully loaded
+INFO : 2022-3-12 12:54 : ../resources/sprites/sidebar\pipes.png was successfully loaded
+INFO : 2022-3-12 12:54 : ../resources/sprites/sidebar\weapons.png was successfully loaded
+INFO : 2022-3-12 12:54 : ../resources/sprites/player\player01.png was successfully loaded
+INFO : 2022-3-12 12:54 : ../resources/sprites/storage\storage01.png was successfully loaded
+INFO : 2022-3-12 12:54 : ../resources/sprites/tools/drills\drill01.png was successfully loaded
+INFO : 2022-3-12 12:54 : ../resources/sprites/tools/drills\drill02.png was successfully loaded
+INFO : 2022-3-12 12:54 : ../resources/sprites/tools/drills\drill03.png was successfully loaded
+INFO : 2022-3-12 12:54 : ../resources/sprites/walls\earth_wall.png was successfully loaded
+INFO : 2022-3-12 12:54 : ../resources/sprites/walls\stone_wall.png was successfully loaded
+INFO : 2022-3-12 12:54 : ../resources/sprites/walls\unknown.png was successfully loaded
+INFO : 2022-3-12 12:54 : ../resources/sprites/floors\earth_floor.png was successfully loaded
+INFO : 2022-3-12 12:54 : ../resources/sprites/floors\sand_floor.png was successfully loaded
+INFO : 2022-3-12 12:54 : ../resources/sprites/floors\stone_floor.png was successfully loaded
+INFO : 2022-3-12 12:54 : ../resources/sprites/floors\water_floor.png was successfully loaded
+INFO : 2022-3-12 12:54 : Resources loaded
+INFO : 2022-3-12 12:54 : Entities initialized
+INFO : 2022-3-12 12:54 : Scene initialized
+INFO : 2022-3-12 12:54 : Scene destroyed
+INFO : 2022-3-12 12:54 : Game successfully terminated

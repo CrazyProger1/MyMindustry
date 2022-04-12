@@ -824,14 +824,14 @@ private:
 /// To apply a shader to a drawable, you must pass it as an
 /// additional parameter to the \ref RenderWindow::draw function:
 /// \code
-/// window.draw(sprite, &shader);
+/// window.draw(m_pSprite, &shader);
 /// \endcode
 ///
 /// ... which is in fact just a shortcut for this:
 /// \code
 /// sf::RenderStates states;
 /// states.shader = &shader;
-/// window.draw(sprite, states);
+/// window.draw(m_pSprite, states);
 /// \endcode
 ///
 /// In the code above we pass a pointer to the shader, because it may
@@ -839,7 +839,7 @@ private:
 ///
 /// Shaders can be used on any drawable, but some combinations are
 /// not interesting. For example, using a vertex shader on a sf::Sprite
-/// is limited because there are only 4 vertices, the sprite would
+/// is limited because there are only 4 vertices, the m_pSprite would
 /// have to be subdivided in order to apply wave effects.
 /// Another bad example is a fragment shader with sf::Text: the texture
 /// of the text is not the actual text that you see on screen, it is

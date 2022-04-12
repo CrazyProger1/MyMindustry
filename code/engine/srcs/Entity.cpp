@@ -27,6 +27,14 @@ namespace engine {
         m_position.y = y;
     }
 
+    void Entity::setCameraDependent(bool dependsOnCameraView) {
+        m_bDependsOnCamera = dependsOnCameraView;
+    }
+
+    sf::Vector2f &Entity::getPosition() {
+        return m_position;
+    }
+
     void Entity::move(const sf::Vector2f &offset) {
         m_position.x += offset.x;
         m_position.y += offset.y;
@@ -37,8 +45,21 @@ namespace engine {
         m_position.y += offsetY;
     }
 
-    sf::Vector2f &Entity::getPosition() {
-        return m_position;
+    bool Entity::isDependsOnCamera() const {
+        return m_bDependsOnCamera;
     }
+
+    bool Entity::isHidden() const {
+        return m_bIsHidden;
+    }
+
+    void Entity::hide() {
+        m_bIsHidden = true;
+    }
+
+    void Entity::show() {
+        m_bIsHidden = false;
+    }
+
 
 }

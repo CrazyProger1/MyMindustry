@@ -114,6 +114,12 @@
 		<Unit filename="D:/Programming/MyGames/MyMindustry/code/engine/include/managers/AssetsManager.h">
 			<Option target="MyMindustry"/>
 		</Unit>
+		<Unit filename="D:/Programming/MyGames/MyMindustry/code/engine/include/managers/CameraManager.h">
+			<Option target="MyMindustry"/>
+		</Unit>
+		<Unit filename="D:/Programming/MyGames/MyMindustry/code/engine/include/managers/ConfigManager.h">
+			<Option target="MyMindustry"/>
+		</Unit>
 		<Unit filename="D:/Programming/MyGames/MyMindustry/code/engine/include/managers/EntitiesManager.h">
 			<Option target="MyMindustry"/>
 		</Unit>
@@ -154,6 +160,12 @@
 			<Option target="MyMindustry"/>
 		</Unit>
 		<Unit filename="D:/Programming/MyGames/MyMindustry/code/engine/srcs/managers/AssetsManager.cpp">
+			<Option target="MyMindustry"/>
+		</Unit>
+		<Unit filename="D:/Programming/MyGames/MyMindustry/code/engine/srcs/managers/CameraManager.cpp">
+			<Option target="MyMindustry"/>
+		</Unit>
+		<Unit filename="D:/Programming/MyGames/MyMindustry/code/engine/srcs/managers/ConfigManager.cpp">
 			<Option target="MyMindustry"/>
 		</Unit>
 		<Unit filename="D:/Programming/MyGames/MyMindustry/code/engine/srcs/managers/EntitiesManager.cpp">

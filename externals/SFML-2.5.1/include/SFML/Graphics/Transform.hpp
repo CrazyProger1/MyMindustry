@@ -446,8 +446,8 @@ SFML_GRAPHICS_API bool operator !=(const Transform& left, const Transform& right
 /// shear, project, whatever things. In mathematical terms, it defines
 /// how to transform a coordinate system into another.
 ///
-/// For example, if you apply a rotation transform to a sprite, the
-/// result will be a rotated sprite. And anything that is transformed
+/// For example, if you apply a rotation transform to a m_pSprite, the
+/// result will be a rotated m_pSprite. And anything that is transformed
 /// by this rotation transform will be rotated the same way, according
 /// to its initial m_position.
 ///

@@ -222,7 +222,7 @@ public:
     ///
     /// After drawing to the render-texture and calling Display,
     /// you can retrieve the updated texture using this function,
-    /// and draw it using a sprite (for example).
+    /// and draw it using a m_pSprite (for example).
     /// The internal sf::Texture of a render-texture is always the
     /// same instance, so that it is possible to call this function
     /// once and keep a reference to the texture even after it is
@@ -261,7 +261,7 @@ private:
 /// Rendering to a texture can be useful in a variety of situations:
 /// \li precomputing a complex static texture (like a level's background from multiple tiles)
 /// \li applying post-effects to the whole scene with shaders
-/// \li creating a sprite from a 3D object rendered with OpenGL
+/// \li creating a m_pSprite from a 3D object rendered with OpenGL
 /// \li etc.
 ///
 /// Usage example:
@@ -285,7 +285,7 @@ private:
 ///    texture.clear(sf::Color::Red);
 ///
 ///    // Draw stuff to the texture
-///    texture.draw(sprite);  // sprite is a sf::Sprite
+///    texture.draw(m_pSprite);  // m_pSprite is a sf::Sprite
 ///    texture.draw(shape);   // shape is a sf::Shape
 ///    texture.draw(text);    // text is a sf::Text
 ///
@@ -296,8 +296,8 @@ private:
 ///    window.clear();
 ///
 ///    // Draw the texture
-///    sf::Sprite sprite(texture.getTexture());
-///    window.draw(sprite);
+///    sf::Sprite m_pSprite(texture.getTexture());
+///    window.draw(m_pSprite);
 ///
 ///    // End the current frame and display its contents on screen
 ///    window.display();

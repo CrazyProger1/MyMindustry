@@ -12,8 +12,8 @@ namespace engine {
     Button::Button(const sf::Vector2f &size,
                    const sf::Color &color,
                    const sf::Color &hoverColor,
-                   Text *text,
-                   Image *image,
+                   TextPtr text,
+                   ImagePtr image,
                    const sf::Vector2f &textOffset,
                    const sf::Vector2f &imageOffset,
                    int borderWidth,
@@ -236,16 +236,17 @@ namespace engine {
     }
 
 
-    void Button::setText(Text &text) {
-        m_pText = &text;
-        m_textColor = text.getTextColor();
-        m_textHoverColor = text.getTextHoverColor();
+    void Button::setText(const TextPtr& text) {
+        m_pText = text;
+        m_textColor = text->getTextColor();
+        m_textHoverColor = text->getTextHoverColor();
         m_bIsTextSet = true;
         initialize();
     }
 
-    void Button::setImage(Image &image) {
-        m_pImage = &image;
+
+    void Button::setImage(const ImagePtr &image) {
+        m_pImage = image;
         m_bIsImageSet = true;
         initialize();
     }
