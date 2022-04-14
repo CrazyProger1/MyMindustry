@@ -11,6 +11,7 @@
 #include "include/GUI/Button.h"
 #include "include/GUI/ButtonStyle.h"
 #include "include/GUI/TextStyle.h"
+#include "include/GUI/Grid.h"
 
 #endif //MYMINDUSTRY_ENGINE_H
 

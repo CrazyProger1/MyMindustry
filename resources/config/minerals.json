@@ -1,0 +1,41 @@
+{
+  "names": [
+    "charcoal",
+    "magnesium",
+    "metal",
+    "titan",
+    "uranium"
+  ],
+  "generating": {
+    "charcoal": {
+      "max_size": 30,
+      "min_size": 5,
+      "probability": 10
+    },
+    "magnesium": {
+      "max_size": 15,
+      "min_size": 3,
+      "probability": 8
+    },
+    "metal": {
+      "max_size": 30,
+      "min_size": 5,
+      "probability": 9
+    },
+    "titan": {
+      "max_size": 15,
+      "min_size": 3,
+      "probability": 7
+    },
+    "uranium": {
+      "max_size": 10,
+      "min_size": 1,
+      "probability": 5
+    }
+  },
+  "prohibited_places": [
+    "1",
+    "3",
+    "6"
+  ]
+}

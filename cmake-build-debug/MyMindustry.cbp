@@ -96,6 +96,9 @@
 		<Unit filename="D:/Programming/MyGames/MyMindustry/code/engine/include/GUI/ButtonStyle.h">
 			<Option target="MyMindustry"/>
 		</Unit>
+		<Unit filename="D:/Programming/MyGames/MyMindustry/code/engine/include/GUI/Grid.h">
+			<Option target="MyMindustry"/>
+		</Unit>
 		<Unit filename="D:/Programming/MyGames/MyMindustry/code/engine/include/GUI/Image.h">
 			<Option target="MyMindustry"/>
 		</Unit>
@@ -132,6 +135,12 @@
 		<Unit filename="D:/Programming/MyGames/MyMindustry/code/engine/include/managers/ScenesManager.h">
 			<Option target="MyMindustry"/>
 		</Unit>
+		<Unit filename="D:/Programming/MyGames/MyMindustry/code/engine/include/managers/variables/SmartStr.h">
+			<Option target="MyMindustry"/>
+		</Unit>
+		<Unit filename="D:/Programming/MyGames/MyMindustry/code/engine/include/managers/variables/SmartVariable.h">
+			<Option target="MyMindustry"/>
+		</Unit>
 		<Unit filename="D:/Programming/MyGames/MyMindustry/code/engine/include/types.h">
 			<Option target="MyMindustry"/>
 		</Unit>
@@ -142,6 +151,9 @@
 			<Option target="MyMindustry"/>
 		</Unit>
 		<Unit filename="D:/Programming/MyGames/MyMindustry/code/engine/srcs/GUI/ButtonStyle.cpp">
+			<Option target="MyMindustry"/>
+		</Unit>
+		<Unit filename="D:/Programming/MyGames/MyMindustry/code/engine/srcs/GUI/Grid.cpp">
 			<Option target="MyMindustry"/>
 		</Unit>
 		<Unit filename="D:/Programming/MyGames/MyMindustry/code/engine/srcs/GUI/Image.cpp">
@@ -178,6 +190,15 @@
 			<Option target="MyMindustry"/>
 		</Unit>
 		<Unit filename="D:/Programming/MyGames/MyMindustry/code/engine/srcs/managers/ScenesManager.cpp">
+			<Option target="MyMindustry"/>
+		</Unit>
+		<Unit filename="D:/Programming/MyGames/MyMindustry/code/engine/srcs/managers/variables/SmartStr.cpp">
+			<Option target="MyMindustry"/>
+		</Unit>
+		<Unit filename="D:/Programming/MyGames/MyMindustry/code/engine/srcs/managers/variables/SmartVariable.cpp">
+			<Option target="MyMindustry"/>
+		</Unit>
+		<Unit filename="D:/Programming/MyGames/MyMindustry/code/game/editor.h">
 			<Option target="MyMindustry"/>
 		</Unit>
 		<Unit filename="D:/Programming/MyGames/MyMindustry/code/game/game.h">

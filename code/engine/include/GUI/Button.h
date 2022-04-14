@@ -88,9 +88,9 @@ namespace engine {
         void initialize() override;
 
 
-        void setSize(const sf::Vector2f &size);
+        void setSize(const sf::Vector2f &size) override;
 
-        void setSize(float w, float h);
+        void setSize(float w, float h) override;
 
         void setTextOffset(const sf::Vector2f &offset);
 
@@ -126,7 +126,7 @@ namespace engine {
         bool isHovered() const;
 
 
-        sf::Vector2f &getSize();
+        sf::Vector2f getSize();
 
 
         void activate();

@@ -1,0 +1,22 @@
+{
+  "ids": {
+    "0": "unknown",
+    "1": "stone_wall01",
+    "10": "stone_floor01",
+    "20": "earth_wall01",
+    "30": "earth_floor01",
+    "40": "sand_wall01",
+    "50": "sand_floor01",
+    "51": "sand_floor01_to_earth_top",
+    "52": "sand_floor01_to_earth_top_left",
+    "53": "sand_floor01_to_earth_top_left_right",
+    "54": "sand_floor01_to_water_top",
+    "55": "sand_floor01_to_water_corner",
+    "56": "sand_floor01_to_water_2corners",
+    "57": "sand_floor01_to_water_top_left",
+    "58": "sand_floor01_to_water_top_left_right",
+
+    "70": "water_floor01"
+  },
+  "size": 60
+}

@@ -31,7 +31,6 @@ namespace engine {
     }
 
 
-
     void AssetsManager::loadTexturesFromDir(const str &dirPath) {
         for (const auto &f: fs::directory_iterator(dirPath)) {
             TexturePtr texture(new sf::Texture);
@@ -59,10 +58,10 @@ namespace engine {
     }
 
 
-    SpritePtr AssetsManager::getSprite(const str &name) {
-        auto found = m_mpTextures.find(name);
+    SpritePtr AssetsManager::getSprite(const str &textureName) {
+        auto found = m_mpTextures.find(textureName);
         if (found == m_mpTextures.end()) {
-            m_pLoggingManager->logError("Texture (" + name + ") not found");
+            m_pLoggingManager->logError("Texture (" + textureName + ") not found");
         }
 
         SpritePtr sprite(new sf::Sprite(*found->second));
@@ -78,9 +77,71 @@ namespace engine {
         return image;
     }
 
+    SpritePtr AssetsManager::getSprite(const str &textureName, const sf::IntRect &rectangle) {
+        auto found = m_mpTextures.find(textureName);
+        if (found == m_mpTextures.end()) {
+            m_pLoggingManager->logError("Texture (" + textureName + ") not found");
+        }
+
+        SpritePtr sprite(new sf::Sprite(*found->second, rectangle));
+        return sprite;
+    }
+
 
     void AssetsManager::free() {
         m_mpTextures.clear();
+    }
+
+    json AssetsManager::loadJson(const str &filePath) {
+        std::ifstream jsonFile;
+        jsonFile.open(filePath);
+        str buffer, line;
+        while (std::getline(jsonFile, line)) {
+            buffer += line;
+        }
+
+        if (buffer.empty()) {
+            m_pLoggingManager->logError("Failed to read " + filePath);
+        }
+        jsonFile.close();
+        m_pLoggingManager->logInfo(filePath + " was successfully loaded");
+        return nlohmann::json::parse(buffer);
+    }
+
+    void AssetsManager::loadTexturesFromPack(const str &jsonPackDataFile) {
+        json jsonPackData = loadJson(jsonPackDataFile);
+
+
+        str path = jsonPackData["path"];
+        std::vector<std::vector<str>> groups = jsonPackData["names"];
+        int blockSize = jsonPackData["block_size"];
+
+        int x = 0, y = 0;
+
+        for (auto &names: groups) {
+            x = 0;
+            for (auto &name: names) {
+                TexturePtr texture(new sf::Texture);
+                texture->loadFromFile(path, {x, y, blockSize, blockSize});
+                m_mpTextures[name] = texture;
+                if (m_bLogInfo)
+                    m_pLoggingManager->logInfo(path + "(" + name + ")" + " was successfully loaded");
+
+                x += blockSize;
+            }
+
+            y += blockSize;
+        }
+
+
+
+//        TexturePtr texture(new sf::Texture);
+//        texture->loadFromFile(path);
+//
+//        m_mpTextures[fs::path(path).stem().string()] = texture;
+//        if (m_bLogInfo)
+//            m_pLoggingManager->logInfo(path + " was successfully loaded");
+
     }
 
 

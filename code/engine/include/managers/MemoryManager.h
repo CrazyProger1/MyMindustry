@@ -7,6 +7,8 @@
 
 #include "LoggingManager.h"
 #include "SFML/Graphics.hpp"
+#include "variables/SmartStr.h"
+#include <variant>
 
 namespace engine {
     class MemoryManager {
@@ -14,6 +16,8 @@ namespace engine {
         LoggingManager *m_pLoggingManager;
 
         sf::RenderWindow *m_pMainWindow{};
+
+        std::map<str, void *> m_mpVariables;
 
     protected:
         static MemoryManager *s_pSelf;
@@ -30,6 +34,16 @@ namespace engine {
         void setMainWindow(sf::RenderWindow *window);
 
         sf::RenderWindow *getMainWindow();
+
+        void updateVariables();
+
+        void addVariable(const str &name, SmartVariable *variable);
+
+        void *getVariable(const str &name);
+
+        SmartStr *getStringVariable(const str &name);
+
+        void free();
     };
 
 }

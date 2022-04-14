@@ -310,7 +310,7 @@ namespace engine {
         return buff;
     }
 
-    sf::Vector2f &Button::getSize() {
+    sf::Vector2f Button::getSize() {
         return m_size;
     }
 

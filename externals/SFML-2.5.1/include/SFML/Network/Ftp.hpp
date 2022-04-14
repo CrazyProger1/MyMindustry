@@ -110,7 +110,7 @@ public:
             TransferAborted           = 426, ///< Connection closed, transfer aborted
             FileActionAborted         = 450, ///< Requested file action not taken
             LocalError                = 451, ///< Requested action aborted, local error in processing
-            InsufficientStorageSpace  = 452, ///< Requested action not taken; insufficient storage space in system, file unavailable
+            InsufficientStorageSpace  = 452, ///< Requested action not taken; insufficient storages space in system, file unavailable
 
             // 5xx: the command was not accepted and
             // the requested action did not take place
@@ -123,7 +123,7 @@ public:
             NeedAccountToStore      = 532, ///< Need account for storing files
             FileUnavailable         = 550, ///< Requested action not taken, file unavailable
             PageTypeUnknown         = 551, ///< Requested action aborted, page type unknown
-            NotEnoughMemory         = 552, ///< Requested file action aborted, exceeded storage allocation
+            NotEnoughMemory         = 552, ///< Requested file action aborted, exceeded storages allocation
             FilenameNotAllowed      = 553, ///< Requested action not taken, file name not allowed
 
             // 10xx: SFML custom codes

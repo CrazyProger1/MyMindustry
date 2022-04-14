@@ -5,7 +5,8 @@
 #ifndef MYMINDUSTRY_GAME_H
 #define MYMINDUSTRY_GAME_H
 
-#include "scenes.h"
+//#include "scenes.h"
+#include "editor.h"
 
 class Game : public engine::GameCore {
 private:

@@ -2848,7 +2848,7 @@ class exception : public std::exception
     }
 
   private:
-    /// an exception object as storage for error messages
+    /// an exception object as storages for error messages
     std::runtime_error m;
 };
 
@@ -18154,7 +18154,7 @@ class basic_json // NOLINT(cppcoreguidelines-special-member-functions,hicpp-spec
     > are not permitted.
 
     This description includes both integer and floating-point numbers.
-    However, C++ allows more precise storage if it is known whether the number
+    However, C++ allows more precise storages if it is known whether the number
     is a signed integer, an unsigned integer or a floating-point number.
     Therefore, three different types, @ref number_integer_t, @ref
     number_unsigned_t and @ref number_float_t are used.
@@ -18226,7 +18226,7 @@ class basic_json // NOLINT(cppcoreguidelines-special-member-functions,hicpp-spec
     > are not permitted.
 
     This description includes both integer and floating-point numbers.
-    However, C++ allows more precise storage if it is known whether the number
+    However, C++ allows more precise storages if it is known whether the number
     is a signed integer, an unsigned integer or a floating-point number.
     Therefore, three different types, @ref number_integer_t, @ref
     number_unsigned_t and @ref number_float_t are used.
@@ -18297,7 +18297,7 @@ class basic_json // NOLINT(cppcoreguidelines-special-member-functions,hicpp-spec
     > are not permitted.
 
     This description includes both integer and floating-point numbers.
-    However, C++ allows more precise storage if it is known whether the number
+    However, C++ allows more precise storages if it is known whether the number
     is a signed integer, an unsigned integer or a floating-point number.
     Therefore, three different types, @ref number_integer_t, @ref
     number_unsigned_t and @ref number_float_t are used.
@@ -18385,7 +18385,7 @@ class basic_json // NOLINT(cppcoreguidelines-special-member-functions,hicpp-spec
     > should be the 'default' for drivers and tools.
 
     None of these impose any limitations on the internal representation other
-    than the basic unit of storage be some type of array whose parts are
+    than the basic unit of storages be some type of array whose parts are
     decomposable into bytes.
 
     The default representation of this binary format is a
@@ -18445,15 +18445,15 @@ class basic_json // NOLINT(cppcoreguidelines-special-member-functions,hicpp-spec
     }
 
     ////////////////////////
-    // JSON value storage //
+    // JSON value storages //
     ////////////////////////
 
   JSON_PRIVATE_UNLESS_TESTED:
     /*!
     @brief a JSON value
 
-    The actual storage for a JSON value of the @ref basic_json class. This
-    union combines the different storage types for the JSON value types
+    The actual storages for a JSON value of the @ref basic_json class. This
+    union combines the different storages types for the JSON value types
     defined in @ref value_t.
 
     JSON type | value_t type    | used type
@@ -18476,13 +18476,13 @@ class basic_json // NOLINT(cppcoreguidelines-special-member-functions,hicpp-spec
     */
     union json_value
     {
-        /// object (stored with pointer to save storage)
+        /// object (stored with pointer to save storages)
         object_t* object;
-        /// array (stored with pointer to save storage)
+        /// array (stored with pointer to save storages)
         array_t* array;
-        /// string (stored with pointer to save storage)
+        /// string (stored with pointer to save storages)
         string_t* string;
-        /// binary (stored with pointer to save storage)
+        /// binary (stored with pointer to save storages)
         binary_t* binary;
         /// boolean
         boolean_t boolean;

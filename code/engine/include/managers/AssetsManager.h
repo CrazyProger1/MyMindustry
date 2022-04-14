@@ -26,6 +26,8 @@ namespace engine {
 
         std::map<str, std::shared_ptr<sf::Texture>> m_mpTextures;
 
+        json loadJson(const str &filePath);
+
     protected:
         static AssetsManager *s_pSelf;
 
@@ -42,11 +44,15 @@ namespace engine {
 
         void loadTexture(const str &filePath);
 
+        void loadTexturesFromPack(const str &jsonPackData);
+
         void free();
 
         TexturePtr getTexture(const str &name);
 
-        SpritePtr getSprite(const str &name);
+        SpritePtr getSprite(const str &textureName);
+
+        SpritePtr getSprite(const str &textureName, const sf::IntRect &rectangle);
 
         ImagePtr getImage(const str &name);
     };

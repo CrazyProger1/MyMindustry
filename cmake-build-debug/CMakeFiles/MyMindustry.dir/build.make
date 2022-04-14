@@ -289,6 +289,48 @@ CMakeFiles/MyMindustry.dir/code/engine/srcs/managers/ConfigManager.cpp.s: cmake_
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyMindustry.dir/code/engine/srcs/managers/ConfigManager.cpp.s"
 	D:\Programming\C++\Compilers\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Programming\MyGames\MyMindustry\code\engine\srcs\managers\ConfigManager.cpp -o CMakeFiles\MyMindustry.dir\code\engine\srcs\managers\ConfigManager.cpp.s
 
+CMakeFiles/MyMindustry.dir/code/engine/srcs/GUI/Grid.cpp.obj: CMakeFiles/MyMindustry.dir/flags.make
+CMakeFiles/MyMindustry.dir/code/engine/srcs/GUI/Grid.cpp.obj: CMakeFiles/MyMindustry.dir/includes_CXX.rsp
+CMakeFiles/MyMindustry.dir/code/engine/srcs/GUI/Grid.cpp.obj: ../code/engine/srcs/GUI/Grid.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Programming\MyGames\MyMindustry\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/MyMindustry.dir/code/engine/srcs/GUI/Grid.cpp.obj"
+	D:\Programming\C++\Compilers\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\MyMindustry.dir\code\engine\srcs\GUI\Grid.cpp.obj -c D:\Programming\MyGames\MyMindustry\code\engine\srcs\GUI\Grid.cpp
+
+CMakeFiles/MyMindustry.dir/code/engine/srcs/GUI/Grid.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MyMindustry.dir/code/engine/srcs/GUI/Grid.cpp.i"
+	D:\Programming\C++\Compilers\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Programming\MyGames\MyMindustry\code\engine\srcs\GUI\Grid.cpp > CMakeFiles\MyMindustry.dir\code\engine\srcs\GUI\Grid.cpp.i
+
+CMakeFiles/MyMindustry.dir/code/engine/srcs/GUI/Grid.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyMindustry.dir/code/engine/srcs/GUI/Grid.cpp.s"
+	D:\Programming\C++\Compilers\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Programming\MyGames\MyMindustry\code\engine\srcs\GUI\Grid.cpp -o CMakeFiles\MyMindustry.dir\code\engine\srcs\GUI\Grid.cpp.s
+
+CMakeFiles/MyMindustry.dir/code/engine/srcs/managers/variables/SmartStr.cpp.obj: CMakeFiles/MyMindustry.dir/flags.make
+CMakeFiles/MyMindustry.dir/code/engine/srcs/managers/variables/SmartStr.cpp.obj: CMakeFiles/MyMindustry.dir/includes_CXX.rsp
+CMakeFiles/MyMindustry.dir/code/engine/srcs/managers/variables/SmartStr.cpp.obj: ../code/engine/srcs/managers/variables/SmartStr.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Programming\MyGames\MyMindustry\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/MyMindustry.dir/code/engine/srcs/managers/variables/SmartStr.cpp.obj"
+	D:\Programming\C++\Compilers\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\MyMindustry.dir\code\engine\srcs\managers\variables\SmartStr.cpp.obj -c D:\Programming\MyGames\MyMindustry\code\engine\srcs\managers\variables\SmartStr.cpp
+
+CMakeFiles/MyMindustry.dir/code/engine/srcs/managers/variables/SmartStr.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MyMindustry.dir/code/engine/srcs/managers/variables/SmartStr.cpp.i"
+	D:\Programming\C++\Compilers\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Programming\MyGames\MyMindustry\code\engine\srcs\managers\variables\SmartStr.cpp > CMakeFiles\MyMindustry.dir\code\engine\srcs\managers\variables\SmartStr.cpp.i
+
+CMakeFiles/MyMindustry.dir/code/engine/srcs/managers/variables/SmartStr.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyMindustry.dir/code/engine/srcs/managers/variables/SmartStr.cpp.s"
+	D:\Programming\C++\Compilers\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Programming\MyGames\MyMindustry\code\engine\srcs\managers\variables\SmartStr.cpp -o CMakeFiles\MyMindustry.dir\code\engine\srcs\managers\variables\SmartStr.cpp.s
+
+CMakeFiles/MyMindustry.dir/code/engine/srcs/managers/variables/SmartVariable.cpp.obj: CMakeFiles/MyMindustry.dir/flags.make
+CMakeFiles/MyMindustry.dir/code/engine/srcs/managers/variables/SmartVariable.cpp.obj: CMakeFiles/MyMindustry.dir/includes_CXX.rsp
+CMakeFiles/MyMindustry.dir/code/engine/srcs/managers/variables/SmartVariable.cpp.obj: ../code/engine/srcs/managers/variables/SmartVariable.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Programming\MyGames\MyMindustry\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/MyMindustry.dir/code/engine/srcs/managers/variables/SmartVariable.cpp.obj"
+	D:\Programming\C++\Compilers\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\MyMindustry.dir\code\engine\srcs\managers\variables\SmartVariable.cpp.obj -c D:\Programming\MyGames\MyMindustry\code\engine\srcs\managers\variables\SmartVariable.cpp
+
+CMakeFiles/MyMindustry.dir/code/engine/srcs/managers/variables/SmartVariable.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MyMindustry.dir/code/engine/srcs/managers/variables/SmartVariable.cpp.i"
+	D:\Programming\C++\Compilers\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Programming\MyGames\MyMindustry\code\engine\srcs\managers\variables\SmartVariable.cpp > CMakeFiles\MyMindustry.dir\code\engine\srcs\managers\variables\SmartVariable.cpp.i
+
+CMakeFiles/MyMindustry.dir/code/engine/srcs/managers/variables/SmartVariable.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyMindustry.dir/code/engine/srcs/managers/variables/SmartVariable.cpp.s"
+	D:\Programming\C++\Compilers\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Programming\MyGames\MyMindustry\code\engine\srcs\managers\variables\SmartVariable.cpp -o CMakeFiles\MyMindustry.dir\code\engine\srcs\managers\variables\SmartVariable.cpp.s
+
 # Object files for target MyMindustry
 MyMindustry_OBJECTS = \
 "CMakeFiles/MyMindustry.dir/code/main.cpp.obj" \
@@ -306,7 +348,10 @@ MyMindustry_OBJECTS = \
 "CMakeFiles/MyMindustry.dir/code/engine/srcs/GUI/ButtonStyle.cpp.obj" \
 "CMakeFiles/MyMindustry.dir/code/engine/srcs/managers/AssetsManager.cpp.obj" \
 "CMakeFiles/MyMindustry.dir/code/engine/srcs/managers/CameraManager.cpp.obj" \
-"CMakeFiles/MyMindustry.dir/code/engine/srcs/managers/ConfigManager.cpp.obj"
+"CMakeFiles/MyMindustry.dir/code/engine/srcs/managers/ConfigManager.cpp.obj" \
+"CMakeFiles/MyMindustry.dir/code/engine/srcs/GUI/Grid.cpp.obj" \
+"CMakeFiles/MyMindustry.dir/code/engine/srcs/managers/variables/SmartStr.cpp.obj" \
+"CMakeFiles/MyMindustry.dir/code/engine/srcs/managers/variables/SmartVariable.cpp.obj"
 
 # External object files for target MyMindustry
 MyMindustry_EXTERNAL_OBJECTS =
@@ -327,6 +372,9 @@ MyMindustry.exe: CMakeFiles/MyMindustry.dir/code/engine/srcs/GUI/ButtonStyle.cpp
 MyMindustry.exe: CMakeFiles/MyMindustry.dir/code/engine/srcs/managers/AssetsManager.cpp.obj
 MyMindustry.exe: CMakeFiles/MyMindustry.dir/code/engine/srcs/managers/CameraManager.cpp.obj
 MyMindustry.exe: CMakeFiles/MyMindustry.dir/code/engine/srcs/managers/ConfigManager.cpp.obj
+MyMindustry.exe: CMakeFiles/MyMindustry.dir/code/engine/srcs/GUI/Grid.cpp.obj
+MyMindustry.exe: CMakeFiles/MyMindustry.dir/code/engine/srcs/managers/variables/SmartStr.cpp.obj
+MyMindustry.exe: CMakeFiles/MyMindustry.dir/code/engine/srcs/managers/variables/SmartVariable.cpp.obj
 MyMindustry.exe: CMakeFiles/MyMindustry.dir/build.make
 MyMindustry.exe: ../externals/SFML-2.5.1/lib/libsfml-graphics-s-d.a
 MyMindustry.exe: ../externals/SFML-2.5.1/lib/libsfml-window-s-d.a
@@ -335,7 +383,7 @@ MyMindustry.exe: ../externals/SFML-2.5.1/lib/libfreetype.a
 MyMindustry.exe: CMakeFiles/MyMindustry.dir/linklibs.rsp
 MyMindustry.exe: CMakeFiles/MyMindustry.dir/objects1.rsp
 MyMindustry.exe: CMakeFiles/MyMindustry.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\Programming\MyGames\MyMindustry\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX executable MyMindustry.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\Programming\MyGames\MyMindustry\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Linking CXX executable MyMindustry.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\MyMindustry.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

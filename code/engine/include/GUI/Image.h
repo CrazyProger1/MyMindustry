@@ -47,7 +47,7 @@ namespace engine {
 
         void setTexture(const sf::Texture &texture);
 
-        sf::Vector2f getSize();
+        sf::Vector2f getSize() override;
 
 
         void draw(sf::RenderTarget &rt) override;

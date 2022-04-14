@@ -39,4 +39,30 @@ namespace engine {
     sf::RenderWindow *MemoryManager::getMainWindow() {
         return m_pMainWindow;
     }
+
+    void MemoryManager::updateVariables() {
+        for (auto &var: m_mpVariables) {
+            static_cast<SmartVariable *>(var.second)->update();
+        }
+    }
+
+
+    void *MemoryManager::getVariable(const str &name) {
+        return m_mpVariables.at(name);
+    }
+
+    void MemoryManager::addVariable(const str &name, SmartVariable *variable) {
+        m_mpVariables[name] = variable;
+    }
+
+    SmartStr *MemoryManager::getStringVariable(const str &name) {
+        return static_cast<SmartStr *>(m_mpVariables.at(name));
+    }
+
+    void MemoryManager::free() {
+        for (auto &var: m_mpVariables) {
+            delete static_cast<SmartVariable *>(var.second);
+        }
+        m_mpVariables.clear();
+    }
 }

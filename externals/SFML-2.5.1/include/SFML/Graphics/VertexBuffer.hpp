@@ -40,7 +40,7 @@ class RenderTarget;
 class Vertex;
 
 ////////////////////////////////////////////////////////////
-/// \brief Vertex buffer storage for one or more 2D primitives
+/// \brief Vertex buffer storages for one or more 2D primitives
 ///
 ////////////////////////////////////////////////////////////
 class SFML_GRAPHICS_API VertexBuffer : public Drawable, private GlResource

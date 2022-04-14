@@ -108,6 +108,8 @@ namespace engine {
         handleSFMLEvents();
         onUpdate();
         m_pScenesManager->updateScene();
+        m_pMemoryManager->updateVariables();
+
     }
 
 

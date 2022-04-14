@@ -1,3 +1,0 @@
-1 - stone
-2 - stone background
-@ - 100 - storage

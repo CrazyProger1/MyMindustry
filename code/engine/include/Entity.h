@@ -54,6 +54,12 @@ namespace engine {
 
         virtual void move(float offsetX, float offsetY);
 
+        virtual void setSize(const sf::Vector2f &size) {};
+
+        virtual void setSize(float w, float h) {};
+
+        virtual sf::Vector2f getSize() { return m_position; };
+
 
         virtual void initialize() {};
 

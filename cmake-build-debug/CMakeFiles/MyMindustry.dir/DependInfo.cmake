@@ -11,6 +11,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "D:/Programming/MyGames/MyMindustry/code/engine/srcs/Entity.cpp" "D:/Programming/MyGames/MyMindustry/cmake-build-debug/CMakeFiles/MyMindustry.dir/code/engine/srcs/Entity.cpp.obj"
   "D:/Programming/MyGames/MyMindustry/code/engine/srcs/GUI/Button.cpp" "D:/Programming/MyGames/MyMindustry/cmake-build-debug/CMakeFiles/MyMindustry.dir/code/engine/srcs/GUI/Button.cpp.obj"
   "D:/Programming/MyGames/MyMindustry/code/engine/srcs/GUI/ButtonStyle.cpp" "D:/Programming/MyGames/MyMindustry/cmake-build-debug/CMakeFiles/MyMindustry.dir/code/engine/srcs/GUI/ButtonStyle.cpp.obj"
+  "D:/Programming/MyGames/MyMindustry/code/engine/srcs/GUI/Grid.cpp" "D:/Programming/MyGames/MyMindustry/cmake-build-debug/CMakeFiles/MyMindustry.dir/code/engine/srcs/GUI/Grid.cpp.obj"
   "D:/Programming/MyGames/MyMindustry/code/engine/srcs/GUI/Image.cpp" "D:/Programming/MyGames/MyMindustry/cmake-build-debug/CMakeFiles/MyMindustry.dir/code/engine/srcs/GUI/Image.cpp.obj"
   "D:/Programming/MyGames/MyMindustry/code/engine/srcs/GUI/Text.cpp" "D:/Programming/MyGames/MyMindustry/cmake-build-debug/CMakeFiles/MyMindustry.dir/code/engine/srcs/GUI/Text.cpp.obj"
   "D:/Programming/MyGames/MyMindustry/code/engine/srcs/GUI/TextStyle.cpp" "D:/Programming/MyGames/MyMindustry/cmake-build-debug/CMakeFiles/MyMindustry.dir/code/engine/srcs/GUI/TextStyle.cpp.obj"
@@ -23,6 +24,8 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "D:/Programming/MyGames/MyMindustry/code/engine/srcs/managers/LoggingManager.cpp" "D:/Programming/MyGames/MyMindustry/cmake-build-debug/CMakeFiles/MyMindustry.dir/code/engine/srcs/managers/LoggingManager.cpp.obj"
   "D:/Programming/MyGames/MyMindustry/code/engine/srcs/managers/MemoryManager.cpp" "D:/Programming/MyGames/MyMindustry/cmake-build-debug/CMakeFiles/MyMindustry.dir/code/engine/srcs/managers/MemoryManager.cpp.obj"
   "D:/Programming/MyGames/MyMindustry/code/engine/srcs/managers/ScenesManager.cpp" "D:/Programming/MyGames/MyMindustry/cmake-build-debug/CMakeFiles/MyMindustry.dir/code/engine/srcs/managers/ScenesManager.cpp.obj"
+  "D:/Programming/MyGames/MyMindustry/code/engine/srcs/managers/variables/SmartStr.cpp" "D:/Programming/MyGames/MyMindustry/cmake-build-debug/CMakeFiles/MyMindustry.dir/code/engine/srcs/managers/variables/SmartStr.cpp.obj"
+  "D:/Programming/MyGames/MyMindustry/code/engine/srcs/managers/variables/SmartVariable.cpp" "D:/Programming/MyGames/MyMindustry/cmake-build-debug/CMakeFiles/MyMindustry.dir/code/engine/srcs/managers/variables/SmartVariable.cpp.obj"
   "D:/Programming/MyGames/MyMindustry/code/main.cpp" "D:/Programming/MyGames/MyMindustry/cmake-build-debug/CMakeFiles/MyMindustry.dir/code/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

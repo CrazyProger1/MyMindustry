@@ -1,0 +1,26 @@
+{
+  "path": "../resources/sprites/floors/floors_pack.png",
+  "block_size": 60,
+  "names": [
+    [
+      "earth_floor01"
+    ],
+    [
+      "sand_floor01",
+      "sand_floor01_to_earth_top",
+      "sand_floor01_to_earth_top_left",
+      "sand_floor01_to_earth_top_left_right",
+      "sand_floor01_to_water_top",
+      "sand_floor01_to_water_corner",
+      "sand_floor01_to_water_top_left",
+      "sand_floor01_to_water_top_left_right",
+      "sand_floor01_to_water_2corners"
+    ],
+    [
+      "stone_floor01"
+    ],
+    [
+      "water_floor01"
+    ]
+  ]
+}

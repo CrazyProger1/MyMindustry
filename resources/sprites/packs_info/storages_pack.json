@@ -1,0 +1,9 @@
+{
+  "path": "../resources/sprites/storages/storages_pack.png",
+  "block_size": 180,
+  "names": [
+    [
+      "storage01"
+    ]
+  ]
+}

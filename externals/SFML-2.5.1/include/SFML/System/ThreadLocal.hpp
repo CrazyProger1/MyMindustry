@@ -41,7 +41,7 @@ namespace priv
 }
 
 ////////////////////////////////////////////////////////////
-/// \brief Defines variables with thread-local storage
+/// \brief Defines variables with thread-local storages
 ///
 ////////////////////////////////////////////////////////////
 class SFML_SYSTEM_API ThreadLocal : NonCopyable

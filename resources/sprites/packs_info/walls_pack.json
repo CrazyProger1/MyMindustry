@@ -1,0 +1,15 @@
+{
+  "path": "../resources/sprites/walls/walls_pack.png",
+  "block_size": 60,
+  "names": [
+    [
+      "earth_wall01"
+    ],
+    [
+      "stone_wall01"
+    ],
+    [
+      "sand_wall01"
+    ]
+  ]
+}

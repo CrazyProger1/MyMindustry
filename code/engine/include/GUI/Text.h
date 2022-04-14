@@ -91,7 +91,7 @@ namespace engine {
 
         str &getText();
 
-        sf::Vector2f getSize();
+        sf::Vector2f getSize() override;
 
         sf::Vector2f getFullSize();
 

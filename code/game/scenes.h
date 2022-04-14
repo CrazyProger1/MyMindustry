@@ -7,6 +7,8 @@
 
 #include <regex>
 #include "../engine/engine.h"
+#include <stdlib.h>
+#include <time.h>
 
 std::vector<std::string> splitString(const std::string &str, char delim = '\n') {
     std::vector<std::string> tokens;
@@ -253,6 +255,8 @@ private:
     engine::CameraManager *m_pCameraManager;
     std::map<str, engine::SpritePtr> m_loadedSprites;
     sf::Vector2f m_StoragePos;
+    int m_iBlockSize = 0;
+    sf::Vector2i m_screenResolution;
 public:
 
     void load(const str &filePath) {
@@ -263,23 +267,26 @@ public:
         std::vector<str> tmpLineVector;
         m_loadedMapSize = 0;
         int x = 0, y = 0;
+
         while (std::getline(mapFile, line)) {
             x = 0;
             tmpLineVector.clear();
             for (auto const &id: splitString(line, '+')) {
                 tmpLineVector.push_back(id);
                 m_loadedMapSize++;
+
                 if (id == "100") {
                     m_StoragePos.x = x;
-                    m_StoragePos.y = y ;
+                    m_StoragePos.y = y;
                 }
-                x+=60;
+                x += m_iBlockSize;
             }
             m_vcLoadedMap.push_back(tmpLineVector);
-            y+=60;
+            y += m_iBlockSize;
         }
         mapFile.close();
-        m_pCameraManager->setMaxPosition({(float) x - 1920, (float) y - 1080});
+        m_pCameraManager->setMaxPosition({(float) x - m_screenResolution.x,
+                                          (float) y - m_screenResolution.y});
         m_pCameraManager->setMinPosition({0, 0});
     }
 
@@ -294,6 +301,11 @@ public:
         m_pAssetsManager = engine::AssetsManager::getInstance();
         m_pCameraManager = engine::CameraManager::getInstance();
 
+        m_iBlockSize = m_pConfigManager->getJson("game_config")["block_size"];
+        json windowConfig = m_pConfigManager->getJson("window_config");
+        m_screenResolution.x = windowConfig["width"];
+        m_screenResolution.y = windowConfig["height"];
+
         load("../resources/maps/map_1.mp");
 
         json resources = m_pConfigManager->getJson("resources");
@@ -306,37 +318,133 @@ public:
 
     }
 
+    std::vector<std::vector<str>> &getLoadedMap() {
+        return m_vcLoadedMap;
+    }
+
     void draw(sf::RenderTarget &rt) {
         auto cameraPosition = m_pCameraManager->getCameraPosition();
 
         int x = 0, y = 0;
         for (const auto &lineVec: m_vcLoadedMap) {
             x = 0;
-            if (cameraPosition.y + 1080 < y) break;
-            if (y < cameraPosition.y - 60) {
-                y += 60;
+            if (cameraPosition.y + m_screenResolution.y < y) break;
+            if (y < cameraPosition.y - m_iBlockSize) {
+                y += m_iBlockSize;
                 continue;
             }
 
             for (const auto &id: lineVec) {
-                if (cameraPosition.x + 1920 < x) break;
+                if (cameraPosition.x + m_screenResolution.x < x) break;
 
-                if (x < cameraPosition.x - 60) {
-                    x += 60;
+                if (x < cameraPosition.x - m_iBlockSize) {
+                    x += m_iBlockSize;
                     continue;
                 }
 
                 if (id == "100") {
-                    x += 60;
+                    x += m_iBlockSize;
                     continue;
                 }
                 m_loadedSprites.at(id)->setPosition(x + -cameraPosition.x, y + -cameraPosition.y);
                 rt.draw(*m_loadedSprites.at(id));
-                x += 60;
+                x += m_iBlockSize;
             }
-            y += 60;
+            y += m_iBlockSize;
         }
 
+    }
+
+    void update() {
+
+    }
+};
+
+class Minerals {
+
+
+private:
+    std::map<str, engine::SpritePtr> m_mpLoadedSprites;
+    engine::ConfigManager *m_pConfigManager;
+    engine::AssetsManager *m_pAssetsManager;
+    engine::CameraManager *m_pCameraManager;
+
+    std::vector<std::vector<str>> m_vcLoadedMap;
+    std::map<str, std::vector<sf::Vector2f>> m_mpMineralsMap;
+
+    json m_mineralsData;
+
+public:
+    void initialize() {
+        m_pConfigManager = engine::ConfigManager::getInstance();
+        m_pAssetsManager = engine::AssetsManager::getInstance();
+        m_pCameraManager = engine::CameraManager::getInstance();
+
+        m_mineralsData = m_pConfigManager->loadJson("../resources/config/minerals.json", "minerals");
+
+        for (const auto &mineralName: m_mineralsData["names"]) {
+            m_mpLoadedSprites[mineralName] = m_pAssetsManager->getSprite(mineralName);
+        }
+
+    }
+
+    void generate() {
+        srand(time(nullptr));
+
+        json names = m_mineralsData["names"];
+        std::vector<str> prohibitedPlaces = m_mineralsData["prohibited_places"];
+
+        json generatingProperties;
+        int veinSize = 0;
+        sf::Vector2i mapSize;
+        sf::Vector2f startPosition;
+
+        mapSize.y = m_vcLoadedMap.size();
+        mapSize.x = m_vcLoadedMap.at(0).size();
+
+        for (int i = 0; i <= 5; i++)
+            for (str mineralName: names) {
+                generatingProperties = m_mineralsData["generating"][mineralName];
+
+                int maxSize = generatingProperties["max_size"];
+                int minSize = generatingProperties["min_size"];
+                int probability = generatingProperties["probability"];
+
+                if (rand() % 30 + 1 <= probability) {
+                    std::cout << "Generating " << mineralName << std::endl;
+
+                    startPosition.x = rand() % mapSize.x + 1;
+                    startPosition.y = rand() % mapSize.y + 1;
+                    std::cout << startPosition.x << " " << startPosition.y << std::endl;
+
+                    str id = m_vcLoadedMap.at(startPosition.y - 1).at(startPosition.x - 1);
+
+                    if (find(prohibitedPlaces.begin(), prohibitedPlaces.end(), id) != prohibitedPlaces.end()) {
+                        continue;
+                    }
+
+                    startPosition.x *= 60;
+                    startPosition.y *= 60;
+                    m_mpMineralsMap[mineralName].push_back(startPosition);
+
+
+                }
+            }
+    }
+
+    void setLoadedMap(const std::vector<std::vector<str>> &loadedMap) {
+        m_vcLoadedMap = loadedMap;
+    }
+
+    void draw(sf::RenderTarget &rt) {
+        auto cameraPosition = m_pCameraManager->getInvertedCameraPosition();
+        for (str mineralName: m_mineralsData["names"]) {
+            for (auto const &pos: m_mpMineralsMap[mineralName]) {
+                engine::SpritePtr sprite = m_mpLoadedSprites[mineralName];
+                sprite->setPosition({pos.x + cameraPosition.x, pos.y + cameraPosition.y});
+                rt.draw(*sprite);
+            }
+        }
     }
 
     void update() {
@@ -353,14 +461,19 @@ private:
     engine::EntitiesManager *m_pEntitiesManager;
     engine::AssetsManager *m_pAssetsManager;
     Map m_map;
+    Minerals m_minerals;
 public:
     void onInitializeScene() override {
 
         m_map.initialize();
+        m_minerals.setLoadedMap(m_map.getLoadedMap());
+        m_minerals.initialize();
+        m_minerals.generate();
 
         json gameConfig = m_pConfigManager->getJson("game_config");
         int blockSize = gameConfig["block_size"];
         json sidebarSize = gameConfig["sidebar_size"];
+
 
 
         m_pSideBar = std::make_shared<SideBar>();
@@ -381,12 +494,14 @@ public:
 
     void onUpdate() override {
         m_map.update();
+        m_minerals.update();
 
 
     }
 
     void onDraw(sf::RenderTarget &rt) override {
         m_map.draw(rt);
+        m_minerals.draw(rt);
     }
 
     void onLoadResources() override {
@@ -394,6 +509,7 @@ public:
         m_pEntitiesManager = engine::EntitiesManager::getInstance();
         m_pAssetsManager = engine::AssetsManager::getInstance();
 
+        m_pConfigManager->loadJson("../resources/config/game.json", "game_config");
         json resources = m_pConfigManager->loadJson("../resources/config/resources.json", "resources");
 
         json dirs = resources["dirs"];
@@ -404,6 +520,7 @@ public:
 
 
         m_map.initialize();
+        m_minerals.initialize();
     }
 
 

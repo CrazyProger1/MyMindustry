@@ -200,6 +200,30 @@ code/engine/srcs/GUI/ButtonStyle.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyMindustry.dir\build.make CMakeFiles/MyMindustry.dir/code/engine/srcs/GUI/ButtonStyle.cpp.s
 .PHONY : code/engine/srcs/GUI/ButtonStyle.cpp.s
 
+code/engine/srcs/GUI/Grid.obj: code/engine/srcs/GUI/Grid.cpp.obj
+.PHONY : code/engine/srcs/GUI/Grid.obj
+
+# target to build an object file
+code/engine/srcs/GUI/Grid.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyMindustry.dir\build.make CMakeFiles/MyMindustry.dir/code/engine/srcs/GUI/Grid.cpp.obj
+.PHONY : code/engine/srcs/GUI/Grid.cpp.obj
+
+code/engine/srcs/GUI/Grid.i: code/engine/srcs/GUI/Grid.cpp.i
+.PHONY : code/engine/srcs/GUI/Grid.i
+
+# target to preprocess a source file
+code/engine/srcs/GUI/Grid.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyMindustry.dir\build.make CMakeFiles/MyMindustry.dir/code/engine/srcs/GUI/Grid.cpp.i
+.PHONY : code/engine/srcs/GUI/Grid.cpp.i
+
+code/engine/srcs/GUI/Grid.s: code/engine/srcs/GUI/Grid.cpp.s
+.PHONY : code/engine/srcs/GUI/Grid.s
+
+# target to generate assembly for a file
+code/engine/srcs/GUI/Grid.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyMindustry.dir\build.make CMakeFiles/MyMindustry.dir/code/engine/srcs/GUI/Grid.cpp.s
+.PHONY : code/engine/srcs/GUI/Grid.cpp.s
+
 code/engine/srcs/GUI/Image.obj: code/engine/srcs/GUI/Image.cpp.obj
 .PHONY : code/engine/srcs/GUI/Image.obj
 
@@ -488,6 +512,54 @@ code/engine/srcs/managers/ScenesManager.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyMindustry.dir\build.make CMakeFiles/MyMindustry.dir/code/engine/srcs/managers/ScenesManager.cpp.s
 .PHONY : code/engine/srcs/managers/ScenesManager.cpp.s
 
+code/engine/srcs/managers/variables/SmartStr.obj: code/engine/srcs/managers/variables/SmartStr.cpp.obj
+.PHONY : code/engine/srcs/managers/variables/SmartStr.obj
+
+# target to build an object file
+code/engine/srcs/managers/variables/SmartStr.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyMindustry.dir\build.make CMakeFiles/MyMindustry.dir/code/engine/srcs/managers/variables/SmartStr.cpp.obj
+.PHONY : code/engine/srcs/managers/variables/SmartStr.cpp.obj
+
+code/engine/srcs/managers/variables/SmartStr.i: code/engine/srcs/managers/variables/SmartStr.cpp.i
+.PHONY : code/engine/srcs/managers/variables/SmartStr.i
+
+# target to preprocess a source file
+code/engine/srcs/managers/variables/SmartStr.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyMindustry.dir\build.make CMakeFiles/MyMindustry.dir/code/engine/srcs/managers/variables/SmartStr.cpp.i
+.PHONY : code/engine/srcs/managers/variables/SmartStr.cpp.i
+
+code/engine/srcs/managers/variables/SmartStr.s: code/engine/srcs/managers/variables/SmartStr.cpp.s
+.PHONY : code/engine/srcs/managers/variables/SmartStr.s
+
+# target to generate assembly for a file
+code/engine/srcs/managers/variables/SmartStr.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyMindustry.dir\build.make CMakeFiles/MyMindustry.dir/code/engine/srcs/managers/variables/SmartStr.cpp.s
+.PHONY : code/engine/srcs/managers/variables/SmartStr.cpp.s
+
+code/engine/srcs/managers/variables/SmartVariable.obj: code/engine/srcs/managers/variables/SmartVariable.cpp.obj
+.PHONY : code/engine/srcs/managers/variables/SmartVariable.obj
+
+# target to build an object file
+code/engine/srcs/managers/variables/SmartVariable.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyMindustry.dir\build.make CMakeFiles/MyMindustry.dir/code/engine/srcs/managers/variables/SmartVariable.cpp.obj
+.PHONY : code/engine/srcs/managers/variables/SmartVariable.cpp.obj
+
+code/engine/srcs/managers/variables/SmartVariable.i: code/engine/srcs/managers/variables/SmartVariable.cpp.i
+.PHONY : code/engine/srcs/managers/variables/SmartVariable.i
+
+# target to preprocess a source file
+code/engine/srcs/managers/variables/SmartVariable.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyMindustry.dir\build.make CMakeFiles/MyMindustry.dir/code/engine/srcs/managers/variables/SmartVariable.cpp.i
+.PHONY : code/engine/srcs/managers/variables/SmartVariable.cpp.i
+
+code/engine/srcs/managers/variables/SmartVariable.s: code/engine/srcs/managers/variables/SmartVariable.cpp.s
+.PHONY : code/engine/srcs/managers/variables/SmartVariable.s
+
+# target to generate assembly for a file
+code/engine/srcs/managers/variables/SmartVariable.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyMindustry.dir\build.make CMakeFiles/MyMindustry.dir/code/engine/srcs/managers/variables/SmartVariable.cpp.s
+.PHONY : code/engine/srcs/managers/variables/SmartVariable.cpp.s
+
 code/main.obj: code/main.cpp.obj
 .PHONY : code/main.obj
 
@@ -530,6 +602,9 @@ help:
 	@echo ... code/engine/srcs/GUI/ButtonStyle.obj
 	@echo ... code/engine/srcs/GUI/ButtonStyle.i
 	@echo ... code/engine/srcs/GUI/ButtonStyle.s
+	@echo ... code/engine/srcs/GUI/Grid.obj
+	@echo ... code/engine/srcs/GUI/Grid.i
+	@echo ... code/engine/srcs/GUI/Grid.s
 	@echo ... code/engine/srcs/GUI/Image.obj
 	@echo ... code/engine/srcs/GUI/Image.i
 	@echo ... code/engine/srcs/GUI/Image.s
@@ -566,6 +641,12 @@ help:
 	@echo ... code/engine/srcs/managers/ScenesManager.obj
 	@echo ... code/engine/srcs/managers/ScenesManager.i
 	@echo ... code/engine/srcs/managers/ScenesManager.s
+	@echo ... code/engine/srcs/managers/variables/SmartStr.obj
+	@echo ... code/engine/srcs/managers/variables/SmartStr.i
+	@echo ... code/engine/srcs/managers/variables/SmartStr.s
+	@echo ... code/engine/srcs/managers/variables/SmartVariable.obj
+	@echo ... code/engine/srcs/managers/variables/SmartVariable.i
+	@echo ... code/engine/srcs/managers/variables/SmartVariable.s
 	@echo ... code/main.obj
 	@echo ... code/main.i
 	@echo ... code/main.s
