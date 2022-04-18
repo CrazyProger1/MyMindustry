@@ -5,7 +5,7 @@
 #ifndef MYMINDUSTRY_GRID_H
 #define MYMINDUSTRY_GRID_H
 
-#include "Button.h"
+#include "UsualButton.h"
 #include "Text.h"
 
 namespace engine {
@@ -18,9 +18,11 @@ namespace engine {
         int m_iCols = 1, m_iRows = 1;
         bool m_bResizeButtons = true;
     public:
-        void addEntity(const EntityPtr &entity, int column = 0, int row = 0);
+        void addEntity(const EntityPtr &entity, int column, int row);
 
         void setSize(const sf::Vector2f &size);
+
+        void setSize(float w, float h);
 
         void setPosition(const sf::Vector2f &position);
 

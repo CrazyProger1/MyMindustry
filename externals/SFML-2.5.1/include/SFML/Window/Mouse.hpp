@@ -72,7 +72,7 @@ public:
     ////////////////////////////////////////////////////////////
     /// \brief Check if a mouse button is pressed
     ///
-    /// \param button Button to check
+    /// \param button UsualButton to check
     ///
     /// \return True if the button is pressed, false otherwise
     ///

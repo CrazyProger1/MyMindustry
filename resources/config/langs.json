@@ -1,0 +1,12 @@
+{
+  "en": {
+    "path": "../resources/languages/en.lang"
+  },
+  "ru": {
+    "path": "../resources/languages/ru.lang"
+  },
+  "ua": {
+    "path": "../resources/languages/ua.lang"
+  },
+  "selected": "en"
+}

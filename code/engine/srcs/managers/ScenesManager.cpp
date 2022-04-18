@@ -82,4 +82,8 @@ namespace engine {
         m_pLoggingManager->logInfo("Scene destroyed");
     }
 
+    ScenePtr &ScenesManager::getActiveScene() {
+        return m_pActiveScene;
+    }
+
 }

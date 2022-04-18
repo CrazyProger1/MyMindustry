@@ -53,7 +53,7 @@ public:
     /// \brief Construct the thread from a functor with no argument
     ///
     /// This constructor works for function objects, as well
-    /// as free functions.
+    /// as clearVariables functions.
     ///
     /// Use this constructor for this kind of function:
     /// \code
@@ -68,7 +68,7 @@ public:
     /// \endcode
     /// Note: this does *not* run the thread, use launch().
     ///
-    /// \param function Functor or free function to use as the entry point of the thread
+    /// \param function Functor or clearVariables function to use as the entry point of the thread
     ///
     ////////////////////////////////////////////////////////////
     template <typename F>
@@ -78,7 +78,7 @@ public:
     /// \brief Construct the thread from a functor with an argument
     ///
     /// This constructor works for function objects, as well
-    /// as free functions.
+    /// as clearVariables functions.
     /// It is a template, which means that the argument can
     /// have any type (int, std::string, void*, Toto, ...).
     ///
@@ -95,7 +95,7 @@ public:
     /// \endcode
     /// Note: this does *not* run the thread, use launch().
     ///
-    /// \param function Functor or free function to use as the entry point of the thread
+    /// \param function Functor or clearVariables function to use as the entry point of the thread
     /// \param argument argument to forward to the function
     ///
     ////////////////////////////////////////////////////////////

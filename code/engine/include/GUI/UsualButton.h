@@ -2,8 +2,8 @@
 // Created by crazy on 04.04.2022.
 //
 
-#ifndef MYMINDUSTRY_BUTTON_H
-#define MYMINDUSTRY_BUTTON_H
+#ifndef MYMINDUSTRY_USUALBUTTON_H
+#define MYMINDUSTRY_USUALBUTTON_H
 
 #include <memory>
 #include <SFML/Graphics.hpp>
@@ -13,7 +13,7 @@
 
 namespace engine {
 
-    class Button : public Entity {
+    class UsualButton : public Entity {
     private:
         sf::RenderWindow *m_pMainWindow;
 
@@ -69,20 +69,20 @@ namespace engine {
         void drawBorder(sf::RenderTarget &rt);
 
     public:
-        Button();
+        UsualButton();
 
-        explicit Button(const sf::Vector2f &size,
-                        const sf::Color &color = {250, 0, 100},
-                        const sf::Color &hoverColor = {0, 250, 0},
-                        TextPtr text = nullptr,
-                        ImagePtr image = nullptr,
-                        const sf::Vector2f &textOffset = {0, 0},
-                        const sf::Vector2f &imageOffset = {0, 0},
-                        int borderWidth = 0,
-                        const sf::Color &borderColor = {100, 100, 100},
-                        bool centerText = false,
-                        bool centerImage = false,
-                        int cornerRadius = 0
+        explicit UsualButton(const sf::Vector2f &size,
+                             const sf::Color &color = {250, 0, 100},
+                             const sf::Color &hoverColor = {0, 250, 0},
+                             TextPtr text = nullptr,
+                             ImagePtr image = nullptr,
+                             const sf::Vector2f &textOffset = {0, 0},
+                             const sf::Vector2f &imageOffset = {0, 0},
+                             int borderWidth = 0,
+                             const sf::Color &borderColor = {100, 100, 100},
+                             bool centerText = false,
+                             bool centerImage = false,
+                             int cornerRadius = 0
         );
 
         void initialize() override;
@@ -143,8 +143,8 @@ namespace engine {
 
     };
 
-    typedef std::shared_ptr<Button> ButtonPtr;
+    typedef std::shared_ptr<UsualButton> ButtonPtr;
 }
 
 
-#endif //MYMINDUSTRY_BUTTON_H
+#endif //MYMINDUSTRY_USUALBUTTON_H

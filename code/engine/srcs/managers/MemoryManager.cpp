@@ -59,10 +59,22 @@ namespace engine {
         return static_cast<SmartStr *>(m_mpVariables.at(name));
     }
 
-    void MemoryManager::free() {
+    void MemoryManager::clearVariables() {
         for (auto &var: m_mpVariables) {
             delete static_cast<SmartVariable *>(var.second);
         }
         m_mpVariables.clear();
+    }
+
+    void MemoryManager::pushSignal(int signal) {
+        m_vcSignals.push_back(signal);
+    }
+
+    std::vector<int> &MemoryManager::getSignals() {
+        return m_vcSignals;
+    }
+
+    void MemoryManager::clearSignals() {
+        m_vcSignals.clear();
     }
 }

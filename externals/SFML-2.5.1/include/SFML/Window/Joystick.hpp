@@ -123,7 +123,7 @@ public:
     /// If the joystick is not connected, this function returns false.
     ///
     /// \param joystick Index of the joystick
-    /// \param button   Button to check
+    /// \param button   UsualButton to check
     ///
     /// \return True if the button is pressed, false otherwise
     ///

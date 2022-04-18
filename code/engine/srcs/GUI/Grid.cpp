@@ -7,12 +7,17 @@
 
 namespace engine {
 
-    void Grid::addEntity(const EntityPtr &entity, int row, int column) {
-        m_mpEntities[entity] = {row, column};
+    void Grid::addEntity(const EntityPtr &entity, int column, int row) {
+        m_mpEntities[entity] = {column, row};
     }
 
     void Grid::setSize(const sf::Vector2f &size) {
         m_size = size;
+    }
+
+    void Grid::setSize(float w, float h) {
+        m_size.x = w;
+        m_size.y = h;
     }
 
     void Grid::setPosition(const sf::Vector2f &position) {

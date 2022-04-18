@@ -32,6 +32,8 @@ namespace engine {
 
         void tick();
 
+        void updateSignals();
+
     public:
         GameCore();
 

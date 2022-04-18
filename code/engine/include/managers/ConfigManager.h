@@ -15,6 +15,7 @@ namespace engine {
 
         std::map<str, json> m_mpConfigs;
 
+        std::map<str, std::map<str, str>> m_mpLoadedLangPack;
 
     protected:
         static ConfigManager *s_pSelf;
@@ -33,6 +34,10 @@ namespace engine {
         json &getJson(const str &name);
 
         void unloadJson(const str &name);
+
+        void loadLanguagePack(const str &filePath, const str &langName = "en");
+
+        str &getTranslation(const str &chapter, const str &name);
 
     };
 

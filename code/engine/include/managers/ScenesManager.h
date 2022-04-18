@@ -46,6 +46,8 @@ namespace engine {
 
         void handleSFMLEvent(sf::Event &event);
 
+        ScenePtr &getActiveScene();
+
     };
 
 }

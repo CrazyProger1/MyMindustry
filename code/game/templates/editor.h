@@ -329,9 +329,9 @@ public:
         m_pCameraManager = engine::CameraManager::getInstance();
         m_pMemoryManager = engine::MemoryManager::getInstance();
 
-        m_pAssetsManager->loadTexturesFromPack("../resources/sprites/packs_info/floors_pack.json");
-        m_pAssetsManager->loadTexturesFromPack("../resources/sprites/packs_info/walls_pack.json");
-        m_pAssetsManager->loadTexturesFromPack("../resources/sprites/packs_info/storages_pack.json");
+        m_pAssetsManager->loadTexturesFromPack("../resources/sprites/sprite_packs/floors_pack.json");
+        m_pAssetsManager->loadTexturesFromPack("../resources/sprites/sprite_packs/walls_pack.json");
+        m_pAssetsManager->loadTexturesFromPack("../resources/sprites/sprite_packs/storages_pack.json");
         m_pAssetsManager->loadTexture("../resources/sprites/player/player01.png");
         m_pAssetsManager->loadTexture("../resources/sprites/walls/unknown.png");
 

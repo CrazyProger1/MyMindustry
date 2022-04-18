@@ -1,0 +1,14 @@
+{
+  "menu_size": [
+    300,
+    400
+  ],
+  "buttons": [
+    "NewGame",
+    "LoadGame",
+    "PlayOnline",
+    "Settings",
+    "About",
+    "Exit"
+  ]
+}

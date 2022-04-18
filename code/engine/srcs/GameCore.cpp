@@ -18,7 +18,7 @@ namespace engine {
         m_pAssetsManager = AssetsManager::getInstance();
         m_pCameraManager = CameraManager::getInstance();
         m_pConfigManager = ConfigManager::getInstance();
-    };
+    }
 
 
     void GameCore::setMainWindow(sf::RenderWindow *window) {
@@ -43,15 +43,23 @@ namespace engine {
     }
 
     void GameCore::run() {
+
+
         std::chrono::high_resolution_clock::time_point start;
         std::chrono::high_resolution_clock::time_point end;
+
+        if (m_pScenesManager->getActiveScene() == nullptr) {
+            m_pLoggingManager->logError("Scene not set");
+            terminate();
+        }
         float fps;
 
         m_pLoggingManager->logInfo("Mainloop ran");
         while (m_pMainWindow->isOpen()) {
             start = std::chrono::high_resolution_clock::now();
-            // window.draw, etc.
+
             tick();
+
             end = std::chrono::high_resolution_clock::now();
 
             fps = (float) 1e9 / (float) std::chrono::duration_cast<std::chrono::nanoseconds>(end - start).count();
@@ -62,8 +70,10 @@ namespace engine {
     }
 
     void GameCore::terminate() {
-        m_pScenesManager->destroyActiveScene();
+        if (m_pScenesManager->getActiveScene() != nullptr)
+            m_pScenesManager->destroyActiveScene();
         onTerminate();
+
         m_pMainWindow->close();
         m_pLoggingManager->logInfo("Game successfully terminated");
 
@@ -109,7 +119,21 @@ namespace engine {
         onUpdate();
         m_pScenesManager->updateScene();
         m_pMemoryManager->updateVariables();
+        updateSignals();
 
+    }
+
+    void GameCore::updateSignals() {
+        for (int signal: m_pMemoryManager->getSignals()) {
+            switch (signal) {
+                case signals::EXIT:
+                    m_pLoggingManager->logInfo("Got stop signal");
+                    terminate();
+                    break;
+                default:
+                    break;
+            }
+        }
     }
 
 

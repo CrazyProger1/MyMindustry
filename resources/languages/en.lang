@@ -6,5 +6,9 @@
     "Settings": "Settings",
     "About": "About",
     "Exit": "Exit"
+  },
+  "NewGameModeSelection": {
+    "CreateNewGame": "Create new game",
+    "CreateMap": "Create map"
   }
 }

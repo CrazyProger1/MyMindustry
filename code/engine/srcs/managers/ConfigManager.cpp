@@ -37,9 +37,12 @@ namespace engine {
             buffer += line;
         }
         jsonFile.close();
+
         m_mpConfigs[name] = nlohmann::json::parse(buffer);
         m_pLoggingManager->logInfo(filePath + " was successfully loaded");
+
         return m_mpConfigs.at(name);
+
     }
 
     void ConfigManager::unloadJson(const str &name) {
@@ -49,5 +52,15 @@ namespace engine {
 
     json &ConfigManager::getJson(const str &name) {
         return m_mpConfigs.at(name);
+    }
+
+    void ConfigManager::loadLanguagePack(const str &filePath, const str &langName) {
+        m_mpLoadedLangPack = loadJson(filePath, langName + "_lang");
+        m_pLoggingManager->logInfo(filePath + " language pack was successfully loaded");
+        unloadJson(langName + "_lang");
+    }
+
+    str &ConfigManager::getTranslation(const str &chapter, const str &name) {
+        return m_mpLoadedLangPack[chapter][name];
     }
 }

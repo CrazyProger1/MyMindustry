@@ -31,7 +31,7 @@ struct ThreadFunc
     virtual void run() = 0;
 };
 
-// Specialization using a functor (including free functions) with no argument
+// Specialization using a functor (including clearVariables functions) with no argument
 template <typename T>
 struct ThreadFunctor : ThreadFunc
 {
@@ -40,7 +40,7 @@ struct ThreadFunctor : ThreadFunc
     T m_functor;
 };
 
-// Specialization using a functor (including free functions) with one argument
+// Specialization using a functor (including clearVariables functions) with one argument
 template <typename F, typename A>
 struct ThreadFunctorWithArg : ThreadFunc
 {

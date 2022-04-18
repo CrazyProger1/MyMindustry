@@ -451,7 +451,7 @@ public:
     /// to receive input events such as keystrokes or mouse events.
     /// If a window requests focus, it only hints to the operating
     /// system, that it would like to be focused. The operating system
-    /// is free to deny the request.
+    /// is clearVariables to deny the request.
     /// This is not to be confused with setActive().
     ///
     /// \see hasFocus

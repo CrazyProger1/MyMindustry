@@ -1,26 +1,27 @@
 //
-// Created by crazy on 04.04.2022.
+// Created by crazy on 15.04.2022.
 //
 
-#include "../../include/GUI/Button.h"
+#include "../../include/GUI/ImprovedUsualButton.h"
+
 
 namespace engine {
-    Button::Button() {
+    ImprovedUsualButton::ImprovedUsualButton() {
         m_pMainWindow = MemoryManager::getInstance()->getMainWindow();
     }
 
-    Button::Button(const sf::Vector2f &size,
-                   const sf::Color &color,
-                   const sf::Color &hoverColor,
-                   TextPtr text,
-                   ImagePtr image,
-                   const sf::Vector2f &textOffset,
-                   const sf::Vector2f &imageOffset,
-                   int borderWidth,
-                   const sf::Color &borderColor,
-                   bool centerText,
-                   bool centerImage,
-                   int cornerRadius) {
+    ImprovedUsualButton::ImprovedUsualButton(const sf::Vector2f &size,
+                                             const sf::Color &color,
+                                             const sf::Color &hoverColor,
+                                             TextPtr text,
+                                             ImagePtr image,
+                                             const sf::Vector2f &textOffset,
+                                             const sf::Vector2f &imageOffset,
+                                             int borderWidth,
+                                             const sf::Color &borderColor,
+                                             bool centerText,
+                                             bool centerImage,
+                                             int cornerRadius) {
 
         m_size = size;
         m_color = color;
@@ -49,7 +50,7 @@ namespace engine {
     }
 
 
-    void Button::centralizeText() {
+    void ImprovedUsualButton::centralizeText() {
         sf::Vector2f pos = getPosition();
 
         if (!m_bCenterText)
@@ -64,7 +65,7 @@ namespace engine {
     }
 
 
-    void Button::centralizeImage() {
+    void ImprovedUsualButton::centralizeImage() {
         sf::Vector2f pos = getPosition();
 
         if (!m_bCenterImage)
@@ -78,7 +79,7 @@ namespace engine {
         }
     }
 
-    void Button::checkClick(sf::Event &event) {
+    void ImprovedUsualButton::checkClick(sf::Event &event) {
         if (m_bIsDeactivated) {
             m_bIsClicked = false;
             return;
@@ -93,7 +94,7 @@ namespace engine {
         m_bIsClicked = false;
     }
 
-    void Button::checkHover() {
+    void ImprovedUsualButton::checkHover() {
         sf::Vector2f pos = getPosition();
         sf::Vector2i mousePos = sf::Mouse::getPosition(*m_pMainWindow);
 
@@ -106,7 +107,7 @@ namespace engine {
         m_bIsHovered = false;
     }
 
-    void Button::initialize() {
+    void ImprovedUsualButton::initialize() {
         setType("button");
 
         sf::Vector2f pos = getPosition();
@@ -140,25 +141,74 @@ namespace engine {
         }
 
         if (m_iBorderWidth > 0 && m_iCornerRadius == 0) {
-            m_borderRect.setSize({m_size.x + (float) m_iBorderWidth * 2, m_size.y + (float) m_iBorderWidth * 2});
-            m_borderRect.setFillColor(m_borderColor);
-            m_borderRect.setPosition({pos.x - (float) m_iBorderWidth, pos.y - (float) m_iBorderWidth});
+            RectangleShapePtr topLine = std::make_shared<sf::RectangleShape>();
+            topLine->setSize({m_size.x + m_iBorderWidth * 2, (float) m_iBorderWidth}); // right
+            topLine->setPosition({pos.x - m_iBorderWidth, pos.y - m_iBorderWidth}); // right
+            m_vcBorderLines.push_back(topLine); // right
+
+            RectangleShapePtr downLine = std::make_shared<sf::RectangleShape>();
+            downLine->setSize({m_size.x + m_iBorderWidth, (float) m_iBorderWidth});// right
+            downLine->setPosition({pos.x, pos.y + m_size.y});// right
+            m_vcBorderLines.push_back(downLine);// right
+
+            RectangleShapePtr leftLine = std::make_shared<sf::RectangleShape>();
+            leftLine->setSize({(float) m_iBorderWidth, m_size.y + m_iBorderWidth * 2}); // right
+            leftLine->setPosition({pos.x - m_iBorderWidth, pos.y - m_iBorderWidth});  // right
+            m_vcBorderLines.push_back(leftLine); // right
+
+            RectangleShapePtr rightLine = std::make_shared<sf::RectangleShape>();
+            rightLine->setSize({(float) m_iBorderWidth, m_size.y + m_iBorderWidth});// right
+            rightLine->setPosition({pos.x + m_size.x, pos.y});// right
+            m_vcBorderLines.push_back(rightLine);// right
 
         } else if (m_iBorderWidth > 0 && m_iCornerRadius > 0) {
-            m_borderRect.setSize({m_size.x + (float) m_iBorderWidth * 2 - m_iCornerRadius * 2,
-                                  m_size.y + (float) m_iBorderWidth * 2});
-            m_borderRect.setFillColor(m_borderColor);
-            m_borderRect.setPosition({pos.x - (float) m_iBorderWidth + m_iCornerRadius,
-                                      pos.y - (float) m_iBorderWidth});
+            RectangleShapePtr topLine = std::make_shared<sf::RectangleShape>();
+            topLine->setSize({m_size.x + m_iBorderWidth * 2 - m_iCornerRadius * 2, (float) m_iBorderWidth}); // right
+            topLine->setPosition({pos.x - m_iBorderWidth + m_iCornerRadius, pos.y - m_iBorderWidth}); // right
+            m_vcBorderLines.push_back(topLine); // right
 
-            m_sideBorderRect.setSize({m_size.x + m_iBorderWidth * 2,
-                                      m_size.y - m_iCornerRadius * 2 + m_iBorderWidth * 2});
-            m_sideBorderRect.setPosition({pos.x - m_iBorderWidth, pos.y + m_iCornerRadius - m_iBorderWidth});
-            m_sideBorderRect.setFillColor(m_borderColor);
+            ArcShapePtr topLeftArcShape = std::make_shared<ArcShape>();
+            topLeftArcShape->setCenterPosition(pos);
+            topLeftArcShape->setStartAngle(180);
+            topLeftArcShape->setEndAngle(270);
+//            m_vcCornerArcs.push_back(topLeftArcShape);
 
-            m_cornerBorderCircle.setFillColor(m_borderColor);
-            m_cornerBorderCircle.setRadius(m_iCornerRadius);
+            ArcShapePtr test = std::make_shared<ArcShape>();
+            test->setRadius(m_iCornerRadius);
+            test->setColor(m_borderColor);
+            test->setWidth(m_iBorderWidth);
+            test->setCenterPosition({100 + (float)m_iCornerRadius, 100 + (float)m_iCornerRadius});
+            test->setStartAngle(180);
+            test->setEndAngle(270);
+            m_vcCornerArcs.push_back(test);
+
+            RectangleShapePtr downLine = std::make_shared<sf::RectangleShape>();
+            downLine->setSize({m_size.x + m_iBorderWidth * 2 - m_iCornerRadius * 2, (float) m_iBorderWidth});// right
+            downLine->setPosition({pos.x + m_iCornerRadius - m_iBorderWidth, pos.y + m_size.y});// right
+            m_vcBorderLines.push_back(downLine);// right
+
+
+
+//            RectangleShapePtr leftLine = std::make_shared<sf::RectangleShape>();
+//            leftLine->setSize({(float) m_iBorderWidth, m_size.y + m_iBorderWidth * 2}); // right
+//            leftLine->setPosition({pos.x - m_iBorderWidth, pos.y - m_iBorderWidth});  // right
+//            m_vcBorderLines.push_back(leftLine); // right
+//
+//            RectangleShapePtr rightLine = std::make_shared<sf::RectangleShape>();
+//            rightLine->setSize({(float) m_iBorderWidth, m_size.y + m_iBorderWidth});// right
+//            rightLine->setPosition({pos.x + m_size.x, pos.y});// right
+//            m_vcBorderLines.push_back(rightLine);// right
+
+            for (auto &arcShape: m_vcCornerArcs) {
+
+                arcShape->init();
+                arcShape->initialize();
+
+
+            }
+//
         }
+
 
         if (m_bIsTextSet) {
             centralizeText();
@@ -170,73 +220,60 @@ namespace engine {
             centralizeImage();
             m_pImage->initialize();
         }
+
+
     }
 
-    void Button::drawBorder(sf::RenderTarget &rt) {
+    void ImprovedUsualButton::drawBorder(sf::RenderTarget &rt) {
         if (m_iBorderWidth > 0) {
             sf::Vector2f pos = getPosition();
-
-            rt.draw(m_borderRect);
-
-            if (m_iCornerRadius) {
-                rt.draw(m_sideBorderRect);
-
-                m_cornerBorderCircle.setPosition({pos.x - m_iBorderWidth, pos.y - m_iBorderWidth});
-                rt.draw(m_cornerBorderCircle);
-
-                m_cornerBorderCircle.setPosition({pos.x + m_size.x - m_iCornerRadius * 2 + m_iBorderWidth,
-                                                  pos.y - m_iBorderWidth});
-                rt.draw(m_cornerBorderCircle);
-
-                m_cornerBorderCircle.setPosition(
-                        {pos.x - m_iBorderWidth, pos.y + m_size.y - m_iCornerRadius * 2 + m_iBorderWidth});
-                rt.draw(m_cornerBorderCircle);
-
-                m_cornerBorderCircle.setPosition(
-                        {pos.x + m_size.x - m_iCornerRadius * 2 + m_iBorderWidth,
-                         pos.y + m_size.y - m_iCornerRadius * 2 + m_iBorderWidth});
-                rt.draw(m_cornerBorderCircle);
+            for (auto &borderLine: m_vcBorderLines) {
+                rt.draw(*borderLine);
             }
+            for (auto &cornerArc: m_vcCornerArcs) {
+                cornerArc->draw(rt);
+            }
+
         }
 
 
     }
 
-    void Button::setSize(const sf::Vector2f &size) {
+    void ImprovedUsualButton::setSize(const sf::Vector2f &size) {
         m_size = size;
         initialize();
     }
 
-    void Button::setSize(float w, float h) {
+    void ImprovedUsualButton::setSize(float w, float h) {
         m_size.x = w;
         m_size.y = h;
         initialize();
     }
 
 
-    void Button::setTextOffset(const sf::Vector2f &offset) {
+    void ImprovedUsualButton::setTextOffset(const sf::Vector2f &offset) {
         m_textOffset = offset;
         initialize();
     }
 
-    void Button::setImageOffset(const sf::Vector2f &offset) {
+    void ImprovedUsualButton::setImageOffset(const sf::Vector2f &offset) {
         m_imageOffset = offset;
         initialize();
     }
 
 
-    void Button::setBorderWidth(int width) {
+    void ImprovedUsualButton::setBorderWidth(int width) {
         m_iBorderWidth = width;
         initialize();
     }
 
-    void Button::setCornerRadius(int radius) {
+    void ImprovedUsualButton::setCornerRadius(int radius) {
         m_iCornerRadius = radius;
         initialize();
     }
 
 
-    void Button::setText(const TextPtr& text) {
+    void ImprovedUsualButton::setText(const TextPtr &text) {
         m_pText = text;
         m_textColor = text->getTextColor();
         m_textHoverColor = text->getTextHoverColor();
@@ -245,45 +282,45 @@ namespace engine {
     }
 
 
-    void Button::setImage(const ImagePtr &image) {
+    void ImprovedUsualButton::setImage(const ImagePtr &image) {
         m_pImage = image;
         m_bIsImageSet = true;
         initialize();
     }
 
 
-    void Button::setBorderColor(const sf::Color &color) {
+    void ImprovedUsualButton::setBorderColor(const sf::Color &color) {
         m_borderColor = color;
         initialize();
     }
 
-    void Button::setHoverColor(const sf::Color &color) {
+    void ImprovedUsualButton::setHoverColor(const sf::Color &color) {
         m_hoverColor = color;
         initialize();
     }
 
-    void Button::setCenteringText(bool center) {
+    void ImprovedUsualButton::setCenteringText(bool center) {
         m_bCenterText = center;
         initialize();
     }
 
-    void Button::setCenteringImage(bool center) {
+    void ImprovedUsualButton::setCenteringImage(bool center) {
         m_bCenterImage = center;
         initialize();
     }
 
 
-    void Button::setColor(const sf::Color &color) {
+    void ImprovedUsualButton::setColor(const sf::Color &color) {
         m_color = color;
         initialize();
     }
 
-    void Button::setDeactivatedColor(const sf::Color &color) {
+    void ImprovedUsualButton::setDeactivatedColor(const sf::Color &color) {
         m_deactivatedColor = color;
         initialize();
     }
 
-    void Button::setStyle(ButtonStyle &buttonStyle) {
+    void ImprovedUsualButton::setStyle(ButtonStyle &buttonStyle) {
         m_size = buttonStyle.getSize();
         m_iBorderWidth = buttonStyle.getBorderWidth();
         m_iCornerRadius = buttonStyle.getCornerRadius();
@@ -300,35 +337,35 @@ namespace engine {
     }
 
 
-    bool Button::isHovered() const {
+    bool ImprovedUsualButton::isHovered() const {
         return m_bIsHovered;
     }
 
-    bool Button::isClicked() {
+    bool ImprovedUsualButton::isClicked() {
         bool buff = m_bIsClicked;
         m_bIsClicked = false;
         return buff;
     }
 
-    sf::Vector2f Button::getSize() {
+    sf::Vector2f ImprovedUsualButton::getSize() {
         return m_size;
     }
 
 
-    void Button::activate() {
+    void ImprovedUsualButton::activate() {
         if (!m_bIsDeactivated) return;
         m_bIsDeactivated = false;
         initialize();
     }
 
-    void Button::deactivate() {
+    void ImprovedUsualButton::deactivate() {
         if (m_bIsDeactivated) return;
         m_bIsDeactivated = true;
         initialize();
     }
 
 
-    void Button::draw(sf::RenderTarget &rt) {
+    void ImprovedUsualButton::draw(sf::RenderTarget &rt) {
         drawBorder(rt);
 
         rt.draw(m_mainRect);
@@ -365,11 +402,11 @@ namespace engine {
 
     }
 
-    void Button::handleSFMLEvent(sf::Event &event) {
+    void ImprovedUsualButton::handleSFMLEvent(sf::Event &event) {
         checkClick(event);
     }
 
-    void Button::update() {
+    void ImprovedUsualButton::update() {
         checkHover();
 
         if (!m_bIsDeactivated) {
@@ -409,6 +446,5 @@ namespace engine {
             }
         }
     }
-
 
 }

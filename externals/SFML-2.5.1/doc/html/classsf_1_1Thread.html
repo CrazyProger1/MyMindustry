@@ -127,11 +127,11 @@ template&lt;typename F &gt; </div>
 </div><div class="memdoc">
 
 <p>Construct the thread from a functor with no argument. </p>
-<p>This constructor works for function objects, as well as free functions.</p>
+<p>This constructor works for function objects, as well as clearVariables functions.</p>
 <p>Use this constructor for this kind of function: </p><div class="fragment"><div class="line"><span class="keywordtype">void</span> <span class="keyword">function</span>();</div><div class="line"></div><div class="line"><span class="comment">// --- or ----</span></div><div class="line"></div><div class="line"><span class="keyword">struct </span>Functor</div><div class="line">{</div><div class="line">    <span class="keywordtype">void</span> operator()();</div><div class="line">};</div></div><!-- fragment --><p> Note: this does <em>not</em> run the thread, use <a class="el" href="classsf_1_1Thread.html#a74f75a9e86e1eb47479496314048b5f6" title="Run the thread. ">launch()</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">function</td><td>Functor or free function to use as the entry point of the thread </td></tr>
+    <tr><td class="paramname">function</td><td>Functor or clearVariables function to use as the entry point of the thread </td></tr>
   </table>
   </dd>
 </dl>
@@ -167,11 +167,11 @@ template&lt;typename F , typename A &gt; </div>
 </div><div class="memdoc">
 
 <p>Construct the thread from a functor with an argument. </p>
-<p>This constructor works for function objects, as well as free functions. It is a template, which means that the argument can have any type (int, std::string, void*, Toto, ...).</p>
+<p>This constructor works for function objects, as well as clearVariables functions. It is a template, which means that the argument can have any type (int, std::string, void*, Toto, ...).</p>
 <p>Use this constructor for this kind of function: </p><div class="fragment"><div class="line"><span class="keywordtype">void</span> <span class="keyword">function</span>(<span class="keywordtype">int</span> arg);</div><div class="line"></div><div class="line"><span class="comment">// --- or ----</span></div><div class="line"></div><div class="line"><span class="keyword">struct </span>Functor</div><div class="line">{</div><div class="line">    <span class="keywordtype">void</span> operator()(std::string arg);</div><div class="line">};</div></div><!-- fragment --><p> Note: this does <em>not</em> run the thread, use <a class="el" href="classsf_1_1Thread.html#a74f75a9e86e1eb47479496314048b5f6" title="Run the thread. ">launch()</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">function</td><td>Functor or free function to use as the entry point of the thread </td></tr>
+    <tr><td class="paramname">function</td><td>Functor or clearVariables function to use as the entry point of the thread </td></tr>
     <tr><td class="paramname">argument</td><td>argument to forward to the function </td></tr>
   </table>
   </dd>

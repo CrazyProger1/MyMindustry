@@ -54,11 +54,11 @@ int main()
     if (!loginResponse.isOk())
         return EXIT_FAILURE;
 
-    // Main menu
+    // Main menu.json
     int choice = 0;
     do
     {
-        // Main FTP menu
+        // Main FTP menu.json
         std::cout << std::endl;
         std::cout << "Choose an action:"                      << std::endl;
         std::cout << "1. Print working directory"             << std::endl;

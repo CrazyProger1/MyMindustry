@@ -1,12 +1,15 @@
 //
-// Created by crazy on 01.04.2022.
+// Created by crazy on 15.04.2022.
 //
 
 #ifndef MYMINDUSTRY_GAME_H
 #define MYMINDUSTRY_GAME_H
 
-//#include "scenes.h"
-#include "editor.h"
+
+#include "../engine/engine.h"
+#include "editor/editor.h"
+#include "MainMenuScene.h"
+#include "GameModeSelectionScene.h"
 
 class Game : public engine::GameCore {
 private:
@@ -31,5 +34,6 @@ public:
 
     }
 };
+
 
 #endif //MYMINDUSTRY_GAME_H

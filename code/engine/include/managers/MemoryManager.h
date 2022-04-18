@@ -19,6 +19,8 @@ namespace engine {
 
         std::map<str, void *> m_mpVariables;
 
+        std::vector<int> m_vcSignals;
+
     protected:
         static MemoryManager *s_pSelf;
 
@@ -43,7 +45,17 @@ namespace engine {
 
         SmartStr *getStringVariable(const str &name);
 
-        void free();
+        void clearVariables();
+
+        void pushSignal(int signal);
+
+        std::vector<int> &getSignals();
+
+        void clearSignals();
+    };
+
+    enum signals {
+        EXIT = 0,
     };
 
 }

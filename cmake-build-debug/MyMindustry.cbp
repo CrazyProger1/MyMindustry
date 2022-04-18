@@ -90,9 +90,6 @@
 		<Unit filename="D:/Programming/MyGames/MyMindustry/code/engine/include/Entity.h">
 			<Option target="MyMindustry"/>
 		</Unit>
-		<Unit filename="D:/Programming/MyGames/MyMindustry/code/engine/include/GUI/Button.h">
-			<Option target="MyMindustry"/>
-		</Unit>
 		<Unit filename="D:/Programming/MyGames/MyMindustry/code/engine/include/GUI/ButtonStyle.h">
 			<Option target="MyMindustry"/>
 		</Unit>
@@ -102,10 +99,16 @@
 		<Unit filename="D:/Programming/MyGames/MyMindustry/code/engine/include/GUI/Image.h">
 			<Option target="MyMindustry"/>
 		</Unit>
+		<Unit filename="D:/Programming/MyGames/MyMindustry/code/engine/include/GUI/ImprovedUsualButton.h">
+			<Option target="MyMindustry"/>
+		</Unit>
 		<Unit filename="D:/Programming/MyGames/MyMindustry/code/engine/include/GUI/Text.h">
 			<Option target="MyMindustry"/>
 		</Unit>
 		<Unit filename="D:/Programming/MyGames/MyMindustry/code/engine/include/GUI/TextStyle.h">
+			<Option target="MyMindustry"/>
+		</Unit>
+		<Unit filename="D:/Programming/MyGames/MyMindustry/code/engine/include/GUI/UsualButton.h">
 			<Option target="MyMindustry"/>
 		</Unit>
 		<Unit filename="D:/Programming/MyGames/MyMindustry/code/engine/include/GameCore.h">
@@ -141,13 +144,13 @@
 		<Unit filename="D:/Programming/MyGames/MyMindustry/code/engine/include/managers/variables/SmartVariable.h">
 			<Option target="MyMindustry"/>
 		</Unit>
+		<Unit filename="D:/Programming/MyGames/MyMindustry/code/engine/include/shapes/ArcShape.h">
+			<Option target="MyMindustry"/>
+		</Unit>
 		<Unit filename="D:/Programming/MyGames/MyMindustry/code/engine/include/types.h">
 			<Option target="MyMindustry"/>
 		</Unit>
 		<Unit filename="D:/Programming/MyGames/MyMindustry/code/engine/srcs/Entity.cpp">
-			<Option target="MyMindustry"/>
-		</Unit>
-		<Unit filename="D:/Programming/MyGames/MyMindustry/code/engine/srcs/GUI/Button.cpp">
 			<Option target="MyMindustry"/>
 		</Unit>
 		<Unit filename="D:/Programming/MyGames/MyMindustry/code/engine/srcs/GUI/ButtonStyle.cpp">
@@ -159,10 +162,16 @@
 		<Unit filename="D:/Programming/MyGames/MyMindustry/code/engine/srcs/GUI/Image.cpp">
 			<Option target="MyMindustry"/>
 		</Unit>
+		<Unit filename="D:/Programming/MyGames/MyMindustry/code/engine/srcs/GUI/ImprovedUsualButton.cpp">
+			<Option target="MyMindustry"/>
+		</Unit>
 		<Unit filename="D:/Programming/MyGames/MyMindustry/code/engine/srcs/GUI/Text.cpp">
 			<Option target="MyMindustry"/>
 		</Unit>
 		<Unit filename="D:/Programming/MyGames/MyMindustry/code/engine/srcs/GUI/TextStyle.cpp">
+			<Option target="MyMindustry"/>
+		</Unit>
+		<Unit filename="D:/Programming/MyGames/MyMindustry/code/engine/srcs/GUI/UsualButton.cpp">
 			<Option target="MyMindustry"/>
 		</Unit>
 		<Unit filename="D:/Programming/MyGames/MyMindustry/code/engine/srcs/GameCore.cpp">
@@ -198,13 +207,31 @@
 		<Unit filename="D:/Programming/MyGames/MyMindustry/code/engine/srcs/managers/variables/SmartVariable.cpp">
 			<Option target="MyMindustry"/>
 		</Unit>
-		<Unit filename="D:/Programming/MyGames/MyMindustry/code/game/editor.h">
+		<Unit filename="D:/Programming/MyGames/MyMindustry/code/engine/srcs/shapes/ArcShape.cpp">
+			<Option target="MyMindustry"/>
+		</Unit>
+		<Unit filename="D:/Programming/MyGames/MyMindustry/code/game/GameModeSelectionScene.cpp">
+			<Option target="MyMindustry"/>
+		</Unit>
+		<Unit filename="D:/Programming/MyGames/MyMindustry/code/game/GameModeSelectionScene.h">
+			<Option target="MyMindustry"/>
+		</Unit>
+		<Unit filename="D:/Programming/MyGames/MyMindustry/code/game/MainMenuScene.cpp">
+			<Option target="MyMindustry"/>
+		</Unit>
+		<Unit filename="D:/Programming/MyGames/MyMindustry/code/game/MainMenuScene.h">
+			<Option target="MyMindustry"/>
+		</Unit>
+		<Unit filename="D:/Programming/MyGames/MyMindustry/code/game/editor/MapEditorScene.cpp">
+			<Option target="MyMindustry"/>
+		</Unit>
+		<Unit filename="D:/Programming/MyGames/MyMindustry/code/game/editor/MapEditorScene.h">
+			<Option target="MyMindustry"/>
+		</Unit>
+		<Unit filename="D:/Programming/MyGames/MyMindustry/code/game/editor/editor.h">
 			<Option target="MyMindustry"/>
 		</Unit>
 		<Unit filename="D:/Programming/MyGames/MyMindustry/code/game/game.h">
-			<Option target="MyMindustry"/>
-		</Unit>
-		<Unit filename="D:/Programming/MyGames/MyMindustry/code/game/scenes.h">
 			<Option target="MyMindustry"/>
 		</Unit>
 		<Unit filename="D:/Programming/MyGames/MyMindustry/code/main.cpp">

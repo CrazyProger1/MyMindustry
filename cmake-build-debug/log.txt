@@ -1,67 +1,39 @@
-INFO : 2022-3-14 19:56 : LoggingManager initialized
-INFO : 2022-3-14 19:56 : Core (v1) initialized
-INFO : 2022-3-14 19:56 : ScenesManager initialized
-INFO : 2022-3-14 19:56 : EntitiesManager initialized
-INFO : 2022-3-14 19:56 : CameraManager initialized
-INFO : 2022-3-14 19:56 : MemoryManager initialized
-INFO : 2022-3-14 19:56 : AssetsManager initialized
-INFO : 2022-3-14 19:56 : ConfigManager initialized
-INFO : 2022-3-14 19:56 : ../resources/config/window.json was successfully loaded
-INFO : 2022-3-14 19:56 : Window is set (1920x1080)
-INFO : 2022-3-14 19:56 : Added new scene (id = 1)
-INFO : 2022-3-14 19:56 : New active scene is set (id = 1)
-INFO : 2022-3-14 19:56 : ../resources/sprites/packs_info/floors_pack.json was successfully loaded
-INFO : 2022-3-14 19:56 : ../resources/sprites/floors/floors_pack.png(earth_floor01) was successfully loaded
-INFO : 2022-3-14 19:56 : ../resources/sprites/floors/floors_pack.png(sand_floor01) was successfully loaded
-INFO : 2022-3-14 19:56 : ../resources/sprites/floors/floors_pack.png(sand_floor01_to_earth_top) was successfully loaded
-INFO : 2022-3-14 19:56 : ../resources/sprites/floors/floors_pack.png(sand_floor01_to_earth_top_left) was successfully loaded
-INFO : 2022-3-14 19:56 : ../resources/sprites/floors/floors_pack.png(sand_floor01_to_earth_top_left_right) was successfully loaded
-INFO : 2022-3-14 19:56 : ../resources/sprites/floors/floors_pack.png(sand_floor01_to_water_top) was successfully loaded
-INFO : 2022-3-14 19:56 : ../resources/sprites/floors/floors_pack.png(sand_floor01_to_water_corner) was successfully loaded
-INFO : 2022-3-14 19:56 : ../resources/sprites/floors/floors_pack.png(sand_floor01_to_water_top_left) was successfully loaded
-INFO : 2022-3-14 19:56 : ../resources/sprites/floors/floors_pack.png(sand_floor01_to_water_top_left_right) was successfully loaded
-INFO : 2022-3-14 19:56 : ../resources/sprites/floors/floors_pack.png(sand_floor01_to_water_2corners) was successfully loaded
-INFO : 2022-3-14 19:56 : ../resources/sprites/floors/floors_pack.png(stone_floor01) was successfully loaded
-INFO : 2022-3-14 19:56 : ../resources/sprites/floors/floors_pack.png(water_floor01) was successfully loaded
-INFO : 2022-3-14 19:56 : ../resources/sprites/packs_info/walls_pack.json was successfully loaded
-INFO : 2022-3-14 19:56 : ../resources/sprites/walls/walls_pack.png(earth_wall01) was successfully loaded
-INFO : 2022-3-14 19:56 : ../resources/sprites/walls/walls_pack.png(stone_wall01) was successfully loaded
-INFO : 2022-3-14 19:56 : ../resources/sprites/walls/walls_pack.png(sand_wall01) was successfully loaded
-INFO : 2022-3-14 19:56 : ../resources/sprites/packs_info/storages_pack.json was successfully loaded
-INFO : 2022-3-14 19:56 : ../resources/sprites/storages/storages_pack.png(storage01) was successfully loaded
-INFO : 2022-3-14 19:56 : ../resources/sprites/player/player01.png was successfully loaded
-INFO : 2022-3-14 19:56 : ../resources/sprites/walls/unknown.png was successfully loaded
-INFO : 2022-3-14 19:56 : ../resources/config/blocks.json was successfully loaded
-INFO : 2022-3-14 19:56 : Resources loaded
-INFO : 2022-3-14 19:56 : Entities initialized
-INFO : 2022-3-14 19:56 : Scene initialized
-INFO : 2022-3-14 19:56 : Scene destroyed
-INFO : 2022-3-14 19:56 : New active scene is set (id = 1)
-INFO : 2022-3-14 19:56 : ../resources/sprites/packs_info/floors_pack.json was successfully loaded
-INFO : 2022-3-14 19:56 : ../resources/sprites/floors/floors_pack.png(earth_floor01) was successfully loaded
-INFO : 2022-3-14 19:56 : ../resources/sprites/floors/floors_pack.png(sand_floor01) was successfully loaded
-INFO : 2022-3-14 19:56 : ../resources/sprites/floors/floors_pack.png(sand_floor01_to_earth_top) was successfully loaded
-INFO : 2022-3-14 19:56 : ../resources/sprites/floors/floors_pack.png(sand_floor01_to_earth_top_left) was successfully loaded
-INFO : 2022-3-14 19:56 : ../resources/sprites/floors/floors_pack.png(sand_floor01_to_earth_top_left_right) was successfully loaded
-INFO : 2022-3-14 19:56 : ../resources/sprites/floors/floors_pack.png(sand_floor01_to_water_top) was successfully loaded
-INFO : 2022-3-14 19:56 : ../resources/sprites/floors/floors_pack.png(sand_floor01_to_water_corner) was successfully loaded
-INFO : 2022-3-14 19:56 : ../resources/sprites/floors/floors_pack.png(sand_floor01_to_water_top_left) was successfully loaded
-INFO : 2022-3-14 19:56 : ../resources/sprites/floors/floors_pack.png(sand_floor01_to_water_top_left_right) was successfully loaded
-INFO : 2022-3-14 19:56 : ../resources/sprites/floors/floors_pack.png(sand_floor01_to_water_2corners) was successfully loaded
-INFO : 2022-3-14 19:56 : ../resources/sprites/floors/floors_pack.png(stone_floor01) was successfully loaded
-INFO : 2022-3-14 19:56 : ../resources/sprites/floors/floors_pack.png(water_floor01) was successfully loaded
-INFO : 2022-3-14 19:56 : ../resources/sprites/packs_info/walls_pack.json was successfully loaded
-INFO : 2022-3-14 19:56 : ../resources/sprites/walls/walls_pack.png(earth_wall01) was successfully loaded
-INFO : 2022-3-14 19:56 : ../resources/sprites/walls/walls_pack.png(stone_wall01) was successfully loaded
-INFO : 2022-3-14 19:56 : ../resources/sprites/walls/walls_pack.png(sand_wall01) was successfully loaded
-INFO : 2022-3-14 19:56 : ../resources/sprites/packs_info/storages_pack.json was successfully loaded
-INFO : 2022-3-14 19:56 : ../resources/sprites/storages/storages_pack.png(storage01) was successfully loaded
-INFO : 2022-3-14 19:56 : ../resources/sprites/player/player01.png was successfully loaded
-INFO : 2022-3-14 19:56 : ../resources/sprites/walls/unknown.png was successfully loaded
-INFO : 2022-3-14 19:56 : ../resources/config/blocks.json was successfully loaded
-INFO : 2022-3-14 19:56 : Resources loaded
-INFO : 2022-3-14 19:56 : Entities initialized
-INFO : 2022-3-14 19:56 : Scene initialized
-INFO : 2022-3-14 19:56 : Mainloop ran
-INFO : 2022-3-14 19:56 : Scene destroyed
-INFO : 2022-3-14 19:56 : Game successfully terminated
+INFO : 2022-3-16 10:22 : LoggingManager initialized
+INFO : 2022-3-16 10:22 : Core (v1) initialized
+INFO : 2022-3-16 10:22 : ScenesManager initialized
+INFO : 2022-3-16 10:22 : EntitiesManager initialized
+INFO : 2022-3-16 10:22 : CameraManager initialized
+INFO : 2022-3-16 10:22 : MemoryManager initialized
+INFO : 2022-3-16 10:22 : AssetsManager initialized
+INFO : 2022-3-16 10:22 : ConfigManager initialized
+INFO : 2022-3-16 10:22 : ../resources/config/window.json was successfully loaded
+INFO : 2022-3-16 10:22 : Window is set (1920x1080)
+INFO : 2022-3-16 10:22 : Added new scene (id = 1)
+INFO : 2022-3-16 10:22 : New active scene is set (id = 1)
+INFO : 2022-3-16 10:22 : ../resources/config/langs.json was successfully loaded
+INFO : 2022-3-16 10:22 : ../resources/config/menu.json was successfully loaded
+INFO : 2022-3-16 10:22 : ../resources/imgs/backgrounds/background2.jpg was successfully loaded
+INFO : 2022-3-16 10:22 : ../resources/languages/en.lang was successfully loaded
+INFO : 2022-3-16 10:22 : ../resources/languages/en.lang language pack was successfully loaded
+INFO : 2022-3-16 10:22 : Resources loaded
+INFO : 2022-3-16 10:22 : Entities initialized
+INFO : 2022-3-16 10:22 : Scene initialized
+INFO : 2022-3-16 10:22 : Added new scene (id = 2)
+INFO : 2022-3-16 10:22 : Scene destroyed
+INFO : 2022-3-16 10:22 : New active scene is set (id = 1)
+INFO : 2022-3-16 10:22 : ../resources/config/langs.json was successfully loaded
+INFO : 2022-3-16 10:22 : ../resources/config/menu.json was successfully loaded
+INFO : 2022-3-16 10:22 : ../resources/imgs/backgrounds/background2.jpg was successfully loaded
+INFO : 2022-3-16 10:22 : ../resources/languages/en.lang was successfully loaded
+INFO : 2022-3-16 10:22 : ../resources/languages/en.lang language pack was successfully loaded
+INFO : 2022-3-16 10:22 : Resources loaded
+INFO : 2022-3-16 10:22 : Entities initialized
+INFO : 2022-3-16 10:22 : Scene initialized
+INFO : 2022-3-16 10:22 : Mainloop ran
+INFO : 2022-3-16 10:22 : Scene destroyed
+INFO : 2022-3-16 10:22 : New active scene is set (id = 2)
+INFO : 2022-3-16 10:22 : Resources loaded
+INFO : 2022-3-16 10:22 : Entities initialized
+INFO : 2022-3-16 10:22 : Scene initialized
+INFO : 2022-3-16 10:22 : Scene destroyed
+INFO : 2022-3-16 10:22 : Game successfully terminated
